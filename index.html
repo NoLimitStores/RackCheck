@@ -634,6 +634,113 @@
       color: rgba(255,255,255,0.65);
     }
 
+    /* ── HOVUMA PARTNER ── */
+    #partner {
+      background: var(--navy-2);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      position: relative; overflow: hidden;
+    }
+    #partner::before {
+      content: 'HOVUMA';
+      position: absolute;
+      font-family: var(--font-d); font-size: clamp(80px, 14vw, 180px);
+      font-weight: 900; letter-spacing: 0.04em;
+      color: transparent;
+      -webkit-text-stroke: 1px rgba(255,255,255,0.022);
+      top: 50%; right: -2%; transform: translateY(-50%);
+      white-space: nowrap; pointer-events: none; user-select: none;
+    }
+    .partner-inner {
+      position: relative; z-index: 1;
+      display: grid; grid-template-columns: 220px 1fr;
+      gap: 80px; align-items: center;
+    }
+    .partner-badge-col {
+      display: flex; justify-content: center;
+    }
+    .partner-badge { text-align: center; }
+    .partner-badge-ring {
+      width: 120px; height: 120px;
+      position: relative; margin: 0 auto 16px;
+    }
+    .partner-badge-ring svg {
+      position: absolute; inset: 0;
+      width: 100%; height: 100%;
+    }
+    .partner-ring-spin {
+      transform-origin: center;
+      animation: spin 12s linear infinite;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    .partner-badge-inner {
+      position: absolute; inset: 0;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .partner-badge-label {
+      font-size: 11px; font-weight: 700;
+      letter-spacing: 0.14em; text-transform: uppercase;
+      color: var(--blue);
+    }
+    .partner-desc {
+      font-size: 16px; color: var(--muted);
+      line-height: 1.8; max-width: 540px;
+      margin-bottom: 36px;
+    }
+    .partner-desc strong { color: var(--text); font-weight: 600; }
+    .partner-steps {
+      display: flex; align-items: center; gap: 12px;
+      margin-bottom: 36px; flex-wrap: wrap;
+    }
+    .partner-step {
+      display: flex; align-items: flex-start; gap: 12px;
+      background: rgba(0,98,247,0.06);
+      border: 1px solid rgba(0,98,247,0.14);
+      border-radius: 10px; padding: 16px 18px;
+      flex: 1; min-width: 160px;
+      transition: background .25s, border-color .25s;
+    }
+    .partner-step:hover {
+      background: rgba(0,98,247,0.12);
+      border-color: rgba(0,98,247,0.3);
+    }
+    .partner-step-icon {
+      width: 36px; height: 36px; flex-shrink: 0;
+      background: rgba(0,98,247,0.12);
+      border: 1px solid var(--border-blue);
+      border-radius: 8px;
+      display: flex; align-items: center; justify-content: center;
+      color: var(--blue);
+    }
+    .partner-step strong {
+      display: block; font-family: var(--font-d);
+      font-size: 15px; font-weight: 700;
+      text-transform: uppercase; letter-spacing: 0.04em;
+      color: var(--white); margin-bottom: 3px;
+    }
+    .partner-step p { font-size: 12px; color: var(--muted); line-height: 1.6; }
+    .partner-arrow {
+      color: var(--blue); flex-shrink: 0;
+      opacity: 0.6;
+    }
+    .partner-link {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-size: 13px; font-weight: 600;
+      letter-spacing: 0.06em; text-transform: uppercase;
+      color: var(--blue); text-decoration: none;
+      border-bottom: 1px solid rgba(0,98,247,0.3);
+      padding-bottom: 3px;
+      transition: color .2s, border-color .2s, gap .25s var(--ease-spring);
+    }
+    .partner-link:hover { color: var(--white); border-color: var(--white); gap: 12px; }
+
+    @media (max-width: 800px) {
+      .partner-inner { grid-template-columns: 1fr; gap: 40px; }
+      .partner-badge-col { display: none; }
+      .partner-steps { flex-direction: column; }
+      .partner-arrow { transform: rotate(90deg); align-self: center; }
+    }
+
     /* ── CONTACT ── */
     #contact {
       position: relative; overflow: hidden;
@@ -1115,6 +1222,84 @@
           <strong>ISO</strong>
           <span>Gecertificeerd</span>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOVUMA PARTNER -->
+  <section id="partner" aria-labelledby="partner-title">
+    <div class="partner-inner">
+      <div class="partner-badge-col">
+        <div class="partner-badge">
+          <div class="partner-badge-ring">
+            <svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="60" cy="60" r="56" stroke="rgba(0,98,247,0.2)" stroke-width="1"/>
+              <circle cx="60" cy="60" r="56" stroke="url(#pg)" stroke-width="1.5" stroke-dasharray="8 4" class="partner-ring-spin"/>
+              <defs>
+                <linearGradient id="pg" x1="0" y1="0" x2="120" y2="120" gradientUnits="userSpaceOnUse">
+                  <stop offset="0%" stop-color="#0062F7"/>
+                  <stop offset="100%" stop-color="transparent"/>
+                </linearGradient>
+              </defs>
+            </svg>
+            <div class="partner-badge-inner">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                <path d="M16 3L4 8v8c0 8 5.5 13.5 12 16 6.5-2.5 12-8 12-16V8z" fill="rgba(0,98,247,0.15)" stroke="#0062F7" stroke-width="1.5"/>
+                <path d="M11 16l4 4 7-7" stroke="#0062F7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+          </div>
+          <div class="partner-badge-label">Officieel Partner</div>
+        </div>
+      </div>
+
+      <div class="partner-content reveal">
+        <div class="section-tag">Hovuma Partnerschap</div>
+        <h2 class="section-title" id="partner-title">Van inspectie naar<br><span>reparatie in één stap</span></h2>
+        <p class="partner-desc">
+          RackCheck is officieel partner van <strong>Hovuma</strong> — specialist in magazijninrichting en stellingreparatie.
+          Na iedere inspectie ontvangt u niet alleen een gedetailleerd rapport, maar ook direct
+          een <strong>vrijblijvende offerte</strong> voor het herstel van geconstateerde schade.
+        </p>
+        <div class="partner-steps">
+          <div class="partner-step reveal reveal-d1">
+            <div class="partner-step-icon">
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M8 10l3 3 8-8M21 11v7a2 2 0 01-2 2H3a2 2 0 01-2-2V4a2 2 0 012-2h11" transform="scale(0.78) translate(1,1)"/><path d="M2 9l3 3 5-6"/></svg>
+            </div>
+            <div>
+              <strong>Inspectie</strong>
+              <p>Gecertificeerde keuring van uw stellingen door RackCheck</p>
+            </div>
+          </div>
+          <div class="partner-arrow" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 10h12M12 6l4 4-4 4" stroke="#0062F7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="partner-step reveal reveal-d2">
+            <div class="partner-step-icon">
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="2" y="2" width="14" height="16" rx="2"/><path d="M5 7h8M5 10h8M5 13h5"/></svg>
+            </div>
+            <div>
+              <strong>Rapport + Offerte</strong>
+              <p>Binnen 24 uur rapport én Hovuma-offerte voor reparatie</p>
+            </div>
+          </div>
+          <div class="partner-arrow" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 10h12M12 6l4 4-4 4" stroke="#0062F7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="partner-step reveal reveal-d3">
+            <div class="partner-step-icon">
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M14 9v5a2 2 0 01-2 2H4a2 2 0 01-2-2V6a2 2 0 012-2h5"/><path d="M16 2l-8 8-3-3"/></svg>
+            </div>
+            <div>
+              <strong>Reparatie</strong>
+              <p>Hovuma herstelt de schade — uw stellingen zijn weer veilig</p>
+            </div>
+          </div>
+        </div>
+        <a href="https://www.hovuma.nl" target="_blank" rel="noopener noreferrer" class="partner-link">
+          Bezoek hovuma.nl
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 12L12 2M12 2H6M12 2v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
       </div>
     </div>
   </section>
