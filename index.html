@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>RackCheck:Magazijninspecties | Veiligheid | Zekerheid</title>
+  <title>RackCheck | Magazijninspecties | Veiligheid | Zekerheid</title>
   <meta name="description" content="RackCheck is dé specialist in professionele magazijninspecties in Nederland. Gecertificeerd conform NEN-EN 15635. Rapport binnen 24 uur." />
   <meta property="og:title" content="RackCheck:Magazijninspecties" />
   <meta property="og:description" content="Professionele stellinginspecties in heel Nederland. Gecertificeerd, snel en onafhankelijk." />
@@ -106,7 +106,7 @@
       text-decoration: none;
     }
     .nav-logo-img {
-      height: 44px;
+      height: 54px;
       width: auto;
       object-fit: contain;
     }
@@ -135,9 +135,9 @@
     .nav-links li a:hover::after { left: 0; right: 0; }
 
     .nav-cta {
-      display: inline-flex; align-items: center; gap: 8px;
+      display: inline-flex; align-items: center; justify-content: center; gap: 8px;
       background: var(--blue); color: var(--white) !important;
-      padding: 10px 22px; border-radius: 5px;
+      padding: 13px 26px; border-radius: 5px;
       font-weight: 600 !important; font-size: 13px !important;
       letter-spacing: 0.05em !important;
       transition: background .2s, transform .2s !important;
@@ -275,7 +275,7 @@
     .btn-ghost:hover { color: var(--white); gap: 14px; }
 
     /* ── STATS ── */
-    #stats { padding: 0 52px; margin-top: 60px; }
+    #stats { padding: 0 52px; margin-top: 48px; }
     .stats-inner {
       background: var(--navy-2);
       border: 1px solid var(--border);
@@ -336,12 +336,13 @@
 
     /* ── SOCIAL PROOF ── */
     #social-proof {
-      padding: 48px 52px;
+      padding: 36px 52px;
       border-bottom: 1px solid var(--border);
       background: var(--navy-2);
+      margin-top: 0;
     }
     .social-proof-inner {
-      display: flex; align-items: center; gap: 48px; flex-wrap: wrap;
+      display: flex; align-items: center; gap: 40px; flex-wrap: wrap;
     }
     .social-proof-label {
       font-size: 11px; font-weight: 500;
@@ -353,21 +354,19 @@
       gap: 0; flex: 1; flex-wrap: wrap;
     }
     .client-logo {
-      flex: 1; min-width: 100px;
+      flex: 1; min-width: 90px;
       display: flex; align-items: center; justify-content: center;
-      padding: 14px 24px;
+      padding: 10px 20px;
       border-left: 1px solid var(--border);
-      opacity: 0.38;
+      opacity: 0.35;
       transition: opacity .25s;
     }
-    .client-logo:hover { opacity: 0.72; }
-    .client-logo span {
-      font-family: var(--font-d);
-      font-size: 22px; font-weight: 800;
-      letter-spacing: -0.01em; text-transform: uppercase;
-      color: var(--white); white-space: nowrap;
+    .client-logo:hover { opacity: 0.65; }
+    .client-logo img {
+      height: 32px; width: auto; max-width: 120px;
+      object-fit: contain;
+      filter: brightness(0) invert(1);
     }
-    .client-logo.logo-jumbo span { color: #FFD700; }
 
     /* ── DIENSTEN ── */
     #diensten {
@@ -479,6 +478,7 @@
       letter-spacing: -0.01em; margin-bottom: 18px;
     }
     .feature-photo-content h2 span { color: var(--blue); }
+    .feature-photo-sub { font-size: 13px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--blue); margin-bottom: 14px; }
     .feature-photo-content > p {
       font-size: 15px; color: rgba(255,255,255,0.6);
       line-height: 1.75;
@@ -723,6 +723,13 @@
       margin-bottom: 36px;
     }
     .partner-desc strong { color: var(--text); font-weight: 600; }
+    .partner-saving-badge {
+      display: inline-flex; flex-direction: column;
+      background: rgba(0,98,247,0.1); border: 1px solid rgba(0,98,247,0.3);
+      border-radius: 10px; padding: 12px 18px; margin-bottom: 28px;
+    }
+    .partner-saving-badge strong { font-size: 15px; font-weight: 700; color: var(--blue); }
+    .partner-saving-badge span { font-size: 12px; color: var(--muted); margin-top: 2px; }
     .partner-steps {
       display: flex; align-items: center; gap: 12px;
       margin-bottom: 36px; flex-wrap: wrap;
@@ -866,7 +873,7 @@
       align-items: center; flex-wrap: wrap; gap: 20px;
     }
     .footer-logo-img {
-      height: 52px; width: auto;
+      height: 72px; width: auto;
       object-fit: contain;
       opacity: 0.85;
     }
@@ -1054,11 +1061,11 @@
     <div class="social-proof-inner">
       <div class="social-proof-label">Vertrouwd door</div>
       <div class="social-proof-logos">
-        <div class="client-logo"><span>Sligro</span></div>
-        <div class="client-logo logo-jumbo"><span>Jumbo</span></div>
-        <div class="client-logo"><span>Mainfreight</span></div>
-        <div class="client-logo"><span>Tennant</span></div>
-        <div class="client-logo"><span>Wavin</span></div>
+        <div class="client-logo"><img src="images/logo-sligro.png" alt="Sligro" /></div>
+        <div class="client-logo"><img src="images/logo-jumbo.png" alt="Jumbo" /></div>
+        <div class="client-logo"><img src="images/logo-mainfreight.png" alt="Mainfreight" /></div>
+        <div class="client-logo"><img src="images/logo-tennant.webp" alt="Tennant" /></div>
+        <div class="client-logo"><img src="images/logo-wavin.png" alt="Wavin" /></div>
       </div>
     </div>
   </div>
@@ -1081,23 +1088,15 @@
           <svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M8 10l3 3 8-8M21 11v7a2 2 0 01-2 2H3a2 2 0 01-2-2V4a2 2 0 012-2h11"/></svg>
         </div>
         <h3 class="dienst-title">Periodieke Inspectie</h3>
-        <p class="dienst-desc">Verplichte jaarlijkse of halfjaarlijkse inspectie conform NEN-EN 15635. Inclusief risicoclassificatie.</p>
+        <p class="dienst-desc">Verplichte jaarlijkse of halfjaarlijkse inspectie conform NEN-EN 15635 en NPR 5055.</p>
       </div>
       <div class="dienst-card reveal reveal-d1">
         <span class="dienst-num" aria-hidden="true">02</span>
         <div class="dienst-icon" aria-hidden="true">
-          <svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35M11 8v3l2 2"/></svg>
-        </div>
-        <h3 class="dienst-title">Veiligheidsaudit</h3>
-        <p class="dienst-desc">Uitgebreide audit van uw volledige magazijnomgeving. Alle risico's in kaart met concreet advies.</p>
-      </div>
-      <div class="dienst-card reveal reveal-d2">
-        <span class="dienst-num" aria-hidden="true">03</span>
-        <div class="dienst-icon" aria-hidden="true">
           <svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
         </div>
         <h3 class="dienst-title">Schade & Risico</h3>
-        <p class="dienst-desc">Directe beoordeling na incident. Classificatie Groen/Oranje/Rood en advies over gebruik of buitenstelling.</p>
+        <p class="dienst-desc">Directe beoordeling na incident. Advies over gebruik of buitenstelling van beschadigde stellingen.</p>
       </div>
       <div class="dienst-card reveal reveal-d1">
         <span class="dienst-num" aria-hidden="true">04</span>
@@ -1112,8 +1111,8 @@
         <div class="dienst-icon" aria-hidden="true">
           <svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
         </div>
-        <h3 class="dienst-title">Reparatie Coördinatie</h3>
-        <p class="dienst-desc">Begeleiding bij herstelwerkzaamheden. Controle-inspectie na afronding altijd inbegrepen.</p>
+        <h3 class="dienst-title">Reparatie Offerte</h3>
+        <p class="dienst-desc">Na inspectie een op maat gemaakte offerte voor alle herstelwerkzaamheden zodat je weer compliant bent.</p>
       </div>
     </div>
   </section>
@@ -1125,6 +1124,7 @@
       <div class="feature-photo-content">
         <p class="section-tag">Wettelijk verplicht</p>
         <h2>Bent u<br><span>compliant?</span></h2>
+        <p class="feature-photo-sub">Europese NEN-EN 15635 en Nederlandse NPR 5055</p>
         <p>De NEN-EN 15635 norm verplicht periodieke inspectie van uw stellingen. Zonder keuring riskeert u boetes van de Arboinspectie van duizenden euro's. RackCheck zorgt dat u altijd aantoonbaar voldoet.</p>
       </div>
     </div>
@@ -1215,7 +1215,7 @@
             </div>
             <div class="waarom-content">
               <h3>Persoonlijk & betrokken</h3>
-              <p>Direct contact met uw vaste inspecteur. Wij kennen uw magazijn en uw specifieke situatie.</p>
+              <p>Direct contact met uw vaste inspecteur. Wij kennen uw magazijn en zijn het hele jaar bereikbaar.</p>
             </div>
           </li>
         </ul>
@@ -1231,15 +1231,6 @@
               <div class="cert-info">
                 <span>NEN-EN 15635</span>
                 <small>Europese norm magazijnsystemen</small>
-              </div>
-            </div>
-            <div class="cert-item">
-              <div class="cert-badge" aria-hidden="true">
-                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="white" stroke-width="1.8"><path d="M10 18s7-4 7-9V4l-7-2-7 2v5c0 5 7 9 7 9z"/></svg>
-              </div>
-              <div class="cert-info">
-                <span>TÜV SÜD</span>
-                <small>Internationaal gecertificeerd</small>
               </div>
             </div>
             <div class="cert-item">
@@ -1262,8 +1253,8 @@
             </div>
           </div>
         </div>
-        <div class="floating-badge" aria-label="ISO Gecertificeerd">
-          <strong>ISO</strong>
+        <div class="floating-badge" aria-label="TÜV SÜD Gecertificeerd">
+          <strong>TÜV SÜD</strong>
           <span>Gecertificeerd</span>
         </div>
       </div>
@@ -1302,9 +1293,13 @@
         <h2 class="section-title" id="partner-title">Van inspectie naar<br><span>reparatie in één stap</span></h2>
         <p class="partner-desc">
           RackCheck is officieel partner van <strong>Hovuma</strong>, specialist in magazijninrichting en stellingreparatie.
-          Na iedere inspectie ontvangt u niet alleen een gedetailleerd rapport, maar ook direct
+          Omdat wij uw stellingen al kennen, bespaart u direct op reparatiekosten. Na iedere inspectie ontvangt u niet alleen een gedetailleerd rapport, maar ook direct
           een <strong>vrijblijvende offerte</strong> voor het herstel van geconstateerde schade.
         </p>
+        <div class="partner-saving-badge">
+          <strong>Tot 50% goedkopere offerte</strong>
+          <span>dankzij directe koppeling inspectie & reparatie</span>
+        </div>
         <a href="https://www.hovuma.nl" target="_blank" rel="noopener noreferrer" class="partner-link">
           Bezoek hovuma.nl
           <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 12L12 2M12 2H6M12 2v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
