@@ -1343,7 +1343,10 @@
       </div>
 
       <div class="contact-form reveal reveal-d2">
-        <form onsubmit="handleSubmit(event)" novalidate>
+        <form id="contactForm" onsubmit="handleSubmit(event)" novalidate>
+          <input type="hidden" name="access_key" value="73bd0fef-dc68-4b3c-b68e-fdf1bca0b47f" />
+          <input type="hidden" name="subject" value="Nieuwe inspectieverzoek via RackCheck.nl" />
+          <input type="hidden" name="from_name" value="RackCheck Website" />
           <div class="form-row">
             <div class="form-group">
               <label for="naam">Naam *</label>
@@ -1356,28 +1359,36 @@
           </div>
           <div class="form-row">
             <div class="form-group">
+              <label for="tel">Telefoonnummer *</label>
+              <input type="tel" id="tel" name="phone" autocomplete="tel" placeholder="+31 6 00 000 000" required />
+            </div>
+            <div class="form-group">
               <label for="email">E-mailadres *</label>
               <input type="email" id="email" name="email" autocomplete="email" placeholder="naam@bedrijf.nl" required />
             </div>
-            <div class="form-group">
-              <label for="tel">Telefoon</label>
-              <input type="tel" id="tel" name="phone" autocomplete="tel" placeholder="+31 6 00 000 000" />
-            </div>
           </div>
           <div class="form-group">
-            <label for="dienst">Gewenste dienst</label>
-            <select id="dienst" name="dienst">
-              <option value="">Selecteer een dienst...</option>
-              <option>Periodieke racking inspectie</option>
-              <option>Veiligheidsaudit</option>
-              <option>Schade &amp; risicoanalyse</option>
-              <option>Training &amp; instructie</option>
-              <option>Anders</option>
+            <label for="magazijn">Grootte van het magazijn *</label>
+            <input type="text" id="magazijn" name="magazijn_grootte" placeholder="Bijv. 50 secties stellingen, of ca. 2000 m²" required />
+          </div>
+          <div class="form-group">
+            <label for="maand">Voorkeur voor inspectiemaand</label>
+            <select id="maand" name="voorkeur_maand">
+              <option value="">Selecteer een voorkeur...</option>
+              <option>Zo snel mogelijk</option>
+              <option>Januari</option>
+              <option>Februari</option>
+              <option>Maart</option>
+              <option>April</option>
+              <option>Mei</option>
+              <option>Juni</option>
+              <option>Juli</option>
+              <option>Augustus</option>
+              <option>September</option>
+              <option>Oktober</option>
+              <option>November</option>
+              <option>December</option>
             </select>
-          </div>
-          <div class="form-group">
-            <label for="bericht">Bericht</label>
-            <textarea id="bericht" name="message" placeholder="Beschrijf uw situatie, aantal stellingen, magazijnoppervlak, etc."></textarea>
           </div>
           <button type="submit" class="btn-primary" style="width:100%;justify-content:center;" id="submitBtn">
             Aanvraag versturen
@@ -1505,12 +1516,35 @@
     }, { passive: true });
 
     // ── FORM SUBMIT ──
-    function handleSubmit(e) {
+    async function handleSubmit(e) {
       e.preventDefault();
       const btn = document.getElementById('submitBtn');
-      btn.innerHTML = 'Verzonden! Wij nemen contact op. ✓';
-      btn.style.background = '#16a34a';
+      const form = document.getElementById('contactForm');
+
+      btn.innerHTML = 'Versturen...';
       btn.style.pointerEvents = 'none';
+
+      const data = new FormData(form);
+      try {
+        const res = await fetch('https://api.web3forms.com/submit', {
+          method: 'POST',
+          body: data
+        });
+        const json = await res.json();
+        if (json.success) {
+          btn.innerHTML = 'Verzonden ✓ Wij nemen snel contact op.';
+          btn.style.background = '#16a34a';
+          form.reset();
+        } else {
+          btn.innerHTML = 'Er ging iets mis. Probeer opnieuw.';
+          btn.style.background = '#dc2626';
+          btn.style.pointerEvents = 'auto';
+        }
+      } catch {
+        btn.innerHTML = 'Er ging iets mis. Probeer opnieuw.';
+        btn.style.background = '#dc2626';
+        btn.style.pointerEvents = 'auto';
+      }
     }
   </script>
 </body>
