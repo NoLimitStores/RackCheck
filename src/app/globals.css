@@ -1,0 +1,166 @@
+@import "tailwindcss";
+
+@theme {
+  /* RackCheck merkkleuren: diep navy (logo), signaalblauw (logo-vinkje), wit */
+  --color-navy-50: #f2f6fb;
+  --color-navy-100: #e0e9f3;
+  --color-navy-200: #c2d3e6;
+  --color-navy-300: #92afce;
+  --color-navy-400: #5c81ac;
+  --color-navy-500: #3c608c;
+  --color-navy-600: #2c4a70;
+  --color-navy-700: #21395a;
+  --color-navy-800: #152740;
+  --color-navy-900: #0a1a30;
+  --color-navy-950: #041020;
+
+  --color-brand-50: #eef5ff;
+  --color-brand-100: #dbe9ff;
+  --color-brand-200: #bad4ff;
+  --color-brand-300: #8bb6ff;
+  --color-brand-400: #558cff;
+  --color-brand-500: #0062f7;
+  --color-brand-600: #0050cc;
+  --color-brand-700: #0043b0;
+  --color-brand-800: #073a8f;
+  --color-brand-900: #0c336f;
+
+  /* Signaalkleuren voor urgentie en schadeclassificatie */
+  --color-signal-groen: #1f9d55;
+  --color-signal-oranje: #e0820a;
+  --color-signal-rood: #d23b2f;
+  --color-amber-400: #ffb020;
+  --color-amber-500: #f09c00;
+
+  --font-sans: var(--font-archivo), system-ui, sans-serif;
+  --font-display: var(--font-oswald), var(--font-archivo), system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  /* Navy achtergrond zodat de rekruimte onder de laatste sectie (sticky footer)
+     naadloos overloopt in de navy footer, in plaats van een witte balk. De
+     secties zelf hebben een eigen (witte/lichte) achtergrond. */
+  background: var(--color-navy-950);
+  color: var(--color-navy-950);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+@layer components {
+  .display {
+    font-family: var(--font-display);
+    letter-spacing: -0.01em;
+    font-weight: 700;
+  }
+
+  /* Signaalstreep, verwijst naar magazijnsignalering */
+  .hazard {
+    background-image: repeating-linear-gradient(
+      -45deg,
+      var(--color-amber-400) 0 12px,
+      var(--color-navy-950) 12px 24px
+    );
+  }
+
+  /* Lange content (kennisbank en dienstpagina's) */
+  .content {
+    font-size: 1.0625rem;
+    line-height: 1.75;
+    color: var(--color-navy-800);
+  }
+  .content > *:first-child {
+    margin-top: 0;
+  }
+  .content h2 {
+    margin-top: 2.5rem;
+    margin-bottom: 0.75rem;
+    font-size: 1.5rem;
+    line-height: 1.25;
+    font-weight: 700;
+    letter-spacing: -0.015em;
+    color: var(--color-navy-950);
+  }
+  .content h3 {
+    margin-top: 1.75rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.1875rem;
+    font-weight: 700;
+    color: var(--color-navy-950);
+  }
+  .content p {
+    margin-bottom: 1rem;
+  }
+  .content ul,
+  .content ol {
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+  }
+  .content ul {
+    list-style: disc;
+  }
+  .content ol {
+    list-style: decimal;
+  }
+  .content li {
+    margin-bottom: 0.4rem;
+    padding-left: 0.25rem;
+  }
+  .content li::marker {
+    color: var(--color-brand-500);
+    font-weight: 700;
+  }
+  .content a {
+    color: var(--color-brand-700);
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-color: var(--color-brand-300);
+    text-decoration-thickness: 2px;
+  }
+  .content a:hover {
+    color: var(--color-brand-800);
+  }
+  .content strong {
+    color: var(--color-navy-950);
+    font-weight: 700;
+  }
+  .content table {
+    width: 100%;
+    margin: 1.5rem 0;
+    border-collapse: collapse;
+    font-size: 0.9375rem;
+  }
+  .content th {
+    background: var(--color-navy-900);
+    color: #fff;
+    text-align: left;
+    padding: 0.6rem 0.9rem;
+    font-weight: 600;
+  }
+  .content td {
+    padding: 0.6rem 0.9rem;
+    border-bottom: 1px solid var(--color-navy-100);
+    vertical-align: top;
+  }
+  .content tr:nth-child(even) td {
+    background: var(--color-navy-50);
+  }
+}

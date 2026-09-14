@@ -1,0 +1,683 @@
+/**
+ * Kennisbank RackCheck. Elk artikel is uniek geschreven voor RackCheck.
+ * Inhoud is gebaseerd op openbare, gezaghebbende bronnen (Arbowet en
+ * Arbobesluit, Arboportaal, Nederlandse Arbeidsinspectie, NEN). Er wordt geen
+ * normtekst letterlijk geciteerd en er worden geen exacte toleranties uit
+ * betaalde normen gepubliceerd.
+ */
+
+export type Block =
+  | { t: "h2"; text: string }
+  | { t: "h3"; text: string }
+  | { t: "p"; text: string }
+  | { t: "ul"; items: string[] }
+  | { t: "ol"; items: string[] }
+  | { t: "note"; text: string }
+  | { t: "table"; head: string[]; rows: string[][] };
+
+export type Artikel = {
+  slug: string;
+  category: string;
+  title: string;
+  h1: string;
+  metaTitle: string;
+  metaDescription: string;
+  excerpt: string;
+  answer: string;
+  updated: string;
+  featured?: boolean;
+  image?: { src: string; alt: string; caption?: string };
+  blocks: Block[];
+  faq: { q: string; a: string }[];
+  related: string[];
+};
+
+export const categories = [
+  "Normen en regels",
+  "Inspectie en keuring",
+  "Schade en preventie",
+  "Kosten en praktijk",
+] as const;
+
+export const artikelen: Artikel[] = [
+  {
+    slug: "nen-en-15635",
+    category: "Normen en regels",
+    title: "Wat is NEN-EN 15635?",
+    h1: "Wat is NEN-EN 15635?",
+    metaTitle: "Wat is NEN-EN 15635? Uitleg over stellinginspectie",
+    metaDescription:
+      "NEN-EN 15635 beschrijft het veilig gebruik en de inspectie van magazijnstellingen. Lees wat de norm inhoudt, wat de PRSES-rol is en hoe de inspectie werkt.",
+    excerpt:
+      "De Europese norm voor het veilig gebruiken en inspecteren van magazijnstellingen, in begrijpelijke taal uitgelegd.",
+    answer:
+      "NEN-EN 15635 is de Europese norm die beschrijft hoe u magazijnstellingen veilig gebruikt en inspecteert. De norm benoemt onder meer de rol van een verantwoordelijke binnen het bedrijf (de PRSES), periodieke visuele controles en een periodieke inspectie door een deskundige. De norm zelf is geen wet, maar geeft invulling aan de wettelijke zorgplicht uit de Arbowet.",
+    updated: "2026-07-15",
+    featured: true,
+    blocks: [
+      { t: "p", text: "NEN-EN 15635 gaat over de toepassing en het onderhoud van opslagsystemen van staal, oftewel het veilig gebruiken van magazijnstellingen. De norm richt zich op de gebruiker: het bedrijf dat de stellingen dagelijks in bedrijf heeft. Het doel is eenvoudig: voorkomen dat schade onopgemerkt blijft en uitgroeit tot een gevaarlijke situatie." },
+      { t: "note", text: "Kort gezegd: NEN-EN 15635 vertelt hoe u als gebruiker met stellingen omgaat, hoe u schade signaleert en beoordeelt, en hoe vaak controle en inspectie horen plaats te vinden." },
+      { t: "h2", text: "Wat regelt de norm?" },
+      { t: "p", text: "De norm beschrijft een systeem van controle in lagen. Naast het dagelijkse veilige gebruik gaat het om twee soorten controle die elkaar aanvullen:" },
+      { t: "ul", items: [
+        "Regelmatige interne visuele controles door een aangewezen medewerker, bedoeld om zichtbare schade snel op te merken.",
+        "Een periodieke inspectie door een deskundige, die de stellingen grondiger beoordeelt en de bevindingen classificeert.",
+      ] },
+      { t: "h2", text: "De rol van de PRSES" },
+      { t: "p", text: "De norm introduceert de PRSES: de Person Responsible for Storage Equipment Safety, de persoon binnen uw organisatie die verantwoordelijk is voor de veiligheid van de opslagsystemen. Deze persoon zorgt dat schade wordt gemeld, dat interne controles plaatsvinden en dat de deskundige inspectie op tijd wordt uitgevoerd." },
+      { t: "h2", text: "Verhouding tot de wet" },
+      { t: "p", text: "NEN-EN 15635 is een norm, geen wet. In Nederland komt de wettelijke verplichting voort uit de Arbowet en het Arbobesluit: een werkgever moet zorgen voor een veilige werkomgeving en arbeidsmiddelen periodiek keuren. De norm geeft een erkende, praktische invulling van die zorgplicht. Wie de norm volgt, maakt aantoonbaar dat de stellingen veilig worden gebruikt en gecontroleerd." },
+      { t: "h2", text: "Hoe RackCheck de norm toepast" },
+      { t: "p", text: "RackCheck voert de periodieke deskundige inspectie uit conform NEN-EN 15635. We beoordelen alle bereikbare stellingen, classificeren de bevindingen als groen, oranje of rood en leveren een rapport met concrete prioriteiten en vervolgstappen. Daarmee ondersteunen we de PRSES bij zijn of haar verantwoordelijkheid." },
+    ],
+    faq: [
+      { q: "Is NEN-EN 15635 verplicht?", a: "De norm zelf is niet wettelijk verplicht, maar de onderliggende zorgplicht uit de Arbowet wel. De norm volgen is de meest praktische manier om aan die zorgplicht te voldoen." },
+      { q: "Geldt de norm voor alle stellingtypen?", a: "De norm gaat over stalen opslagsystemen in het algemeen, waaronder pallet-, legbord- en draagarmstellingen." },
+    ],
+    related: ["is-stellingkeuring-verplicht", "wat-is-een-prses", "hoe-vaak-stellingen-keuren"],
+  },
+  {
+    slug: "npr-5055",
+    category: "Normen en regels",
+    title: "Wat is NPR 5055?",
+    h1: "Wat is NPR 5055?",
+    metaTitle: "Wat is NPR 5055? De Nederlandse praktijkrichtlijn uitgelegd",
+    metaDescription:
+      "NPR 5055 is de Nederlandse praktijkrichtlijn die NEN-EN 15635 aanvult voor de Nederlandse situatie. Lees wat de richtlijn toevoegt en voor wie ze bedoeld is.",
+    excerpt:
+      "De Nederlandse praktijkrichtlijn die de Europese stellingnorm vertaalt naar de praktijk in Nederland.",
+    answer:
+      "NPR 5055 is een Nederlandse praktijkrichtlijn die aanvulling en toelichting geeft op de Europese normen voor magazijnstellingen, waaronder NEN-EN 15635. De richtlijn helpt gebruikers en inspecteurs om de norm toe te passen op de Nederlandse praktijk. Net als een norm is een praktijkrichtlijn geen wet.",
+    updated: "2026-07-15",
+    blocks: [
+      { t: "p", text: "Een NPR, ofwel Nederlandse praktijkrichtlijn, is een document dat praktische invulling en toelichting geeft bij een norm. Waar NEN-EN 15635 op Europees niveau beschrijft hoe stellingen veilig gebruikt en geïnspecteerd worden, helpt NPR 5055 om die uitgangspunten begrijpelijk toe te passen in Nederlandse magazijnen." },
+      { t: "note", text: "In het kort: NEN-EN 15635 geeft de kaders, NPR 5055 helpt bij de praktische toepassing daarvan in Nederland." },
+      { t: "h2", text: "Waarom een aparte praktijkrichtlijn?" },
+      { t: "p", text: "Europese normen zijn bewust algemeen gehouden, zodat ze in alle lidstaten bruikbaar zijn. Een praktijkrichtlijn vult die ruimte in met voorbeelden, aandachtspunten en werkwijzen die aansluiten bij de manier waarop in Nederland met stellingen wordt gewerkt. Dat maakt het voor bedrijven makkelijker om de norm concreet te maken." },
+      { t: "h2", text: "Voor wie is NPR 5055 bedoeld?" },
+      { t: "ul", items: [
+        "Gebruikers van magazijnstellingen die hun interne controles goed willen inrichten.",
+        "Verantwoordelijken (PRSES) die willen weten hoe ze schade beoordelen en registreren.",
+        "Inspecteurs die de Europese norm consequent willen toepassen.",
+      ] },
+      { t: "h2", text: "Verhouding tot wet en norm" },
+      { t: "p", text: "De volgorde is: de Arbowet en het Arbobesluit vormen de wettelijke basis, NEN-EN 15635 geeft de erkende invulling en NPR 5055 helpt bij de praktische toepassing. Geen van deze richtlijnen of normen is op zichzelf een wet, maar samen vormen ze de gangbare, aantoonbare manier om veilig met stellingen om te gaan." },
+    ],
+    faq: [
+      { q: "Moet ik zowel NEN-EN 15635 als NPR 5055 kennen?", a: "Als gebruiker hoeft u de documenten niet uit uw hoofd te kennen. Het belangrijkste is dat de interne controles en de deskundige inspectie op orde zijn. RackCheck neemt de inhoudelijke beoordeling voor zijn rekening." },
+      { q: "Waar vind ik de exacte tekst van NPR 5055?", a: "De volledige tekst is een betaald document van NEN. Wij citeren die tekst niet, maar passen de uitgangspunten toe in onze inspectie." },
+    ],
+    related: ["nen-en-15635", "schadeclassificatie", "wat-wordt-gecontroleerd"],
+  },
+  {
+    slug: "is-stellingkeuring-verplicht",
+    category: "Normen en regels",
+    title: "Is een stellingkeuring verplicht?",
+    h1: "Is een stellingkeuring verplicht?",
+    metaTitle: "Is een stellingkeuring verplicht? Wat de wet vraagt",
+    metaDescription:
+      "Een stellingkeuring is niet los in de wet genoemd, maar volgt uit de zorgplicht van de Arbowet en het Arbobesluit. Lees wat dat voor uw magazijn betekent.",
+    excerpt:
+      "Wat de Arbowet en het Arbobesluit vragen, en waarom een deskundige inspectie de logische invulling is.",
+    answer:
+      "Er is geen wet die letterlijk zegt dat u uw stellingen jaarlijks moet laten keuren. Wel verplicht de Arbowet werkgevers om te zorgen voor een veilige werkomgeving en verplicht het Arbobesluit om arbeidsmiddelen periodiek te keuren. Magazijnstellingen vallen daaronder. Een periodieke deskundige inspectie is daarmee de gangbare en aantoonbare manier om aan die zorgplicht te voldoen.",
+    updated: "2026-07-15",
+    featured: true,
+    blocks: [
+      { t: "p", text: "Deze vraag komt vaak voor en het antwoord vraagt om precisie. Het is onjuist om te zeggen dat een specifieke norm een wet is. Tegelijk is het te kort door de bocht om te zeggen dat er geen enkele verplichting bestaat." },
+      { t: "h2", text: "Wat de wet wel zegt" },
+      { t: "p", text: "De Arbowet legt werkgevers een zorgplicht op: zorgen voor een veilige en gezonde werkomgeving. Het Arbobesluit werkt dat verder uit en bepaalt dat arbeidsmiddelen die aan slijtage of veroudering onderhevig zijn, periodiek gekeurd worden door een deskundige. Magazijnstellingen zijn zulke arbeidsmiddelen." },
+      { t: "note", text: "De verplichting zit dus niet in een los artikel over stellingen, maar in de bredere zorgplicht en keuringsplicht voor arbeidsmiddelen." },
+      { t: "h2", text: "Hoe u die verplichting invult" },
+      { t: "p", text: "NEN-EN 15635 geeft de erkende invulling: regelmatige interne controles plus een periodieke inspectie door een deskundige. Door die aanpak te volgen maakt u aantoonbaar dat u de veiligheid serieus neemt. Dat is niet alleen belangrijk voor de veiligheid van uw medewerkers, maar ook richting de Nederlandse Arbeidsinspectie en uw verzekeraar." },
+      { t: "h2", text: "Wat als u niets doet?" },
+      { t: "ul", items: [
+        "U loopt een reëel veiligheidsrisico voor uw medewerkers.",
+        "Bij een ongeval kan blijken dat u niet aan de zorgplicht heeft voldaan.",
+        "Een verzekeraar kan bij schade vragen naar het inspectiedossier.",
+      ] },
+    ],
+    faq: [
+      { q: "Moet de keuring per se jaarlijks?", a: "De wet noemt geen vaste termijn. In de praktijk is een jaarlijkse deskundige inspectie gebruikelijk, aangevuld met frequentere interne controles. De juiste frequentie hangt af van hoe intensief de stellingen worden gebruikt." },
+      { q: "Geldt dit ook voor kleine magazijnen?", a: "Ja. De zorgplicht geldt ongeacht de grootte. Bij een klein magazijn is de inspectie alleen korter en goedkoper." },
+    ],
+    related: ["hoe-vaak-stellingen-keuren", "nen-en-15635", "wie-mag-stellingen-inspecteren"],
+  },
+  {
+    slug: "hoe-vaak-stellingen-keuren",
+    category: "Inspectie en keuring",
+    title: "Hoe vaak moeten magazijnstellingen worden gekeurd?",
+    h1: "Hoe vaak moeten magazijnstellingen worden gekeurd?",
+    metaTitle: "Hoe vaak stellingen keuren? Inspectiefrequentie uitgelegd",
+    metaDescription:
+      "Een deskundige inspecteert stellingen meestal jaarlijks, aangevuld met regelmatige interne controles. Lees hoe u de juiste frequentie bepaalt.",
+    excerpt:
+      "Van dagelijkse oplettendheid tot de jaarlijkse deskundige inspectie: zo bepaalt u het juiste ritme.",
+    answer:
+      "In de praktijk laat u magazijnstellingen minimaal één keer per jaar inspecteren door een deskundige. Daarnaast horen er regelmatige interne visuele controles plaats te vinden, bijvoorbeeld wekelijks of maandelijks, door een aangewezen medewerker. Bij intensief gebruik of na een incident kan een hogere frequentie nodig zijn.",
+    updated: "2026-07-15",
+    featured: true,
+    blocks: [
+      { t: "p", text: "Er is geen wettelijk vastgelegde termijn, maar wel een breed gedragen praktijk die voortkomt uit NEN-EN 15635. Die praktijk kent verschillende niveaus van controle die elkaar aanvullen." },
+      { t: "table", head: ["Soort controle", "Wie", "Frequentie"], rows: [
+        ["Direct melden van schade", "Iedere medewerker", "Doorlopend"],
+        ["Interne visuele controle", "Aangewezen medewerker (PRSES)", "Wekelijks tot maandelijks"],
+        ["Deskundige inspectie", "Externe deskundige", "In de regel jaarlijks"],
+      ] },
+      { t: "h2", text: "Waarom niet alleen jaarlijks?" },
+      { t: "p", text: "Een jaarlijkse inspectie is een momentopname. Schade ontstaat het hele jaar door, vaak door aanrijdingen die niet worden gemeld. Daarom is de combinatie belangrijk: medewerkers die schade direct melden, een aangewezen persoon die regelmatig rondloopt en een deskundige die jaarlijks grondig beoordeelt." },
+      { t: "h2", text: "Wanneer vaker inspecteren?" },
+      { t: "ul", items: [
+        "Bij intensief heftruckverkeer of meerploegendienst.",
+        "Na een aanrijding of ander incident: laat de betreffende sectie meteen beoordelen.",
+        "Na een wijziging aan de opstelling, zoals verplaatste liggers of een nieuwe configuratie.",
+        "Bij veel gemelde schade in korte tijd, wat kan wijzen op een structureel probleem.",
+      ] },
+      { t: "note", text: "Tip: leg de datum van elke inspectie vast en plan de volgende meteen in. Zo verdwijnt de inspectie niet tussen andere werkzaamheden." },
+    ],
+    faq: [
+      { q: "Kan ik een herinnering krijgen voor de volgende inspectie?", a: "Ja. RackCheck kan een terugkerende planning of jaarlijkse herinnering afspreken, zodat u de inspectie niet vergeet." },
+      { q: "Telt een interne controle mee als keuring?", a: "Nee. Interne controles zijn belangrijk, maar vervangen de periodieke deskundige inspectie niet. Ze vullen elkaar aan." },
+    ],
+    related: ["is-stellingkeuring-verplicht", "interne-controle-vs-externe-inspectie", "wat-is-een-prses"],
+  },
+  {
+    slug: "wie-mag-stellingen-inspecteren",
+    category: "Inspectie en keuring",
+    title: "Wie mag magazijnstellingen inspecteren?",
+    h1: "Wie mag magazijnstellingen inspecteren?",
+    metaTitle: "Wie mag magazijnstellingen inspecteren? Deskundigheid uitgelegd",
+    metaDescription:
+      "De periodieke inspectie hoort door een deskundige te gebeuren. Lees wat deskundigheid inhoudt en waarom onafhankelijkheid belangrijk is.",
+    excerpt:
+      "Wat deskundigheid betekent, welke rol de interne medewerker speelt en waarom onafhankelijkheid telt.",
+    answer:
+      "De periodieke inspectie van magazijnstellingen hoort te worden uitgevoerd door een deskundige: iemand met kennis van de constructie, de faalmechanismen en de relevante normen. Interne visuele controles kunnen door een getrainde eigen medewerker worden gedaan. De wet schrijft geen specifiek diploma voor, maar aantoonbare deskundigheid en onafhankelijkheid zijn wel belangrijk.",
+    updated: "2026-07-15",
+    blocks: [
+      { t: "p", text: "Rond deze vraag bestaan misverstanden. Sommigen denken dat er een wettelijk verplicht certificaat bestaat, anderen denken dat iedereen het mag doen. De werkelijkheid ligt daartussen." },
+      { t: "h2", text: "Twee soorten controle, twee soorten mensen" },
+      { t: "ul", items: [
+        "Interne visuele controle: uitgevoerd door een aangewezen, getrainde medewerker binnen uw eigen organisatie (vaak de PRSES).",
+        "Periodieke deskundige inspectie: uitgevoerd door een deskundige die de constructie kan beoordelen en schade correct kan classificeren.",
+      ] },
+      { t: "h2", text: "Wat is een deskundige?" },
+      { t: "p", text: "Een deskundige inspecteur kent de opbouw van verschillende stellingtypen, weet hoe schade zich ontwikkelt en kan beoordelen wanneer een gebrek de veiligheid raakt. Die kennis komt uit opleiding en ervaring in de praktijk. Het gaat om aantoonbare vakbekwaamheid, niet om één specifiek wettelijk keurmerk." },
+      { t: "h2", text: "Waarom onafhankelijkheid telt" },
+      { t: "p", text: "Wie de inspectie combineert met de verkoop van nieuwe onderdelen, heeft een belang bij afkeur. Een onafhankelijke inspecteur beoordeelt puur op veiligheid en de relevante criteria. Bij RackCheck staat de inspectie los van eventueel herstel: dat volgt pas daarna, in een apart traject." },
+      { t: "note", text: "Vraag bij twijfel altijd hoe de beoordeling tot stand komt en of degene die keurt ook belang heeft bij de reparatie." },
+    ],
+    faq: [
+      { q: "Mag mijn eigen technische dienst de jaarlijkse inspectie doen?", a: "De interne controles kunnen intern gebeuren. Voor de periodieke deskundige inspectie is een onafhankelijke, deskundige beoordeling gebruikelijk en aan te raden, juist om blinde vlekken te voorkomen." },
+      { q: "Is RackCheck onafhankelijk?", a: "Ja. Onze inspectiebeoordeling staat los van herstelverkoop. We keuren niet af om onderdelen te slijten." },
+    ],
+    related: ["onafhankelijke-stellinginspectie", "wat-is-een-prses", "nen-en-15635"],
+  },
+  {
+    slug: "wat-is-een-prses",
+    category: "Inspectie en keuring",
+    title: "Wat is een PRSES?",
+    h1: "Wat is een PRSES?",
+    metaTitle: "Wat is een PRSES? De verantwoordelijke voor stellingveiligheid",
+    metaDescription:
+      "De PRSES is de persoon binnen uw bedrijf die verantwoordelijk is voor de veiligheid van de magazijnstellingen. Lees wat de rol inhoudt en hoe u die invult.",
+    excerpt:
+      "De persoon binnen uw organisatie die de veiligheid van de opslagsystemen bewaakt: taken en invulling.",
+    answer:
+      "PRSES staat voor Person Responsible for Storage Equipment Safety: de persoon binnen uw organisatie die verantwoordelijk is voor de veiligheid van de magazijnstellingen. NEN-EN 15635 raadt aan zo iemand aan te wijzen. De PRSES zorgt dat schade wordt gemeld en beoordeeld, dat interne controles plaatsvinden en dat de deskundige inspectie op tijd gebeurt.",
+    updated: "2026-07-15",
+    blocks: [
+      { t: "p", text: "De term komt uit NEN-EN 15635. De gedachte erachter is dat stellingveiligheid pas werkt als er één duidelijk aanspreekpunt is. Zonder aangewezen persoon blijft schade vaak liggen omdat niemand zich er eigenaar van voelt." },
+      { t: "h2", text: "Wat doet de PRSES?" },
+      { t: "ul", items: [
+        "Zorgt dat medewerkers weten hoe en waar ze schade melden.",
+        "Voert of organiseert de regelmatige interne visuele controles.",
+        "Beoordeelt gemelde schade of laat die beoordelen.",
+        "Plant de periodieke deskundige inspectie op tijd in.",
+        "Houdt het inspectiedossier en de opvolging van herstel bij.",
+      ] },
+      { t: "h2", text: "Wie is geschikt?" },
+      { t: "p", text: "Vaak is dit de warehouse manager, een teamleider of een KAM- of preventiemedewerker. Belangrijk is dat de persoon de bevoegdheid heeft om actie te ondernemen, bijvoorbeeld om een sectie af te zetten, en voldoende kennis heeft om schade te herkennen." },
+      { t: "note", text: "De PRSES vervangt de externe deskundige inspectie niet. De rol zorgt juist dat het hele systeem van controle en inspectie blijft draaien." },
+      { t: "h2", text: "Hoe RackCheck de PRSES ondersteunt" },
+      { t: "p", text: "Ons rapport is opgezet als werkdocument: per bevinding een locatie, classificatie en vervolgstap. Daarmee kan de PRSES direct de opvolging organiseren en aantonen dat er iets met de bevindingen is gedaan." },
+    ],
+    faq: [
+      { q: "Is een PRSES wettelijk verplicht?", a: "De term komt uit de norm, niet uit de wet. Maar iemand aanwijzen die verantwoordelijk is, is de praktische manier om aan de zorgplicht te voldoen." },
+      { q: "Kan één persoon PRSES zijn voor meerdere vestigingen?", a: "Dat kan, mits die persoon per locatie kan zorgen dat controles en meldingen goed geregeld zijn. Vaak wijst men per vestiging een aanspreekpunt aan." },
+    ],
+    related: ["hoe-vaak-stellingen-keuren", "interne-controle-vs-externe-inspectie", "nen-en-15635"],
+  },
+  {
+    slug: "schadeclassificatie",
+    category: "Schade en preventie",
+    title: "Wat betekenen de schadeclassificaties groen, oranje en rood?",
+    h1: "Wat betekenen de schadeclassificaties?",
+    metaTitle: "Schadeclassificatie stellingen: groen, oranje en rood uitgelegd",
+    metaDescription:
+      "Bij een stellinginspectie krijgt elke bevinding een classificatie: groen, oranje of rood. Lees wat de kleuren betekenen en welke actie erbij hoort.",
+    excerpt:
+      "Groen, oranje of rood: wat de kleurcodes betekenen en welke vervolgactie erbij hoort.",
+    answer:
+      "Bij een stellinginspectie krijgt elke bevinding een kleurcode. Groen betekent aanvaardbaar: de stelling kan in gebruik blijven. Oranje betekent herstel binnen een afgesproken termijn. Rood betekent direct handelen: de sectie moet worden ontlast of afgezet tot het herstel is uitgevoerd. Deze systematiek maakt in één oogopslag duidelijk wat urgent is.",
+    updated: "2026-07-15",
+    featured: true,
+    blocks: [
+      { t: "p", text: "De kleurclassificatie is het hart van een bruikbaar inspectierapport. Ze vertaalt een technische bevinding naar een heldere actie, ook voor iemand zonder technische achtergrond." },
+      { t: "table", head: ["Kleur", "Betekenis", "Actie"], rows: [
+        ["Groen", "Aanvaardbaar, lichte gebruikssporen", "In gebruik houden, registreren en monitoren"],
+        ["Oranje", "Vraagt aandacht, geen direct gevaar", "Herstel binnen een afgesproken termijn"],
+        ["Rood", "Raakt de veiligheid direct", "Sectie ontlasten of afzetten en direct herstellen"],
+      ] },
+      { t: "h2", text: "Waarom niet alles rood of groen is" },
+      { t: "p", text: "De kracht van het systeem zit in de middelste categorie. Niet elke deuk of kras is gevaarlijk, maar niet elke beschadiging kan onbeperkt wachten. Oranje geeft ruimte om herstel gepland en beheerst uit te voeren, zonder de operatie onnodig stil te leggen en zonder een risico te negeren." },
+      { t: "h2", text: "Van kleur naar termijn" },
+      { t: "ul", items: [
+        "Rood: direct, voordat de sectie weer belast wordt.",
+        "Oranje: binnen een termijn die past bij de ernst, vaak enkele weken.",
+        "Groen: meenemen bij de volgende reguliere inspectie.",
+      ] },
+      { t: "note", text: "In een goed rapport staat bij oranje en rood altijd een concrete termijn en actie, niet alleen de kleur." },
+    ],
+    faq: [
+      { q: "Wie bepaalt de classificatie?", a: "De inspecteur, op basis van de aard en de plaats van de schade en de gevolgen voor de draagkracht. Bij twijfel wordt naar de veilige kant geclassificeerd." },
+      { q: "Wat als ik een oranje punt laat liggen?", a: "Dan groeit de kans dat het bij de volgende belasting of aanrijding verergert naar rood. Oranje is een uitnodiging om gepland te herstellen, niet om te negeren." },
+    ],
+    related: ["informatie-in-inspectierapport", "na-heftruckaanrijding", "duidelijk-inspectierapport"],
+  },
+  {
+    slug: "na-heftruckaanrijding",
+    category: "Schade en preventie",
+    title: "Wat moet u doen na een heftruckaanrijding?",
+    h1: "Wat moet u doen na een heftruckaanrijding?",
+    metaTitle: "Stelling aangereden door heftruck? Dit moet u doen",
+    metaDescription:
+      "Na een heftruckaanrijding tegen een stelling telt elke stap. Lees het stappenplan: afzetten, beoordelen en niet zelf rechtbuigen of lassen.",
+    excerpt:
+      "Een helder stappenplan voor de eerste minuten en uren na een aanrijding tegen een stelling.",
+    answer:
+      "Zet na een heftruckaanrijding de betreffende sectie direct veilig: houd mensen weg en beoordeel of de sectie ontladen moet worden. Buig of las een beschadigde staander nooit zelf recht. Laat de schade beoordelen door een deskundige, die bepaalt of de sectie veilig is, hersteld moet worden of moet worden vervangen.",
+    updated: "2026-07-15",
+    featured: true,
+    blocks: [
+      { t: "p", text: "Een aanrijding lijkt soms onschuldig, zeker als er niets is omgevallen. Toch kan een deuk in een staander de draagkracht flink verlagen. De eerste reactie bepaalt hoe veilig de situatie blijft." },
+      { t: "h2", text: "Stappenplan na een aanrijding" },
+      { t: "ol", items: [
+        "Zorg eerst voor de veiligheid van mensen: houd iedereen uit de buurt van de geraakte sectie.",
+        "Beoordeel of de sectie ontladen moet worden. Bij zichtbare vervorming van een staander: ga uit van onveilig tot het tegendeel is vastgesteld.",
+        "Zet de sectie af of markeer die duidelijk, zodat er niet verder wordt gestapeld of gereden.",
+        "Meld de aanrijding intern bij de verantwoordelijke (PRSES) en leg vast wat er is gebeurd.",
+        "Buig of las niets zelf recht en vul geen last bij op de geraakte sectie.",
+        "Laat de schade beoordelen door een deskundige inspecteur.",
+      ] },
+      { t: "note", text: "Belangrijk: rechtbuigen of lassen van een staander herstelt de sterkte niet en kan het staal juist verzwakken. Vervanging is bij structurele schade de veilige route." },
+      { t: "h2", text: "Wanneer direct handelen?" },
+      { t: "p", text: "Bij een duidelijk vervormde of geknikte staander, een losgeraakte ligger of een zichtbaar scheefgezakte sectie is er sprake van acuut gevaar. Ontlaad de sectie dan zo snel als veilig kan en wacht met verder gebruik tot een deskundige het heeft beoordeeld." },
+      { t: "h2", text: "Spoedinspectie door RackCheck" },
+      { t: "p", text: "Na een aanrijding plannen we een inspectie met voorrang in. We beoordelen de schade onafhankelijk, melden acuut gevaar direct op locatie en leggen in het rapport vast wat er moet gebeuren en met welke prioriteit. U kunt vooraf foto's van de schade sturen, zodat we goed voorbereid komen." },
+    ],
+    faq: [
+      { q: "De stelling staat nog overeind, is dat niet genoeg?", a: "Nee. Een staander kan een groot deel van zijn draagkracht verliezen zonder direct om te vallen. Onder volgende belasting of bij een nieuwe stoot kan het alsnog misgaan." },
+      { q: "Kan ik de sectie na beoordeling weer gebruiken?", a: "Als de deskundige de sectie groen classificeert wel. Bij oranje of rood volgt eerst herstel of vervanging." },
+    ],
+    related: ["stelling-aangereden", "staander-rechtbuigen-lassen", "schadeclassificatie"],
+  },
+  {
+    slug: "wat-wordt-gecontroleerd",
+    category: "Inspectie en keuring",
+    title: "Wat wordt gecontroleerd bij een stellinginspectie?",
+    h1: "Wat wordt gecontroleerd bij een stellinginspectie?",
+    metaTitle: "Wat wordt gecontroleerd bij een stellinginspectie?",
+    metaDescription:
+      "Van staanders en liggers tot verankering, borging en belastingborden: lees welke onderdelen een deskundige bij een stellinginspectie beoordeelt.",
+    excerpt:
+      "Een overzicht van de onderdelen die een inspecteur nagaat, van staander tot belastingbord.",
+    answer:
+      "Bij een stellinginspectie beoordeelt de deskundige alle dragende en veiligheidsrelevante onderdelen: staanders, liggers, schoren, voetplaten, verankering, borgpennen en belastingborden. Daarnaast kijkt de inspecteur naar aanrijdschade, scheefstand, doorbuiging, aanwijzingen van overbelasting en onjuist gebruik. Elke bevinding wordt geclassificeerd en gefotografeerd.",
+    updated: "2026-07-15",
+    blocks: [
+      { t: "p", text: "Een stellinginspectie is meer dan een blik op de stelling. De inspecteur loopt langs de opstelling en beoordeelt onderdeel voor onderdeel, met bijzondere aandacht voor de plekken waar schade het meest voorkomt en het meest gevaarlijk is." },
+      { t: "h2", text: "De belangrijkste controlepunten" },
+      { t: "ul", items: [
+        "Staanders: deuken, vervorming, scheurvorming en corrosie, vooral in de onderste meter.",
+        "Liggers: doorbuiging, beschadiging en correcte plaatsing in de haken.",
+        "Borgpennen: aanwezig, zodat liggers niet kunnen loslaten.",
+        "Schoren: diagonale en horizontale verbanden op beschadiging en volledigheid.",
+        "Voetplaten en verankering: staat en aanwezigheid van vloerankers.",
+        "Belastingborden: aanwezig, leesbaar en passend bij de huidige configuratie.",
+        "Aanrijdbeveiliging: staanderbeschermers en hoekbeveiliging.",
+        "Scheefstand en doorbuiging: uitlijning en belasting binnen aanvaardbare grenzen.",
+      ] },
+      { t: "h2", text: "Ook het gebruik telt mee" },
+      { t: "p", text: "Naast de constructie kijkt de inspecteur naar hoe de stelling wordt gebruikt: passen de pallets, staat de last stabiel, klopt de belasting met het belastingbord. Onjuist gebruik is een veelvoorkomende oorzaak van schade en wordt daarom meegenomen in de beoordeling." },
+      { t: "note", text: "Alles wat de veiligheid raakt, wordt vastgelegd met locatie, foto, classificatie en vervolgstap, zodat het rapport direct bruikbaar is." },
+    ],
+    faq: [
+      { q: "Worden ook de hoogste niveaus beoordeeld?", a: "De inspecteur beoordeelt alle bereikbare onderdelen visueel, ook de hogere niveaus voor zover die veilig te beoordelen zijn vanaf de vloer." },
+      { q: "Wordt de vloer ook meegenomen?", a: "De staat van de vloer rond de voetplaten en verankering wordt meegenomen, omdat die de stabiliteit beïnvloedt." },
+    ],
+    related: ["schadeclassificatie", "belastingbord", "checklist-veilige-magazijnstelling"],
+  },
+  {
+    slug: "belastingbord",
+    category: "Normen en regels",
+    title: "Hoe werkt een belastingbord of draaglastbord?",
+    h1: "Hoe werkt een belastingbord of draaglastbord?",
+    metaTitle: "Belastingbord palletstelling: wat het is en waarom het moet",
+    metaDescription:
+      "Een belastingbord vermeldt hoeveel een stelling en een ligger mogen dragen. Lees wat erop staat, waarom het verplicht is en wat er misgaat zonder.",
+    excerpt:
+      "Wat op een belastingbord staat, waarom het onmisbaar is en wat er misgaat als het ontbreekt.",
+    answer:
+      "Een belastingbord, ook draaglastbord genoemd, vermeldt de toegestane belasting van een stelling: het maximale gewicht per liggerniveau en per stellingveld. Het bord hoort zichtbaar en leesbaar aanwezig te zijn en te passen bij de actuele configuratie. Zonder correct belastingbord weet niemand hoeveel er veilig opgeslagen mag worden.",
+    updated: "2026-07-15",
+    blocks: [
+      { t: "p", text: "Het belastingbord is een klein onderdeel met een grote functie. Het vertaalt de constructieberekening van de stelling naar een praktische grens voor de mensen op de vloer." },
+      { t: "h2", text: "Wat staat er op?" },
+      { t: "ul", items: [
+        "De maximale belasting per liggerniveau (per liggerpaar).",
+        "De maximale belasting per stellingveld of sectie.",
+        "Vaak informatie over de configuratie waarop deze waarden gelden, zoals de afstand tussen de liggers.",
+      ] },
+      { t: "h2", text: "Waarom het belangrijk is" },
+      { t: "p", text: "De toegestane belasting hangt af van de opbouw: het type staander, het aantal liggers en de onderlinge afstand. Verandert die opbouw, bijvoorbeeld doordat liggers worden verhangen, dan verandert ook de toegestane belasting. Een belastingbord dat niet meer klopt met de werkelijke opstelling is daarom net zo riskant als een ontbrekend bord." },
+      { t: "note", text: "Bij een inspectie controleren we of het belastingbord aanwezig, leesbaar en passend is bij de huidige configuratie." },
+      { t: "h2", text: "Wat gaat er mis zonder?" },
+      { t: "p", text: "Zonder duidelijk bord wordt de belasting een kwestie van inschatten. Overbelasting is dan een kwestie van tijd, met doorgebogen liggers of in het ergste geval een instorting als gevolg. Een leesbaar, kloppend belastingbord voorkomt die onzekerheid." },
+    ],
+    faq: [
+      { q: "Wij hebben liggers verhangen, klopt ons bord nog?", a: "Waarschijnlijk niet zonder herberekening. Verhangen verandert de toegestane belasting. Laat de nieuwe waarden bepalen en pas het bord aan." },
+      { q: "Wie levert een belastingbord?", a: "De leverancier of fabrikant van de stelling kan een bord leveren op basis van de configuratie. RackCheck signaleert in het rapport of een bord ontbreekt of niet klopt." },
+    ],
+    related: ["wat-wordt-gecontroleerd", "nen-en-15635", "checklist-veilige-magazijnstelling"],
+  },
+  {
+    slug: "kosten-stellinginspectie",
+    category: "Kosten en praktijk",
+    title: "Wat kost een stellinginspectie?",
+    h1: "Wat kost een stellinginspectie?",
+    metaTitle: "Wat kost een stellinginspectie? Prijzen en factoren",
+    metaDescription:
+      "Een stellinginspectie start vanaf €395 per jaar. Lees welke factoren de prijs bepalen en wat er bij de inspectie is inbegrepen.",
+    excerpt:
+      "Wat een inspectie kost, waar de prijs van afhangt en wat er allemaal bij inbegrepen zit.",
+    answer:
+      "Een stellinginspectie kost bij RackCheck vanaf €395 per jaar, exclusief btw. De exacte prijs hangt af van de grootte van het magazijn, het aantal en type stellingen en het aantal locaties. We bepalen die op basis van uw situatie en bevestigen de prijs vooraf.",
+    updated: "2026-07-15",
+    blocks: [
+      { t: "p", text: "Bij RackCheck start een inspectie vanaf €395 per jaar, exclusief btw. We werken zonder verborgen kosten: de prijs stemmen we af op uw situatie en bevestigen we vooraf, zodat u niet voor verrassingen komt te staan." },
+      { t: "note", text: "De uiteindelijke prijs hangt vooral af van de grootte van het magazijn, het aantal en type stellingen en het aantal locaties. Vraag vrijblijvend een vaste prijs aan voor uw situatie." },
+      { t: "h2", text: "Wat zit erbij in?" },
+      { t: "ul", items: [
+        "Intake vooraf en de inspectie op locatie.",
+        "Beoordeling van alle bereikbare stellingen.",
+        "Vastlegging met foto's en schadeclassificatie.",
+        "Inspectierapport met prioriteiten en vervolgstappen, in principe binnen 24 uur.",
+        "Directe melding van urgente situaties tijdens de inspectie.",
+      ] },
+      { t: "h2", text: "Welke factoren beïnvloeden de prijs?" },
+      { t: "p", text: "Naast de grootte spelen het aantal en type stellingen, de bereikbaarheid en de urgentie mee. Meerdere vestigingen kunnen gecombineerd worden ingepland, wat vaak gunstiger uitpakt. Een spoedinspectie na een incident plannen we met voorrang, waar een toeslag voor kan gelden." },
+      { t: "note", text: "Wilt u een exacte prijs? Vraag vrijblijvend een vaste prijs aan, dan bevestigen we die vooraf op basis van uw magazijn en stellingen." },
+    ],
+    faq: [
+      { q: "Is de prijs inclusief herstel?", a: "Nee. De prijs is voor de onafhankelijke inspectie en het rapport. Herstel is een apart traject met een eigen voorstel, zodat de beoordeling onafhankelijk blijft." },
+      { q: "Krijg ik korting bij meerdere vestigingen?", a: "Meerdere locaties gecombineerd inplannen scheelt reistijd en levert vaak een gunstiger totaalprijs op. Vraag een vaste prijs aan voor uw situatie." },
+    ],
+    related: ["duidelijk-inspectierapport", "informatie-in-inspectierapport", "hoe-vaak-stellingen-keuren"],
+  },
+  {
+    slug: "aanrijdschade-voorkomen",
+    category: "Schade en preventie",
+    title: "Hoe voorkomt u aanrijdschade aan palletstellingen?",
+    h1: "Hoe voorkomt u aanrijdschade aan palletstellingen?",
+    metaTitle: "Aanrijdschade aan palletstellingen voorkomen: 8 maatregelen",
+    metaDescription:
+      "Aanrijdschade is de meest voorkomende oorzaak van onveilige stellingen. Lees acht praktische maatregelen om aanrijdingen in uw magazijn te voorkomen.",
+    excerpt:
+      "Acht praktische maatregelen die aanrijdingen tegen palletstellingen echt verminderen.",
+    answer:
+      "Aanrijdschade voorkomt u met een combinatie van maatregelen: voldoende gangbreedte, goede aanrijdbeveiliging, duidelijke rijroutes en zichtlijnen, goede verlichting, getrainde heftruckchauffeurs en een cultuur waarin schade direct wordt gemeld. Geen enkele maatregel is op zichzelf genoeg, de combinatie maakt het verschil.",
+    updated: "2026-07-15",
+    blocks: [
+      { t: "p", text: "Aanrijdschade is verreweg de meest voorkomende oorzaak van onveilige stellingen. De goede boodschap: een groot deel is te voorkomen met maatregelen die geen grote investering vragen." },
+      { t: "h2", text: "Acht maatregelen die werken" },
+      { t: "ol", items: [
+        "Zorg voor voldoende gangbreedte in verhouding tot de gebruikte trucks.",
+        "Plaats aanrijdbeveiliging: staanderbeschermers en hoekbeveiliging op kwetsbare plekken.",
+        "Maak rijroutes en looppaden duidelijk zichtbaar met belijning.",
+        "Verbeter de zichtlijnen bij kruisingen en kopse kanten, bijvoorbeeld met spiegels.",
+        "Zorg voor goede, gelijkmatige verlichting zonder donkere hoeken.",
+        "Train chauffeurs en houd hun vaardigheid op peil.",
+        "Beperk werkdruk en tijdsdruk die tot risicovol rijgedrag leiden.",
+        "Maak schade melden makkelijk en vanzelfsprekend, zonder schuldvraag.",
+      ] },
+      { t: "note", text: "Aanrijdbeveiliging voorkomt geen aanrijding, maar vangt de klap op zodat de staander minder of geen schade oploopt. Het is een aanvulling, geen vervanging van goed rijgedrag." },
+      { t: "h2", text: "Van incident naar patroon" },
+      { t: "p", text: "Als dezelfde plekken telkens geraakt worden, is er meestal een onderliggende oorzaak: een krappe bocht, een slechte zichtlijn of een looproute die kruist met heftruckverkeer. Door schade te registreren en te vergelijken over meerdere inspecties, wordt zo'n patroon zichtbaar en kunt u het gericht aanpakken." },
+    ],
+    faq: [
+      { q: "Is aanrijdbeveiliging verplicht?", a: "Er is geen los wetsartikel dat het letterlijk verplicht, maar het hoort bij een veilige inrichting en dus bij de zorgplicht. Op risicovolle plekken is het sterk aan te raden." },
+      { q: "Helpt het om schade te registreren?", a: "Zeker. Registratie maakt patronen zichtbaar, zodat u de oorzaak aanpakt in plaats van steeds opnieuw te repareren." },
+    ],
+    related: ["terugkerende-stellingschade", "na-heftruckaanrijding", "checklist-veilige-magazijnstelling"],
+  },
+  {
+    slug: "staander-rechtbuigen-lassen",
+    category: "Schade en preventie",
+    title: "Mag u een beschadigde staander zelf rechtbuigen of lassen?",
+    h1: "Mag u een beschadigde staander zelf rechtbuigen of lassen?",
+    metaTitle: "Beschadigde staander rechtbuigen of lassen? Waarom niet",
+    metaDescription:
+      "Een beschadigde staander zelf rechtbuigen of lassen herstelt de sterkte niet en is riskant. Lees waarom vervanging bij structurele schade de veilige keuze is.",
+    excerpt:
+      "Waarom rechtbuigen en lassen geen echte reparatie zijn en wat wel de veilige route is.",
+    answer:
+      "Nee, een beschadigde staander zelf rechtbuigen of lassen is niet veilig. Het staal is bij de vervorming al verzwakt en rechtbuigen of lassen herstelt de oorspronkelijke sterkte niet, het kan die zelfs verder verminderen. Bij structurele schade is vervanging van de staander of het beschadigde deel de veilige route.",
+    updated: "2026-07-15",
+    blocks: [
+      { t: "p", text: "De verleiding is begrijpelijk: een deuk lijkt met wat kracht of een lasapparaat zo verholpen. Toch is dit een van de gevaarlijkste misverstanden rond stellingveiligheid." },
+      { t: "h2", text: "Waarom rechtbuigen niet werkt" },
+      { t: "p", text: "Koudgevormd staal dat vervormd is geraakt, heeft ter plekke een deel van zijn eigenschappen verloren. Terugbuigen brengt de vorm misschien terug, maar niet de sterkte. Het materiaal is dan tweemaal vervormd en juist brozer geworden. De staander lijkt hersteld, maar is dat niet." },
+      { t: "h2", text: "Waarom lassen niet de oplossing is" },
+      { t: "p", text: "Lassen aan een dragende staander verandert de eigenschappen van het staal door de warmte en voegt geen betrouwbare sterkte toe die te controleren is. Bovendien is de originele constructie ontworpen zonder die las. Een gelaste reparatie is daarom niet gelijkwaardig aan het oorspronkelijke onderdeel." },
+      { t: "note", text: "Vuistregel: constructieve schade aan een dragend onderdeel los je op met vervanging, niet met rechtbuigen of lassen." },
+      { t: "h2", text: "Wat dan wel?" },
+      { t: "ol", items: [
+        "Ontlaad de sectie en zet die af tot beoordeling.",
+        "Laat de schade classificeren door een deskundige.",
+        "Vervang bij structurele schade de staander of het beschadigde deel door een passend origineel of gelijkwaardig onderdeel.",
+        "Laat na herstel de sectie herbeoordelen.",
+      ] },
+    ],
+    faq: [
+      { q: "Een hele kleine kras, moet die ook vervangen?", a: "Niet per se. Oppervlakkige gebruikssporen zonder vervorming zijn vaak groen. Het gaat om vervorming, knik of scheur in een dragend onderdeel." },
+      { q: "Waar haal ik een vervangende staander?", a: "Afhankelijk van het merk via de fabrikant, dealer of een geschikte leverancier. Bij een onbekend of niet meer leverbaar merk zoeken we naar een technisch verantwoord alternatief." },
+    ],
+    related: ["na-heftruckaanrijding", "schadeclassificatie", "stelling-aangereden"],
+  },
+  {
+    slug: "nulinspectie",
+    category: "Inspectie en keuring",
+    title: "Wanneer is een nulinspectie relevant?",
+    h1: "Wanneer is een nulinspectie relevant?",
+    metaTitle: "Nulinspectie stellingen: wanneer en waarom",
+    metaDescription:
+      "Een nulinspectie legt de begintoestand van een stelling vast, bijvoorbeeld na installatie of verhuizing. Lees wanneer een nulmeting waarde heeft.",
+    excerpt:
+      "Wat een nulinspectie inhoudt en op welke momenten het slim is de begintoestand vast te leggen.",
+    answer:
+      "Een nulinspectie legt de toestand van een stelling vast op een startmoment, meestal direct na installatie, verhuizing of een grote wijziging. Zo weet u zeker dat de stelling correct is opgebouwd en heeft u een referentiepunt voor latere inspecties. Een nulinspectie is vooral relevant bij nieuwe of net verplaatste installaties.",
+    updated: "2026-07-15",
+    blocks: [
+      { t: "p", text: "De naam zegt het al: een nulinspectie is de meting op nul, het startpunt. Ze bevestigt dat de stelling in orde is opgeleverd voordat er last op komt en dient later als vergelijkingsbasis." },
+      { t: "h2", text: "Wanneer is een nulinspectie zinvol?" },
+      { t: "ul", items: [
+        "Direct na installatie van een nieuwe stelling, om de opbouw en verankering te bevestigen.",
+        "Na een verhuizing of het opnieuw opbouwen van een bestaande stelling.",
+        "Na een grote wijziging aan de configuratie.",
+        "Bij oplevering door een leverancier, als onafhankelijke controle van het geleverde werk.",
+      ] },
+      { t: "h2", text: "Wat levert het op?" },
+      { t: "p", text: "Een nulinspectie voorkomt dat opbouwfouten pas jaren later opvallen. Ontbrekende ankers, verkeerd geplaatste schoren of een ontbrekend belastingbord komen zo meteen aan het licht, op het moment dat ze nog eenvoudig te verhelpen zijn. Bovendien heeft u een gedocumenteerd startpunt waartegen u latere schade kunt afzetten." },
+      { t: "note", text: "Een nulinspectie is geen vervanging van de periodieke inspectie, maar een waardevol startpunt aan het begin van de levensduur." },
+    ],
+    faq: [
+      { q: "Is een nulinspectie verplicht?", a: "Nee, het is geen wettelijke verplichting. Het is een verstandige keuze bij nieuwe of verplaatste installaties, zeker als u de oplevering onafhankelijk wilt laten controleren." },
+      { q: "Kan RackCheck de oplevering van mijn leverancier controleren?", a: "Ja. We beoordelen onafhankelijk of de stelling correct is opgebouwd en verankerd, los van de partij die heeft geleverd." },
+    ],
+    related: ["wat-wordt-gecontroleerd", "belastingbord", "hoe-vaak-stellingen-keuren"],
+  },
+  {
+    slug: "interne-controle-vs-externe-inspectie",
+    category: "Inspectie en keuring",
+    title: "Verschil tussen interne controle en externe stellinginspectie",
+    h1: "Verschil tussen interne controle en externe stellinginspectie",
+    metaTitle: "Interne controle versus externe stellinginspectie",
+    metaDescription:
+      "Interne controles en de externe deskundige inspectie vullen elkaar aan. Lees het verschil, wie wat doet en waarom u beide nodig heeft.",
+    excerpt:
+      "Twee soorten controle die elkaar aanvullen: wie doet wat, hoe vaak en waarom u beide nodig heeft.",
+    answer:
+      "Een interne controle is een regelmatige visuele check door een eigen, aangewezen medewerker, gericht op het snel opmerken van zichtbare schade. Een externe inspectie is de periodieke, grondige beoordeling door een onafhankelijke deskundige die schade classificeert en rapporteert. De twee vervangen elkaar niet, ze vullen elkaar aan.",
+    updated: "2026-07-15",
+    blocks: [
+      { t: "p", text: "Veel bedrijven denken dat één van beide volstaat. In werkelijkheid werkt stellingveiligheid alleen goed als beide op hun plek zijn: de frequente eigen ogen en de periodieke deskundige blik." },
+      { t: "table", head: ["", "Interne controle", "Externe inspectie"], rows: [
+        ["Wie", "Aangewezen medewerker (PRSES)", "Onafhankelijke deskundige"],
+        ["Frequentie", "Wekelijks tot maandelijks", "In de regel jaarlijks"],
+        ["Diepgang", "Zichtbare schade signaleren", "Grondige beoordeling en classificatie"],
+        ["Resultaat", "Melding en directe actie", "Rapport met prioriteiten en vervolgstappen"],
+      ] },
+      { t: "h2", text: "Waarom allebei?" },
+      { t: "p", text: "De interne controle vangt schade op die tussen twee jaarlijkse inspecties ontstaat, bijvoorbeeld een verse aanrijding. De externe inspectie brengt diepgang en onafhankelijkheid: een deskundige ziet dingen die in de dagelijkse drukte over het hoofd worden gezien en beoordeelt de ernst objectief." },
+      { t: "note", text: "Zie de interne controle als het rookmelder-principe: dagelijkse waakzaamheid. De externe inspectie is de periodieke keuring van het hele systeem." },
+    ],
+    faq: [
+      { q: "Kan de interne controle de externe inspectie vervangen?", a: "Nee. De interne controle is waardevol, maar mist de diepgang en onafhankelijkheid van de deskundige inspectie." },
+      { q: "Hoe leg ik interne controles vast?", a: "Houd een eenvoudig logboek bij met datum, wie de controle deed en welke meldingen eruit kwamen. Dat versterkt uw dossier en helpt de externe inspecteur." },
+    ],
+    related: ["wat-is-een-prses", "hoe-vaak-stellingen-keuren", "checklist-veilige-magazijnstelling"],
+  },
+  {
+    slug: "checklist-veilige-magazijnstelling",
+    category: "Kosten en praktijk",
+    title: "Checklist voor een veilige magazijnstelling",
+    h1: "Checklist voor een veilige magazijnstelling",
+    metaTitle: "Checklist veilige magazijnstelling: 10 punten om te controleren",
+    metaDescription:
+      "Een praktische checklist voor een veilige magazijnstelling. Loop de tien punten na voor uw interne controle, van staanders tot belastingbord.",
+    excerpt:
+      "Tien concrete punten voor uw interne controle, van staanders en borging tot belastingborden.",
+    answer:
+      "Een veilige magazijnstelling herkent u aan onbeschadigde staanders, correct geplaatste en geborgde liggers, aanwezige schoren en verankering, een leesbaar belastingbord dat past bij de opstelling, aanrijdbeveiliging op kwetsbare plekken en een last die stabiel en binnen de toegestane grenzen is opgeslagen. Onderstaande checklist helpt u dit systematisch na te lopen.",
+    updated: "2026-07-15",
+    blocks: [
+      { t: "p", text: "Deze checklist is bedoeld voor uw interne visuele controle. Ze vervangt de deskundige inspectie niet, maar helpt u om zichtbare problemen snel op te merken tussen twee inspecties door." },
+      { t: "h2", text: "De checklist" },
+      { t: "ol", items: [
+        "Staanders: geen deuken, knikken of scheuren, zeker niet in de onderste meter.",
+        "Liggers: recht, onbeschadigd en correct in de haken geplaatst.",
+        "Borgpennen: overal aanwezig, zodat liggers niet kunnen loslaten.",
+        "Schoren: alle diagonale en horizontale verbanden aanwezig en heel.",
+        "Voetplaten: vlak op de vloer, niet vervormd of losgetrild.",
+        "Verankering: vloerankers aanwezig en vast.",
+        "Belastingbord: aanwezig, leesbaar en passend bij de huidige opstelling.",
+        "Aanrijdbeveiliging: op kwetsbare hoeken en kopse kanten aanwezig en heel.",
+        "Belasting: pallets passen, staan stabiel en overschrijden de toegestane last niet.",
+        "Algemeen beeld: geen scheefstand, geen losse onderdelen op de vloer.",
+      ] },
+      { t: "note", text: "Ziet u bij een van deze punten iets afwijkends dat de veiligheid kan raken? Meld het bij de verantwoordelijke en laat het bij twijfel beoordelen." },
+      { t: "h2", text: "Van checklist naar dossier" },
+      { t: "p", text: "Leg de uitkomst van elke controle kort vast: datum, wie de controle deed en de meldingen. Zo bouwt u een dossier op dat uw zorgplicht onderbouwt en dat de externe inspecteur helpt." },
+    ],
+    faq: [
+      { q: "Hoe vaak moet ik deze checklist doorlopen?", a: "Voor een interne controle is wekelijks tot maandelijks gebruikelijk, afhankelijk van hoe intensief de stellingen worden gebruikt." },
+      { q: "Wat doe ik als ik iets ergs zie?", a: "Bij duidelijke vervorming of schade aan een dragend onderdeel: zet de sectie af, ontlaad indien nodig en laat het beoordelen. Ga uit van onveilig tot het tegendeel vaststaat." },
+    ],
+    related: ["wat-wordt-gecontroleerd", "interne-controle-vs-externe-inspectie", "magazijn-voorbereiden-op-inspectie"],
+  },
+  {
+    slug: "magazijn-voorbereiden-op-inspectie",
+    category: "Kosten en praktijk",
+    title: "Hoe bereidt u het magazijn voor op een inspectie?",
+    h1: "Hoe bereidt u het magazijn voor op een inspectie?",
+    metaTitle: "Magazijn voorbereiden op stellinginspectie: praktische tips",
+    metaDescription:
+      "Met een goede voorbereiding verloopt de stellinginspectie sneller en soepeler. Lees welke stappen helpen, van bereikbaarheid tot documentatie.",
+    excerpt:
+      "Praktische stappen waarmee de inspectie sneller verloopt en de operatie zo min mogelijk hindert.",
+    answer:
+      "Bereid een stellinginspectie voor door de stellingen goed bereikbaar te maken, eerdere rapporten en tekeningen klaar te leggen, bekende schade alvast te melden en een contactpersoon aan te wijzen die de inspecteur wegwijs maakt. Een goede voorbereiding maakt de inspectie sneller en beperkt de verstoring van uw operatie.",
+    updated: "2026-07-15",
+    blocks: [
+      { t: "p", text: "Een inspectie kan in de meeste gevallen gewoon tijdens werktijd plaatsvinden. Met een beetje voorbereiding verloopt het bezoek soepel en houdt het uw operatie zo min mogelijk op." },
+      { t: "h2", text: "Voor de inspectie" },
+      { t: "ul", items: [
+        "Zorg dat de gangen en stellingen goed bereikbaar zijn, ruim losse obstakels op.",
+        "Leg eerdere inspectierapporten, plattegronden en belastinggegevens klaar.",
+        "Meld vooraf bekende schade of aanrijdingen, dan kan de inspecteur daar extra op letten.",
+        "Wijs een contactpersoon aan die de weg kent en beslissingen mag nemen.",
+      ] },
+      { t: "h2", text: "Tijdens de inspectie" },
+      { t: "p", text: "De inspecteur loopt langs de stellingen en beoordeelt onderdeel voor onderdeel. Meestal kan het werk doorgaan. Alleen wanneer er acuut gevaar wordt gevonden, vragen we een sectie tijdelijk vrij te maken of te ontladen. Die melding krijgt u dan direct." },
+      { t: "h2", text: "Na de inspectie" },
+      { t: "p", text: "U ontvangt in principe binnen 24 uur het rapport. Loop de bevindingen door met uw contactpersoon of PRSES en plan de opvolging: rood direct, oranje binnen de aangegeven termijn en groen bij de volgende inspectie." },
+      { t: "note", text: "Een goede voorbereiding bespaart inspectietijd en dus kosten, en zorgt dat niets over het hoofd wordt gezien." },
+    ],
+    faq: [
+      { q: "Moet ik stellingen leeghalen voor de inspectie?", a: "Nee. We beoordelen gevulde stellingen. Alleen bij acuut gevaar vragen we een specifieke sectie te ontladen." },
+      { q: "Hoe lang duurt een inspectie?", a: "Van ongeveer twee uur voor een klein magazijn tot een dag voor een zeer groot of complex magazijn." },
+    ],
+    related: ["kosten-stellinginspectie", "checklist-veilige-magazijnstelling", "informatie-in-inspectierapport"],
+  },
+  {
+    slug: "informatie-in-inspectierapport",
+    category: "Inspectie en keuring",
+    title: "Welke informatie hoort in een inspectierapport?",
+    h1: "Welke informatie hoort in een inspectierapport?",
+    metaTitle: "Wat hoort in een stellinginspectierapport? De 7 elementen",
+    metaDescription:
+      "Een bruikbaar inspectierapport bevat per bevinding een classificatie, locatie, foto, oorzaak, actie en termijn. Lees welke informatie niet mag ontbreken.",
+    excerpt:
+      "De zeven elementen die een inspectierapport tot een bruikbaar werkdocument maken.",
+    answer:
+      "Een goed inspectierapport bevat per bevinding: een duidelijke omschrijving, de exacte locatie, een foto, de schadeclassificatie (groen, oranje of rood), de oorzaak, de benodigde actie en een termijn. Daarnaast horen de datum, de scope van de inspectie en een samenvatting van de urgente punten erin. Alleen een lijst met gebreken is niet genoeg.",
+    updated: "2026-07-15",
+    blocks: [
+      { t: "p", text: "Een rapport is pas nuttig als iemand ermee aan de slag kan zonder de inspecteur erbij te hoeven halen. Dat vraagt om meer dan een opsomming van wat er mis is." },
+      { t: "h2", text: "De zeven elementen per bevinding" },
+      { t: "ol", items: [
+        "Omschrijving: wat is er precies aan de hand.",
+        "Locatie: gang, stelling, veld en niveau, zodat de plek meteen te vinden is.",
+        "Foto: een beeld dat de bevinding ondersteunt.",
+        "Classificatie: groen, oranje of rood.",
+        "Oorzaak: bijvoorbeeld aanrijding, overbelasting of ontbrekend onderdeel.",
+        "Actie: de concrete vervolgstap, zoals vervangen, borgen of monitoren.",
+        "Termijn: direct, binnen enkele weken of bij de volgende inspectie.",
+      ] },
+      { t: "h2", text: "En het rapport als geheel" },
+      { t: "ul", items: [
+        "De datum van de inspectie en de naam van de inspecteur.",
+        "De scope: welke stellingen en welk deel van het magazijn zijn beoordeeld.",
+        "Een samenvatting die de urgente punten bovenaan zet.",
+        "Ruimte om de opvolging bij te houden, zodat u kunt aantonen wat er is gebeurd.",
+      ] },
+      { t: "note", text: "Met deze opzet is het rapport een werkdocument: uw team weet direct waar, wat en wanneer, en u kunt de opvolging aantonen." },
+    ],
+    faq: [
+      { q: "Krijg ik een voorbeeld van het rapport?", a: "Ja. Op de pagina over een duidelijk inspectierapport ziet u een geanonimiseerde voorbeeldweergave van hoe de bevindingen worden gepresenteerd." },
+      { q: "Hoe lang moet ik het rapport bewaren?", a: "Bewaar rapporten zolang de stellingen in gebruik zijn en voor uw dossieropbouw. Ze onderbouwen uw zorgplicht en helpen bij het vergelijken over de tijd." },
+    ],
+    related: ["duidelijk-inspectierapport", "schadeclassificatie", "kosten-stellinginspectie"],
+  },
+];
+
+export function getArtikel(slug: string) {
+  return artikelen.find((a) => a.slug === slug);
+}
+
+export function relatedArtikelen(slugs: string[]) {
+  return slugs
+    .map((s) => artikelen.find((a) => a.slug === s))
+    .filter((a): a is Artikel => Boolean(a));
+}

@@ -1,1 +1,46 @@
+# dependencies
+/node_modules
+/.pnp
+.pnp.*
+
+# next.js
+/.next/
+/out/
+/build
+
+# misc
+.DS_Store
+*.pem
 .claude/
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+.pnpm-debug.log*
+
+# env files
+.env*
+!.env.example
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+.vercel
+
+# large local source archives and backups (never commit)
+/Content van F-schijf-*/
+/legacy/
+
+# loose local source assets in repo root (not used by the app)
+/90029765_2.webp
+/RACKCHECK logo*.png
+/RackCheck inspecteur.png
+/WhatsApp Image*
+
+# raw content-input originals (curated web copies live in public/images/praktijk)
+/content-input/afbeeldingen/
+/content-input/onderwerp.md.txt
