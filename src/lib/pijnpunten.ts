@@ -186,7 +186,7 @@ export const pijnpunten: Record<string, Pijnpunt> = {
       { q: "Wat als een eerdere partij te streng heeft gekeurd?", a: "We geven een onafhankelijke second opinion op basis van meetbare criteria. We beschuldigen niemand, maar geven u helderheid." },
       { q: "Beoordelen jullie ook merken die jullie niet leveren?", a: "Ja. We beoordelen de constructie en de staat, ongeacht het merk. Bij een niet meer leverbaar merk benoemen we dat transparant." },
     ],
-    related: ["wie-mag-stellingen-inspecteren", "duidelijk-inspectierapport", "schadeclassificatie", "werkwijze"],
+    related: ["wie-mag-stellingen-inspecteren", "tweedehands-hovuma-stellingen", "duidelijk-inspectierapport", "schadeclassificatie"],
     ctaTitle: "Vraag een onafhankelijke beoordeling aan",
     image: {
       src: "/images/bordes-entresol-portret.jpg",

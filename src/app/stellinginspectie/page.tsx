@@ -178,9 +178,29 @@ export default function Page() {
           ))}
         </div>
         <p className="mt-5 text-sm text-navy-600">
-          Ook entresolvloeren, bordessen, doorrol- en shuttlesystemen kunnen worden
+          Ook doorrol- en shuttlesystemen en andere opslagsystemen kunnen worden
           beoordeeld. Neem hiervoor contact op, dan bespreken we de mogelijkheden.
         </p>
+
+        <div className="mt-8 rounded-lg border border-navy-200 bg-navy-50 p-6">
+          <p className="text-xs font-bold uppercase tracking-wide text-brand-700">
+            Specialistische inspectie
+          </p>
+          <h3 className="mt-1 text-lg font-bold text-navy-950">
+            Tweedehands Hovuma-stellingen
+          </h3>
+          <p className="mt-1.5 text-sm text-navy-600">
+            Gebruikte Hovuma-stellingen gekocht of herplaatst? We beoordelen de staat, de
+            montage en de aanwezige schade voordat u ze weer in gebruik neemt.
+          </p>
+          <Link
+            href="/tweedehands-hovuma-stellingen/"
+            className="mt-3 inline-flex items-center gap-1.5 text-sm font-bold text-brand-700 hover:text-brand-800"
+          >
+            Inspectie van tweedehands Hovuma-stellingen
+            <ArrowRightIcon className="h-4 w-4" />
+          </Link>
+        </div>
 
         <figure className="mt-8 overflow-hidden rounded-xl border border-navy-200">
           <div className="relative aspect-[21/9]">

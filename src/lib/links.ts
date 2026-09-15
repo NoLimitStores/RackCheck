@@ -15,6 +15,9 @@ const pages: Record<string, { title: string; href: string; desc?: string }> = {
   "palletstelling": { title: "Palletstelling inspecteren", href: "/inspecties/palletstelling/" },
   "legbordstelling": { title: "Legbordstelling inspecteren", href: "/inspecties/legbordstelling/" },
   "draagarmstelling": { title: "Draagarmstelling inspecteren", href: "/inspecties/draagarmstelling/" },
+  "inrijstelling": { title: "Inrijstelling laten keuren", href: "/inspecties/inrijstelling/" },
+  "bordes-entresolvloer": { title: "Bordes of entresolvloer keuren", href: "/inspecties/bordes-entresolvloer/" },
+  "tweedehands-hovuma-stellingen": { title: "Tweedehands Hovuma-stellingen", href: "/tweedehands-hovuma-stellingen/", desc: "Inspectie van gebruikte Hovuma-stellingen." },
 };
 
 /** Zet een lijst met slugs om naar RelatedItems (artikel of vaste pagina). */

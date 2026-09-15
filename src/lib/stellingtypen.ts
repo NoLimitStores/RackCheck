@@ -15,6 +15,8 @@ export type StellingType = {
   risicos: string;
   rapportage: string;
   faq: { q: string; a: string }[];
+  /** Optionele extra praktijkfoto's, getoond in een "In de praktijk"-galerij. */
+  praktijk?: { src: string; alt: string; caption?: string }[];
 };
 
 export const stellingtypen: StellingType[] = [
@@ -137,6 +139,101 @@ export const stellingtypen: StellingType[] = [
       { q: "Kan een verbogen draagarm nog gebruikt worden?", a: "Dat hangt af van de mate van verbuiging. Bij twijfel classificeren we de arm als oranje of rood en adviseren we vervanging. Rechtbuigen raden we af, omdat dat het staal verzwakt." },
       { q: "Worden dubbelzijdige en enkelzijdige stellingen anders beoordeeld?", a: "De aandachtspunten zijn vergelijkbaar, maar bij enkelzijdige draagarmstellingen weegt de verankering nog zwaarder omdat de kantelkracht maar één kant op werkt." },
       { q: "Inspecteren jullie ook buiten opgestelde draagarmstellingen?", a: "Ja. Bij buitenopstelling kijken we extra naar corrosie en naar de staat van de fundering en verankering." },
+    ],
+  },
+  {
+    slug: "inrijstelling",
+    naam: "Inrijstelling",
+    korteNaam: "Inrijstellingen",
+    image: "/images/inrijstelling-drive-in.jpg",
+    imageAlt:
+      "Hoge blauwe inrijstelling met drive-in rijgangen en gele geleiderails in een magazijn",
+    metaTitle: "Inrijstelling laten keuren | Onafhankelijke keuring",
+    metaDescription:
+      "Laat uw inrijstelling professioneel inspecteren. RackCheck controleert onder meer schade, stabiliteit, geleidingen en veilig gebruik.",
+    h1: "Inrijstellingen laten inspecteren",
+    intro:
+      "Bij een inrijstelling rijdt de heftruck de stelling letterlijk in om pallets op doorlopende draagrails te plaatsen. Dat maakt dit systeem compact, maar ook gevoelig voor aanrijdschade op plekken die niet altijd goed zichtbaar zijn. RackCheck inspecteert uw inrijstellingen onafhankelijk.",
+    gebruik:
+      "Een inrijstelling, ook wel drive-instelling genoemd, slaat veel pallets van hetzelfde product compact op. De truck rijdt tussen de staanders een rijgang in en zet de pallets op doorlopende draagrails. Bij een drive-in is er aan één kant toegang, waardoor de laatst geplaatste pallet er als eerste weer uit gaat. Bij een drive-through is de rijgang aan twee kanten open. Doordat de truck zich binnen de constructie beweegt, is het risico op contact met staanders en rails groter dan bij een gewone palletstelling.",
+    schade: [
+      { title: "Aanrijdschade aan staanders", text: "Deuken en vervorming doordat de heftruck in de smalle rijgang langs de staanders manoeuvreert." },
+      { title: "Beschadigde draag- en geleiderails", text: "Rails die krom staan, zijn losgeraakt of zijn geraakt bij het in- en uitrijden." },
+      { title: "Verbogen of losse geleiding", text: "Aanrijdgeleiding aan de vloer die de truck in de rijgang moet houden en daarbij zelf schade oploopt." },
+      { title: "Losse verbindingen en borging", text: "Verbindingen en borgingen die door de stoten en trillingen in de rijgang kunnen loskomen." },
+    ],
+    inspectiepunten: [
+      "Staanders en portalen op deuken, vervorming en scheefstand, met nadruk op de rijgang",
+      "Draagrails op doorbuiging, beschadiging en correcte bevestiging",
+      "Aanrijdgeleiding en geleiderails langs de rijgang",
+      "Verankering, verbindingen en stabiliteitsverbanden",
+      "Borging van rails en liggers",
+      "Aanrijdbeveiliging en portaalbescherming bij de ingang van de rijgang",
+      "Belastinggegevens en de afstemming op het gebruikte pallettype",
+      "Scheefstand en algehele stabiliteit van de opstelling",
+    ],
+    risicos:
+      "Omdat de heftruck zich binnen de constructie beweegt en de zichtlijnen beperkt zijn, ontstaat schade vaak onopgemerkt en op moeilijk bereikbare plekken. Beschadiging aan staanders of draagrails in een sterk gevulde inrijstelling weegt zwaar, omdat veel pallets op een compacte constructie steunen.",
+    rapportage:
+      "In het rapport benoemen we per bevinding de locatie in de rijgang, de classificatie en de vervolgstap. Bij inrijstellingen letten we extra op de staanders langs de rijgang, de draagrails en de geleiding, omdat daar de meeste aanrijdschade ontstaat.",
+    faq: [
+      { q: "Moet de inrijstelling leeg zijn voor de inspectie?", a: "Een volledig gevulde inrijstelling is lastiger te beoordelen, omdat rails en staanders in de rijgang deels aan het zicht onttrokken zijn. We beoordelen wat bereikbaar is en geven aan als delen alleen in ontladen toestand goed te controleren zijn." },
+      { q: "Wat is het verschil tussen drive-in en drive-through?", a: "Bij een drive-in is de rijgang aan één kant toegankelijk; bij een drive-through aan twee kanten. De inspectiepunten zijn vergelijkbaar, maar de looproutes en de manier van vullen verschillen." },
+      { q: "Hoe vaak moet een inrijstelling gekeurd worden?", a: "Net als bij andere magazijnstellingen is een periodieke deskundige inspectie gebruikelijk, in de praktijk jaarlijks, aangevuld met regelmatige interne controles. De juiste frequentie hangt af van de gebruiksintensiteit." },
+    ],
+    praktijk: [
+      {
+        src: "/images/inrijstelling-magazijn.jpg",
+        alt: "Gevulde inrijstelling met pallets in een lange rijgang van een magazijn",
+        caption: "In een gevulde inrijstelling zijn staanders en rails in de rijgang deels aan het zicht onttrokken. Juist daar ontstaat vaak aanrijdschade.",
+      },
+    ],
+  },
+  {
+    slug: "bordes-entresolvloer",
+    naam: "Bordes of entresolvloer",
+    korteNaam: "Bordessen en entresolvloeren",
+    image: "/images/bordes-entresolvloer.jpg",
+    imageAlt:
+      "Bordes met legbordstellingen, een toegangstrap en leuningen in een magazijn",
+    metaTitle: "Bordes of entresolvloer laten keuren | Onafhankelijke keuring",
+    metaDescription:
+      "Laat uw magazijnbordes of entresolvloer professioneel inspecteren. RackCheck beoordeelt de constructie, vloer, trappen en beveiligingen.",
+    h1: "Inspectie van bordessen en entresolvloeren",
+    intro:
+      "Een bordes of entresolvloer is een tussenvloer die op een eigen kolommenstructuur rust en extra opslag- of werkruimte creëert in de hoogte. Omdat er niet alleen goederen op staan maar ook mensen op werken, gaat een inspectie hier zowel over de constructie als over de personenveiligheid.",
+    gebruik:
+      "Bordessen en entresolvloeren benutten de vrije hoogte in een pand voor extra vloeroppervlak. Ze rusten op kolommen en liggers en worden vaak gecombineerd met stellingen eronder of erop. Op de vloer wordt gelopen, gewerkt en opgeslagen, en goederen worden meestal via een palletsluis of hefopening aangevoerd. Daardoor spelen de draagconstructie, de vloer en de randbeveiliging allemaal een rol bij de veiligheid.",
+    schade: [
+      { title: "Aanrijdschade aan kolommen", text: "Ondersteunende kolommen die door heftrucks of intern transport onderaan worden geraakt." },
+      { title: "Beschadigde of losse vloerdelen", text: "Vloerplaten die zijn beschadigd, doorbuigen of niet meer goed vastliggen." },
+      { title: "Beschadigde trappen en leuningen", text: "Versleten treden, losse leuningen of ontbrekende kantplanken langs de rand." },
+      { title: "Onduidelijke of gewijzigde belasting", text: "Een ontbrekende belastingaanduiding of een gebruik dat zwaarder is dan waarvoor de vloer is bedoeld." },
+    ],
+    inspectiepunten: [
+      "Kolommen, liggers en verbindingen van de draagconstructie",
+      "Verankering van de kolommen in de vloer",
+      "Vloerdelen op beschadiging, bevestiging en zichtbare doorbuiging",
+      "Trappen, leuningen, hekwerken en kantplanken",
+      "Palletsluizen, hefopeningen en de valbeveiliging daaromheen",
+      "Belastingaanduiding en of het huidige gebruik daarbij past",
+      "Aanrijdschade aan de ondersteunende constructie",
+    ],
+    risicos:
+      "Op een bordes of entresolvloer werken mensen, waardoor gebreken aan leuningen, trappen of de vloer direct raken aan de veiligheid van personen. Aanrijding van een dragende kolom kan bovendien de stabiliteit van het hele bordes beïnvloeden. Daarom wegen randbeveiliging, vloer en draagconstructie allemaal mee in de beoordeling.",
+    rapportage:
+      "In het rapport beschrijven we per bevinding de locatie, de classificatie en de vervolgstap, met aparte aandacht voor de personenveiligheid zoals leuningen, trappen en de aangegeven vloerbelasting. Een visuele inspectie is iets anders dan een constructieve herberekening; als een berekening nodig is, geven we dat aan.",
+    faq: [
+      { q: "Voert RackCheck een constructieve berekening van de vloer uit?", a: "Nee. Wij voeren een visuele, deskundige inspectie uit van de staat en het veilige gebruik. Is er een constructieve herberekening nodig, bijvoorbeeld bij twijfel over de draagkracht of bij zwaarder gebruik, dan geven we dat aan zodat een constructeur dat kan verzorgen." },
+      { q: "Beoordelen jullie ook de stellingen op en onder het bordes?", a: "Ja, voor zover bereikbaar. Bordessen worden vaak gecombineerd met stellingen; die kunnen we in dezelfde inspectie meenemen." },
+      { q: "Wat als de belastingaanduiding ontbreekt?", a: "Dan benoemen we dat in het rapport. De toegestane vloerbelasting hoort duidelijk zichtbaar te zijn, zodat gebruikers weten wat is toegestaan." },
+    ],
+    praktijk: [
+      {
+        src: "/images/bordes-entresol-rand.jpg",
+        alt: "Rand van een entresolvloer met leuning, een palletopening en een deel van de vloer in een magazijn",
+        caption: "Bij de rand van een entresolvloer komen vloer, leuning en een eventuele palletopening samen. Juist die overgang beoordelen we op valgevaar.",
+      },
     ],
   },
 ];

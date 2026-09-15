@@ -94,12 +94,35 @@ export default async function Page({ params }: { params: Promise<{ type: string 
             </div>
           ))}
         </div>
+
+        {t.praktijk && t.praktijk.length > 0 && (
+          <div className="mt-10 grid gap-6 sm:grid-cols-2">
+            {t.praktijk.map((foto) => (
+              <figure key={foto.src} className="overflow-hidden rounded-xl border border-navy-200 bg-white">
+                <div className="relative aspect-[4/3]">
+                  <Image
+                    src={foto.src}
+                    alt={foto.alt}
+                    fill
+                    sizes="(max-width: 640px) 100vw, 560px"
+                    className="object-cover"
+                  />
+                </div>
+                {foto.caption && (
+                  <figcaption className="px-4 py-3 text-sm text-navy-600">
+                    {foto.caption}
+                  </figcaption>
+                )}
+              </figure>
+            ))}
+          </div>
+        )}
       </Section>
 
       <Section>
         <div className="grid gap-10 lg:grid-cols-2">
           <div>
-            <SectionHeading eyebrow="Specifieke inspectiepunten" title="Waar we op letten" />
+            <SectionHeading eyebrow="Inspectiepunten" title="Waar we op letten" />
             <ul className="mt-6 space-y-2.5">
               {t.inspectiepunten.map((p) => (
                 <li key={p} className="flex gap-2.5 text-navy-800">

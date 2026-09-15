@@ -19,6 +19,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/kennisbank/",
     "/oplossingen/",
     "/regio/",
+    "/tweedehands-hovuma-stellingen/",
     "/privacy/",
     "/stelling-aangereden/",
     "/jaarlijkse-stellinginspectie/",
