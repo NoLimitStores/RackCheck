@@ -283,7 +283,7 @@ export const artikelen: Artikel[] = [
       { q: "Wie bepaalt de classificatie?", a: "De inspecteur, op basis van de aard en de plaats van de schade en de gevolgen voor de draagkracht. Bij twijfel wordt naar de veilige kant geclassificeerd." },
       { q: "Wat als ik een oranje punt laat liggen?", a: "Dan groeit de kans dat het bij de volgende belasting of aanrijding verergert naar rood. Oranje is een uitnodiging om gepland te herstellen, niet om te negeren." },
     ],
-    related: ["informatie-in-inspectierapport", "na-heftruckaanrijding", "duidelijk-inspectierapport"],
+    related: ["informatie-in-inspectierapport", "na-heftruckaanrijding", "magazijnstelling-afgekeurd", "duidelijk-inspectierapport"],
   },
   {
     slug: "na-heftruckaanrijding",
@@ -320,7 +320,7 @@ export const artikelen: Artikel[] = [
       { q: "De stelling staat nog overeind, is dat niet genoeg?", a: "Nee. Een staander kan een groot deel van zijn draagkracht verliezen zonder direct om te vallen. Onder volgende belasting of bij een nieuwe stoot kan het alsnog misgaan." },
       { q: "Kan ik de sectie na beoordeling weer gebruiken?", a: "Als de deskundige de sectie groen classificeert wel. Bij oranje of rood volgt eerst herstel of vervanging." },
     ],
-    related: ["stelling-aangereden", "staander-rechtbuigen-lassen", "schadeclassificatie"],
+    related: ["stelling-aangereden", "staander-rechtbuigen-lassen", "magazijnstelling-afgekeurd", "schadeclassificatie"],
   },
   {
     slug: "wat-wordt-gecontroleerd",
@@ -668,7 +668,59 @@ export const artikelen: Artikel[] = [
       { q: "Krijg ik een voorbeeld van het rapport?", a: "Ja. Op de pagina over een duidelijk inspectierapport ziet u een geanonimiseerde voorbeeldweergave van hoe de bevindingen worden gepresenteerd." },
       { q: "Hoe lang moet ik het rapport bewaren?", a: "Bewaar rapporten zolang de stellingen in gebruik zijn en voor uw dossieropbouw. Ze onderbouwen uw zorgplicht en helpen bij het vergelijken over de tijd." },
     ],
-    related: ["duidelijk-inspectierapport", "schadeclassificatie", "kosten-stellinginspectie"],
+    related: ["duidelijk-inspectierapport", "schadeclassificatie", "magazijnstelling-afgekeurd", "kosten-stellinginspectie"],
+  },
+  {
+    slug: "magazijnstelling-afgekeurd",
+    category: "Schade en preventie",
+    title: "Wat gebeurt er als een magazijnstelling wordt afgekeurd?",
+    h1: "Wat gebeurt er als een magazijnstelling wordt afgekeurd?",
+    metaTitle: "Magazijnstelling afgekeurd: wat betekent het en wat nu?",
+    metaDescription:
+      "Een stelling of sectie afgekeurd bij de inspectie? Lees wat oranje en rood betekenen, welke actie direct nodig is, wie mag herstellen en hoe herkeuring werkt.",
+    excerpt:
+      "Wat een afkeuring betekent, welke stappen direct nodig zijn en hoe u de sectie weer veilig in gebruik neemt.",
+    answer:
+      "Afgekeurd betekent dat een bevinding de veiligheid raakt. Bij een rode classificatie moet de betreffende sectie direct worden ontlast of afgezet tot het herstel is uitgevoerd. Bij oranje mag de sectie meestal in gebruik blijven, maar moet het herstel binnen een afgesproken termijn gebeuren. Laat herstel uitvoeren met originele onderdelen en laat de sectie daarna opnieuw beoordelen voordat u die weer volledig belast.",
+    updated: "2026-09-15",
+    image: {
+      src: "/images/praktijk/aanrijdschade-staander-losgereden.jpg",
+      alt: "Stellingstaander die na een aanrijding is losgescheurd van de voetplaat",
+      caption: "Voorbeeld van een rode bevinding: een staander die is losgescheurd van de voetplaat. Zo'n sectie wordt direct ontlast.",
+    },
+    blocks: [
+      { t: "p", text: "Een afkeuring klinkt ingrijpend, en soms is dat ook zo. Maar afgekeurd betekent niet automatisch dat uw hele magazijn stil moet. Het betekent dat een of meer bevindingen de veiligheid raken en dat er iets moet gebeuren. Wat precies, hangt af van de classificatie en de plaats van de schade." },
+      { t: "h2", text: "Wat betekent afgekeurd precies?" },
+      { t: "p", text: "Bij een inspectie volgens NEN-EN 15635 krijgt elke bevinding een kleurcode. Afgekeurd gaat over de categorieen oranje en rood. Groen betekent aanvaardbaar. Het onderscheid tussen oranje en rood bepaalt hoe snel u moet handelen." },
+      { t: "table", head: ["Classificatie", "Betekenis", "Wat u moet doen"], rows: [
+        ["Oranje", "Raakt de veiligheid, geen direct gevaar", "Herstel binnen een afgesproken termijn, gebruik mag doorgaan"],
+        ["Rood", "Raakt de veiligheid direct", "Sectie direct ontlasten of afzetten en herstellen voor hergebruik"],
+      ] },
+      { t: "note", text: "Een afkeuring geldt vrijwel altijd voor een specifieke sectie of onderdeel, niet voor het hele magazijn. Zo blijft de rest gewoon in bedrijf." },
+      { t: "h2", text: "Direct na een rode afkeuring" },
+      { t: "ol", items: [
+        "Ontlast de afgekeurde sectie zo snel als veilig kan en houd mensen uit de directe omgeving.",
+        "Zet de sectie duidelijk af of markeer die, zodat er niet verder wordt gestapeld of gereden.",
+        "Meld de afkeuring intern bij de verantwoordelijke voor de opslagveiligheid (de PRSES).",
+        "Plan het herstel of de vervanging op basis van de bevinding in het rapport.",
+        "Buig of las beschadigd staal niet zelf recht; dat herstelt de sterkte niet.",
+      ] },
+      { t: "h2", text: "Wie mag de stelling herstellen?" },
+      { t: "p", text: "Herstel is meer dan een onderdeel vervangen. Beschadigde dragende onderdelen zoals staanders en liggers horen te worden vervangen door originele onderdelen van de fabrikant, met het juiste type en de juiste sterkte. Een staander rechtbuigen of dichtlassen is geen betrouwbaar herstel: het staal is dan al vervormd en kan onder belasting alsnog bezwijken. Laat in twijfelgevallen de fabrikant of leverancier het juiste onderdeel bepalen." },
+      { t: "h2", text: "Herkeuring: weer veilig in gebruik" },
+      { t: "p", text: "Na herstel neemt u een afgekeurde sectie pas weer volledig in gebruik als is vastgesteld dat de schade daadwerkelijk is verholpen. In de praktijk laat u de herstelde sectie opnieuw beoordelen en legt u vast wat er is vervangen of gerepareerd. Zo bouwt u een dossier op waarmee u aantoont dat de stelling weer veilig is." },
+      { t: "note", text: "Bewaar de rapportage van de afkeuring en het herstel bij elkaar. Dat onderbouwt uw zorgplicht en helpt bij een eventuele controle of schademelding." },
+      { t: "h2", text: "Is een afkeuring wettelijk bindend?" },
+      { t: "p", text: "De classificatie zelf komt uit de norm NEN-EN 15635 en is geen wet. De onderliggende verplichting is dat wel: op grond van de Arbowet heeft de werkgever een zorgplicht voor een veilige werkomgeving, en het Arbobesluit vraagt om periodieke keuring en goed onderhoud van arbeidsmiddelen. Een afkeuring negeren betekent dus dat u een bekend veiligheidsrisico laat bestaan. Dat raakt zowel de veiligheid van uw medewerkers als uw verantwoordelijkheid als werkgever." },
+      { t: "h2", text: "Hoe RackCheck u verder helpt" },
+      { t: "p", text: "RackCheck beoordeelt uw stellingen onafhankelijk en los van herstel of verkoop. In het rapport staat per bevinding wat er aan de hand is, waar, met welke classificatie en welke vervolgstap eraan hangt. Acuut gevaar melden we direct op locatie. Zo weet u meteen welke secties door kunnen en welke aandacht nodig hebben." },
+    ],
+    faq: [
+      { q: "Moet mijn hele magazijn dicht na een afkeuring?", a: "Nee. Een afkeuring geldt voor de betreffende sectie of het betreffende onderdeel. Bij rood ontlast u die sectie; de overige stellingen kunnen in gebruik blijven zolang die niet zijn afgekeurd." },
+      { q: "Mag ik een afgekeurde staander laten rechtbuigen?", a: "Dat wordt afgeraden. Rechtbuigen of lassen herstelt de oorspronkelijke sterkte niet en kan het staal verder verzwakken. Vervanging door een origineel onderdeel is de veilige route." },
+      { q: "Hoe snel moet een rode bevinding hersteld zijn?", a: "Een rode sectie moet direct worden ontlast of afgezet en mag pas weer belast worden na herstel. De exacte hersteltermijn hangt af van de bevinding en de beschikbaarheid van onderdelen." },
+    ],
+    related: ["schadeclassificatie", "na-heftruckaanrijding", "staander-rechtbuigen-lassen"],
   },
 ];
 
