@@ -1,10 +1,10 @@
 {
   "publicationFrequency": "daily",
-  "lastSuccessfulRun": null,
-  "lastActionType": null,
-  "newArticlesSinceMaintenance": 0,
-  "totalNewArticles": 0,
+  "lastSuccessfulRun": "2026-09-15",
+  "lastActionType": "new",
+  "newArticlesSinceMaintenance": 1,
+  "totalNewArticles": 1,
   "totalMaintenanceUpdates": 0,
-  "lastPublishedUrl": null,
+  "lastPublishedUrl": "https://www.rackcheck.nl/kennisbank/magazijnstelling-afgekeurd/",
   "lastMaintenanceUrl": null
 }

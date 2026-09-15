@@ -36,7 +36,8 @@ locatiepagina's. **Deze routine maakt hier geen content voor.**
 
 ## PRIORITEIT 1 - Schade, urgentie en veiligheid
 
-- [ ] Wat gebeurt er als een magazijnstelling wordt afgekeurd?
+- [x] Wat gebeurt er als een magazijnstelling wordt afgekeurd?
+  - Gepubliceerd: 2026-09-15 -> https://www.rackcheck.nl/kennisbank/magazijnstelling-afgekeurd/
   - Primair zoekwoord: magazijnstelling afgekeurd
   - Secundaire zoekwoorden: stelling afgekeurd wat nu, rode kaart stellinginspectie
   - Zoekintentie: probleemgedreven / urgent
