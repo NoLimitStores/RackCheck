@@ -44,7 +44,8 @@ locatiepagina's. **Deze routine maakt hier geen content voor.**
   - Gewenste CTA: inspectie aanvragen
   - Opmerking: raakt schadeclassificatie; leg de focus op het vervolgtraject (ontlasten, herstel, herkeuring), niet op de kleurcodes zelf.
 
-- [ ] Verbogen ligger in een magazijnstelling: wanneer is deze onveilig?
+- [x] Verbogen ligger in een magazijnstelling: wanneer is deze onveilig?
+  - Gepubliceerd: 2026-09-16 -> https://www.rackcheck.nl/kennisbank/verbogen-ligger/
   - Primair zoekwoord: verbogen ligger magazijnstelling
   - Secundaire zoekwoorden: doorgebogen ligger, ligger vervangen stelling
   - Zoekintentie: probleemgedreven
