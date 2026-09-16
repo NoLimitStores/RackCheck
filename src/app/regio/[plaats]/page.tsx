@@ -25,10 +25,22 @@ export async function generateMetadata({
   const { plaats } = await params;
   const regio = getRegio(plaats);
   if (!regio) return {};
+  const title =
+    regio.metaTitle ?? `Stellinginspectie ${regio.stad} | Onafhankelijke keuring`;
+  const description =
+    regio.metaDescription ??
+    `Onafhankelijke stellinginspectie in ${regio.stad} en omgeving (${regio.provincie}). RackCheck keurt uw magazijnstellingen met een helder rapport binnen 24 uur.`;
+  const url = `/regio/${regio.slug}/`;
   return {
-    title: `Stellinginspectie ${regio.stad} | Onafhankelijke keuring`,
-    description: `Onafhankelijke stellinginspectie in ${regio.stad} en omgeving (${regio.provincie}). RackCheck keurt uw magazijnstellingen met een helder rapport binnen 24 uur.`,
-    alternates: { canonical: `/regio/${regio.slug}/` },
+    title,
+    description,
+    alternates: { canonical: url },
+    openGraph: {
+      title,
+      description,
+      url,
+      images: [{ url: "/images/magazijn-palletstellingen-overzicht.jpg" }],
+    },
   };
 }
 
