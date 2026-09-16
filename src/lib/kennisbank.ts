@@ -283,7 +283,7 @@ export const artikelen: Artikel[] = [
       { q: "Wie bepaalt de classificatie?", a: "De inspecteur, op basis van de aard en de plaats van de schade en de gevolgen voor de draagkracht. Bij twijfel wordt naar de veilige kant geclassificeerd." },
       { q: "Wat als ik een oranje punt laat liggen?", a: "Dan groeit de kans dat het bij de volgende belasting of aanrijding verergert naar rood. Oranje is een uitnodiging om gepland te herstellen, niet om te negeren." },
     ],
-    related: ["informatie-in-inspectierapport", "na-heftruckaanrijding", "magazijnstelling-afgekeurd", "duidelijk-inspectierapport"],
+    related: ["informatie-in-inspectierapport", "na-heftruckaanrijding", "magazijnstelling-afgekeurd", "duidelijk-inspectierapport", "verbogen-ligger"],
   },
   {
     slug: "na-heftruckaanrijding",
@@ -356,7 +356,7 @@ export const artikelen: Artikel[] = [
       { q: "Worden ook de hoogste niveaus beoordeeld?", a: "De inspecteur beoordeelt alle bereikbare onderdelen visueel, ook de hogere niveaus voor zover die veilig te beoordelen zijn vanaf de vloer." },
       { q: "Wordt de vloer ook meegenomen?", a: "De staat van de vloer rond de voetplaten en verankering wordt meegenomen, omdat die de stabiliteit beïnvloedt." },
     ],
-    related: ["schadeclassificatie", "belastingbord", "checklist-veilige-magazijnstelling"],
+    related: ["schadeclassificatie", "belastingbord", "checklist-veilige-magazijnstelling", "verbogen-ligger"],
   },
   {
     slug: "belastingbord",
@@ -493,7 +493,7 @@ export const artikelen: Artikel[] = [
       { q: "Een hele kleine kras, moet die ook vervangen?", a: "Niet per se. Oppervlakkige gebruikssporen zonder vervorming zijn vaak groen. Het gaat om vervorming, knik of scheur in een dragend onderdeel." },
       { q: "Waar haal ik een vervangende staander?", a: "Afhankelijk van het merk via de fabrikant, dealer of een geschikte leverancier. Bij een onbekend of niet meer leverbaar merk zoeken we naar een technisch verantwoord alternatief." },
     ],
-    related: ["na-heftruckaanrijding", "schadeclassificatie", "stelling-aangereden"],
+    related: ["na-heftruckaanrijding", "schadeclassificatie", "stelling-aangereden", "verbogen-ligger"],
   },
   {
     slug: "nulinspectie",
@@ -721,6 +721,66 @@ export const artikelen: Artikel[] = [
       { q: "Hoe snel moet een rode bevinding hersteld zijn?", a: "Een rode sectie moet direct worden ontlast of afgezet en mag pas weer belast worden na herstel. De exacte hersteltermijn hangt af van de bevinding en de beschikbaarheid van onderdelen." },
     ],
     related: ["schadeclassificatie", "na-heftruckaanrijding", "staander-rechtbuigen-lassen"],
+  },
+  {
+    slug: "verbogen-ligger",
+    category: "Schade en preventie",
+    title: "Verbogen ligger in een magazijnstelling: wanneer is deze onveilig?",
+    h1: "Verbogen ligger in een magazijnstelling: wanneer is deze onveilig?",
+    metaTitle: "Verbogen ligger magazijnstelling: wanneer onveilig?",
+    metaDescription:
+      "Een ligger die doorbuigt onder belasting is niet altijd een probleem, blijvende vervorming wel. Lees hoe u het verschil herkent en wat u dan moet doen.",
+    excerpt:
+      "Lichte doorbuiging onder belasting hoort erbij, een blijvende knik niet. Zo herkent u het verschil en weet u wanneer ontlasten nodig is.",
+    answer:
+      "Een lichte, elastische doorbuiging van een ligger onder belasting is normaal en hoort bij het ontwerp van de stelling: de ligger veert enigszins door en komt weer recht zodra de last eraf gaat. Een ligger is onveilig zodra de vervorming blijvend is, dus zichtbaar blijft nadat de sectie is ontlast, of wanneer er een duidelijke knik, deuk of beschadigde inhaakverbinding zichtbaar is. Ontlast de sectie in dat geval direct en laat de ligger beoordelen door een deskundige. De precieze toegestane doorbuiging hangt af van de liggerlengte en staat in de fabrikantopgave en NEN-EN 15635; dat is aan de inspecteur om te beoordelen, niet iets om zelf in te schatten.",
+    updated: "2026-09-16",
+    image: {
+      src: "/images/praktijk/ligger-inhaakverbinding-detail.jpg",
+      alt: "Ligger van een palletstelling ingehaakt in de perforatie van de stellingstaander, met de haken en het profiel goed zichtbaar",
+      caption: "De inhaakverbinding is een van de plekken waar een verbogen of losse ligger het eerst zichtbaar wordt.",
+    },
+    blocks: [
+      { t: "p", text: "Een ligger die er niet helemaal recht meer uitziet, roept al snel de vraag op of de sectie nog wel veilig belast mag worden. Het antwoord hangt af van het soort vervorming: een lichte, tijdelijke doorbuiging onder belasting is iets anders dan een blijvende knik." },
+      { t: "h2", text: "Doorbuiging onder belasting is normaal" },
+      { t: "p", text: "Liggers zijn ontworpen om onder een gevulde pallet enigszins door te veren. Die elastische doorbuiging zit in de constructieberekening verwerkt en is op zich geen teken van gevaar. Het kenmerk van elastische doorbuiging is dat de ligger weer recht komt zodra de last eraf gaat, bijvoorbeeld wanneer de pallet wordt weggehaald." },
+      { t: "note", text: "Kort gezegd: veert de ligger terug zodra de sectie leeg is, dan gaat het om normale, elastische doorbuiging." },
+      { t: "h2", text: "Wanneer wordt het een probleem?" },
+      { t: "p", text: "Een ligger vraagt om beoordeling zodra de vervorming niet meer verdwijnt of duidelijk verder gaat dan een lichte welving. Let op de volgende signalen:" },
+      { t: "ul", items: [
+        "De ligger blijft zichtbaar doorgebogen of scheef, ook nadat de sectie is ontlast.",
+        "Er is een duidelijke knik, deuk of plooi in het profiel te zien, meestal bij het midden of bij de inhaakverbinding.",
+        "De inhaakverbinding met de staander is beschadigd, uitgerekt of zit niet meer goed vast.",
+        "De ligger ligt zichtbaar scheef ten opzichte van de andere liggers in hetzelfde niveau.",
+      ] },
+      { t: "h2", text: "Oorzaak: belasting of aanrijding?" },
+      { t: "p", text: "Het onderscheid tussen beide oorzaken helpt om de juiste vervolgstap te bepalen." },
+      { t: "ul", items: [
+        "Overbelasting: ontstaat geleidelijk, bijvoorbeeld door pallets die zwaarder zijn dan het belastingbord toestaat of door een ongelijkmatig gevulde pallet. De doorbuiging is dan vaak over de hele lengte van de ligger zichtbaar en treedt soms op meerdere liggers in dezelfde sectie tegelijk op.",
+        "Aanrijdschade: ontstaat plotseling door een stoot van een heftruck of lading. De vervorming zit dan vaak lokaal, bijvoorbeeld een deuk of knik dichtbij een van de uiteinden, en is meestal aan één ligger te zien.",
+      ] },
+      { t: "p", text: "Bij twijfel over de oorzaak is dat voor de veiligheid van de sectie niet doorslaggevend: in beide gevallen geldt dat blijvende vervorming om beoordeling vraagt." },
+      { t: "h2", text: "Wat moet u doen bij een verbogen ligger?" },
+      { t: "ol", items: [
+        "Meld de bevinding bij de verantwoordelijke voor de opslagveiligheid (de PRSES).",
+        "Ontlast de sectie of het betreffende liggerniveau bij twijfel over de veiligheid, en zet die af zodat er niet verder wordt gestapeld.",
+        "Buig de ligger niet zelf terug. Net als bij een staander is het staal op de plek van de vervorming al aangetast; terugbuigen herstelt de sterkte niet.",
+        "Laat de ligger beoordelen door een deskundige, die de doorbuiging vergelijkt met wat voor die liggerlengte is toegestaan.",
+        "Vervang de ligger bij blijvende vervorming door een origineel of gelijkwaardig onderdeel van het juiste type en de juiste lengte.",
+        "Laat de sectie na vervanging herbeoordelen voordat u die weer volledig belast.",
+      ] },
+      { t: "note", text: "Dezelfde regel als bij een staander geldt voor een ligger: rechtbuigen of lassen herstelt de oorspronkelijke sterkte niet en is geen veilige reparatie." },
+      { t: "h2", text: "Wie bepaalt of de doorbuiging toegestaan is?" },
+      { t: "p", text: "De toegestane doorbuiging verschilt per liggerlengte, profiel en merk, en staat in de fabrikantopgave en in NEN-EN 15635. Dat maakt het geen kwestie van op het oog inschatten: een deskundige inspecteur meet de doorbuiging en toetst die aan de gegevens die bij die specifieke ligger horen. Zonder die vergelijking is niet met zekerheid te zeggen of een doorbuiging nog binnen de marge valt." },
+      { t: "h2", text: "Hoe RackCheck dit beoordeelt" },
+      { t: "p", text: "Bij een inspectie beoordelen we liggers op doorbuiging, vervorming en de staat van de inhaakverbinding, en vergelijken we opvallende bevindingen met wat voor die ligger toelaatbaar is. Een verbogen ligger die de veiligheid raakt, classificeren we als oranje of rood, met een concrete vervolgstap in het rapport." },
+    ],
+    faq: [
+      { q: "Moet ik een lichte doorbuiging altijd melden?", a: "Een lichte, elastische doorbuiging die verdwijnt zodra de sectie leeg is, hoeft u niet te melden. Blijft de ligger zichtbaar vervormd, of ziet u een knik of beschadigde inhaakverbinding, meld dat dan wel bij de verantwoordelijke." },
+      { q: "Mag ik zelf inschatten of een ligger nog veilig is?", a: "Bij een lichte, tijdelijke doorbuiging kunt u dat als medewerker signaleren. Of de vervorming binnen de toegestane marge valt, is aan een deskundige om te beoordelen op basis van de liggerlengte en de fabrikantopgave." },
+      { q: "Kan één verbogen ligger de hele sectie onveilig maken?", a: "Dat hangt af van de plek en de ernst van de vervorming. Een deskundige beoordeelt of alleen dat liggerniveau ontlast moet worden of dat de hele sectie aandacht nodig heeft." },
+    ],
+    related: ["schadeclassificatie", "staander-rechtbuigen-lassen", "na-heftruckaanrijding", "belastingbord"],
   },
 ];
 
