@@ -736,9 +736,9 @@ export const artikelen: Artikel[] = [
       "Een lichte, elastische doorbuiging van een ligger onder belasting is normaal en hoort bij het ontwerp van de stelling: de ligger veert enigszins door en komt weer recht zodra de last eraf gaat. Een ligger is onveilig zodra de vervorming blijvend is, dus zichtbaar blijft nadat de sectie is ontlast, of wanneer er een duidelijke knik, deuk of beschadigde inhaakverbinding zichtbaar is. Ontlast de sectie in dat geval direct en laat de ligger beoordelen door een deskundige. De precieze toegestane doorbuiging hangt af van de liggerlengte en staat in de fabrikantopgave en NEN-EN 15635; dat is aan de inspecteur om te beoordelen, niet iets om zelf in te schatten.",
     updated: "2026-09-16",
     image: {
-      src: "/images/praktijk/ligger-inhaakverbinding-detail.jpg",
-      alt: "Ligger van een palletstelling ingehaakt in de perforatie van de stellingstaander, met de haken en het profiel goed zichtbaar",
-      caption: "De inhaakverbinding is een van de plekken waar een verbogen of losse ligger het eerst zichtbaar wordt.",
+      src: "/images/praktijk/ligger-geknikt-overbelast.jpg",
+      alt: "Stalen steunbalk die zichtbaar is doorgebogen en geknikt onder een zwaar beladen bordesvloer",
+      caption: "Voorbeeld van blijvende vervorming: deze balk is duidelijk geknikt onder de last van de platen erboven en veert niet meer terug.",
     },
     blocks: [
       { t: "p", text: "Een ligger die er niet helemaal recht meer uitziet, roept al snel de vraag op of de sectie nog wel veilig belast mag worden. Het antwoord hangt af van het soort vervorming: een lichte, tijdelijke doorbuiging onder belasting is iets anders dan een blijvende knik." },

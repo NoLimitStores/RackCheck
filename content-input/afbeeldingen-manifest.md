@@ -19,6 +19,7 @@ Locatie: `public/images/praktijk/` -> pad in code: `/images/praktijk/<bestand>`
 | inrijstelling-drive-in.jpg | Lege inrijstelling (drive-in) met zichtbare geleidingsprofielen | inrijstelling, drive-in | Lege inrijstelling met geleidingsprofielen voor pallets |
 | doorrolstelling-rollen.jpg | Detail van rollenbaan in een doorrolstelling | doorrolstelling, live storage | Rollenbaan in een doorrolstelling van dichtbij |
 | grootvakstelling-bordesvloer.jpg | Grootvakstelling met banden, met stalen bordesvloer erboven | grootvakstelling, bordes/entresol, banden | Grootvakstelling met autobanden en een stalen bordesvloer erboven |
+| ligger-geknikt-overbelast.jpg | Stalen steunbalk onder een bordesvloer, zichtbaar doorgebogen en geknikt onder een zware last van gestapelde platen | verbogen ligger, doorbuiging, overbelasting, blijvende vervorming | Stalen steunbalk die zichtbaar is doorgebogen en geknikt onder een zwaar beladen bordesvloer |
 
 ## Regels
 - Open de foto voordat je hem plaatst; vertrouw niet alleen op de bestandsnaam.
