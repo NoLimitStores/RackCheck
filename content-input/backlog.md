@@ -66,7 +66,8 @@ locatiepagina's. **Deze routine maakt hier geen content voor.**
   - Gewenste CTA: inspectie aanvragen
   - Opmerking: raakt staander-rechtbuigen-lassen; focus hier op de afweging vervangen vs. herstellen en wie dat mag beoordelen.
 
-- [ ] Beschadigde schoor in een palletstelling: wat moet u doen?
+- [x] Beschadigde schoor in een palletstelling: wat moet u doen?
+  - Gepubliceerd: 2026-09-18 -> https://www.rackcheck.nl/kennisbank/beschadigde-schoor/
   - Primair zoekwoord: beschadigde schoor palletstelling
   - Secundaire zoekwoorden: diagonaal stelling kapot, schoor vervangen stelling
   - Zoekintentie: probleemgedreven
