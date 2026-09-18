@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { pageAlternates } from "@/i18n/routes";
 import Image from "next/image";
 import { site } from "@/lib/site";
 import PageHeader from "@/components/PageHeader";
@@ -12,7 +13,7 @@ export const metadata: Metadata = {
   title: "Over RackCheck: onafhankelijke stellinginspecties",
   description:
     "RackCheck staat voor onafhankelijke stellinginspecties zonder verkoopgedreven afkeur. Lees onze visie, werkwijze en kwaliteitsprincipes.",
-  alternates: { canonical: "/over-rackcheck/" },
+  alternates: pageAlternates("about"),
 };
 
 const principes = [

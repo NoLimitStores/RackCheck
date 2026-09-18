@@ -3,6 +3,7 @@ import { site } from "@/lib/site";
 import { artikelen } from "@/lib/kennisbank";
 import { stellingtypen } from "@/lib/stellingtypen";
 import { regios } from "@/lib/regios";
+import { pages as i18nPages, defaultLocale, alternatesFor, type Locale } from "@/i18n/routes";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = site.url.replace(/\/$/, "");
@@ -54,6 +55,22 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.6,
     })
   );
+
+  // Vertaalde pagina's (en/de/fr) met wederzijdse hreflang-verwijzingen.
+  i18nPages.forEach((page) => {
+    const { languages } = alternatesFor(page.id, site.url);
+    page.available
+      .filter((l): l is Locale => l !== defaultLocale)
+      .forEach((locale) => {
+        entries.push({
+          url: `${base}${page.paths[locale]}`,
+          lastModified: now,
+          changeFrequency: "monthly",
+          priority: page.id === "home" ? 0.9 : 0.7,
+          alternates: { languages },
+        });
+      });
+  });
 
   return entries;
 }

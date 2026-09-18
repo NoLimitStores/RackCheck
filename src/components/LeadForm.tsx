@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { site } from "@/lib/site";
 
@@ -41,16 +42,44 @@ const WEB3FORMS_ACCESS_KEY = "73bd0fef-dc68-4b3c-b68e-fdf1bca0b47f";
 
 type Status = "idle" | "submitting" | "error";
 
+/** Vertaalbare teksten voor het (gelokaliseerde) kernformulier. */
+export type FormTexts = {
+  company: string;
+  name: string;
+  email: string;
+  phone: string;
+  reason: string;
+  message: string;
+  messagePlaceholder: string;
+  choose: string;
+  privacyBefore: string;
+  privacyLink: string;
+  privacyAfter: string;
+  submit: string;
+  submitting: string;
+  successTitle: string;
+  successText: string;
+  errorText: string;
+  reasonOptions: string[];
+};
+
 export default function LeadForm({
   variant = "full",
   defaultReden,
   subject = "Nieuwe inspectieaanvraag via RackCheck",
   formName = "Inspectieaanvraag",
+  t,
+  locale = "nl",
+  privacyHref = "/privacy/",
 }: {
   variant?: "full" | "compact";
   defaultReden?: string;
   subject?: string;
   formName?: string;
+  /** Aanwezig = gelokaliseerd kernformulier. Afwezig = Nederlands volledig formulier. */
+  t?: FormTexts;
+  locale?: string;
+  privacyHref?: string;
 }) {
   const router = useRouter();
   const [status, setStatus] = useState<Status>("idle");
@@ -91,9 +120,11 @@ export default function LeadForm({
 
     const formData = new FormData(event.currentTarget);
 
+    const localized = Boolean(t);
+
     // Honeypot: als het (verborgen) botcheck-veld is ingevuld, is het een bot.
     if (formData.get("botcheck")) {
-      if (variant === "full") {
+      if (variant === "full" && !localized) {
         router.push("/bedankt/");
         return;
       }
@@ -105,6 +136,7 @@ export default function LeadForm({
     formData.append("subject", subject);
     formData.append("from_name", "RackCheck website");
     formData.append("aanvraagtype", formName);
+    formData.append("taal", locale);
     formData.append("pagina_url", window.location.href);
     formData.append("pagina_titel", document.title);
     formData.append("verzonden_op", new Date().toLocaleString("nl-NL"));
@@ -117,7 +149,9 @@ export default function LeadForm({
       });
       const result = await res.json();
       if (result.success) {
-        if (variant === "full") {
+        // Gelokaliseerde formulieren tonen altijd een inline succesmelding
+        // (er is nog geen vertaalde bedankpagina).
+        if (variant === "full" && !localized) {
           router.push("/bedankt/");
           return;
         }
@@ -138,12 +172,70 @@ export default function LeadForm({
             <path d="M5 13l4 4L19 7" />
           </svg>
         </span>
-        <h3 className="mt-3 text-lg font-bold text-navy-950">Bedankt voor uw aanvraag</h3>
+        <h3 className="mt-3 text-lg font-bold text-navy-950">
+          {t ? t.successTitle : "Bedankt voor uw aanvraag"}
+        </h3>
         <p className="mx-auto mt-2 max-w-md text-sm text-navy-700">
-          We hebben uw bericht ontvangen en nemen binnen één werkdag contact met u op.
-          Is er sprake van urgente schade? Bel ons dan direct op {site.phoneDisplay}.
+          {t
+            ? `${t.successText} ${site.phoneDisplay}`
+            : `We hebben uw bericht ontvangen en nemen binnen één werkdag contact met u op. Is er sprake van urgente schade? Bel ons dan direct op ${site.phoneDisplay}.`}
         </p>
       </div>
+    );
+  }
+
+  // Gelokaliseerd kernformulier (EN/DE/FR): dezelfde verzendlogica en
+  // Web3Forms-koppeling, met vertaalde labels en een compacte veldenset.
+  if (t) {
+    return (
+      <form onSubmit={handleSubmit} className="grid gap-4 sm:grid-cols-2">
+        <input type="checkbox" name="botcheck" tabIndex={-1} autoComplete="off" aria-hidden="true" className="hidden" />
+        <Field label={t.company} name="bedrijf" autoComplete="organization" required />
+        <Field label={t.name} name="naam" autoComplete="name" required />
+        <Field label={t.email} name="email" type="email" autoComplete="email" required />
+        <Field label={t.phone} name="telefoon" type="tel" autoComplete="tel" required />
+
+        <div className="sm:col-span-2">
+          <Label htmlFor="reden">{t.reason}</Label>
+          <select id="reden" name="redenAanvraag" defaultValue={defaultReden ?? ""} className={inputClass} required>
+            <option value="" disabled>{t.choose}</option>
+            {t.reasonOptions.map((r) => (
+              <option key={r} value={r}>{r}</option>
+            ))}
+          </select>
+        </div>
+
+        <div className="sm:col-span-2">
+          <Label htmlFor="toelichting">{t.message}</Label>
+          <textarea id="toelichting" name="toelichting" rows={4} placeholder={t.messagePlaceholder} className={inputClass} />
+        </div>
+
+        <div className="sm:col-span-2">
+          <label className="flex items-start gap-2.5 text-sm text-navy-700">
+            <input type="checkbox" name="privacy" required className="mt-0.5 h-4 w-4 rounded border-navy-300 text-brand-600 focus:ring-brand-500" />
+            <span>
+              {t.privacyBefore}
+              <Link href={privacyHref} className="font-semibold text-brand-700 underline">{t.privacyLink}</Link>
+              {t.privacyAfter}
+            </span>
+          </label>
+        </div>
+
+        <div className="sm:col-span-2">
+          <button
+            type="submit"
+            disabled={status === "submitting"}
+            className="inline-flex w-full items-center justify-center rounded bg-brand-600 px-6 py-3.5 text-sm font-bold text-white transition-colors hover:bg-brand-700 disabled:cursor-wait disabled:opacity-70 sm:w-auto"
+          >
+            {status === "submitting" ? t.submitting : t.submit}
+          </button>
+          {status === "error" && (
+            <p role="alert" className="mt-3 rounded border border-signal-rood/40 bg-signal-rood/10 px-4 py-3 text-sm font-semibold text-navy-900">
+              {t.errorText}
+            </p>
+          )}
+        </div>
+      </form>
     );
   }
 
@@ -260,7 +352,7 @@ export default function LeadForm({
           <span>
             Ik ga ermee akkoord dat mijn gegevens worden gebruikt om contact met mij
             op te nemen over deze aanvraag. Zie de{" "}
-            <a href="/privacy/" className="font-semibold text-brand-700 underline">privacyverklaring</a>.
+            <Link href="/privacy/" className="font-semibold text-brand-700 underline">privacyverklaring</Link>.
           </span>
         </label>
       </div>

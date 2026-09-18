@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { pageAlternates } from "@/i18n/routes";
 import Link from "next/link";
 import Image from "next/image";
 import { site } from "@/lib/site";
@@ -22,7 +23,7 @@ export const metadata: Metadata = {
   title: { absolute: "RackCheck | Professionele magazijninspecties in Nederland" },
   description:
     "RackCheck is dé specialist in professionele magazijninspecties in Nederland. Onafhankelijke stellinginspecties conform NEN-EN 15635 en NPR 5055, met een rapport binnen 24 uur.",
-  alternates: { canonical: "/" },
+  alternates: pageAlternates("home"),
 };
 
 const serviceSchema = {

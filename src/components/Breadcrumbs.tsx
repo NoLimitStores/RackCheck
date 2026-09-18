@@ -11,11 +11,15 @@ export type Crumb = { name: string; href: string };
 export default function Breadcrumbs({
   items,
   dark = false,
+  home = { name: "Home", href: "/" },
 }: {
   items: Crumb[];
   dark?: boolean;
+  /** Beginkruimel; standaard de Nederlandse home. Voor vertaalde pagina's
+   * geef je hier de home van de betreffende taal mee. */
+  home?: Crumb;
 }) {
-  const all: Crumb[] = [{ name: "Home", href: "/" }, ...items];
+  const all: Crumb[] = [home, ...items];
 
   const schema = {
     "@context": "https://schema.org",

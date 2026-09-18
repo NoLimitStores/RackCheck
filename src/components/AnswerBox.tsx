@@ -5,15 +5,18 @@
 export default function AnswerBox({
   question,
   children,
+  label = "Kort antwoord",
 }: {
   question?: boolean;
   children: React.ReactNode;
+  /** Label boven het antwoord; standaard Nederlands, vertaalbaar per taal. */
+  label?: string;
 }) {
   return (
     <div className="rounded-lg border-l-4 border-brand-500 bg-navy-50 p-5">
       {question && (
         <p className="text-sm font-bold uppercase tracking-wide text-brand-700">
-          Kort antwoord
+          {label}
         </p>
       )}
       <p className="mt-1 text-[1.0625rem] leading-relaxed text-navy-900">{children}</p>

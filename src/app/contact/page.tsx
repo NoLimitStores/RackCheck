@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { pageAlternates } from "@/i18n/routes";
 import Image from "next/image";
 import { site } from "@/lib/site";
 import PageHeader from "@/components/PageHeader";
@@ -11,7 +12,7 @@ export const metadata: Metadata = {
   title: "Contact: neem contact op met RackCheck",
   description:
     "Neem contact op met RackCheck voor een onafhankelijke stellinginspectie. Bel, WhatsApp of mail ons, of vraag direct een inspectie aan.",
-  alternates: { canonical: "/contact/" },
+  alternates: pageAlternates("contact"),
 };
 
 export default function Page() {

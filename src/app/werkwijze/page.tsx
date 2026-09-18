@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { pageAlternates } from "@/i18n/routes";
 import Link from "next/link";
 import Image from "next/image";
 import { site } from "@/lib/site";
@@ -15,7 +16,7 @@ export const metadata: Metadata = {
   title: "Werkwijze: van aanvraag tot rapport in zeven stappen",
   description:
     "Zo verloopt een stellinginspectie bij RackCheck: intake, planning, inspectie op locatie, directe melding bij gevaar, rapport binnen 24 uur en eventueel herstelvoorstel.",
-  alternates: { canonical: "/werkwijze/" },
+  alternates: pageAlternates("how-we-work"),
 };
 
 const howToSchema = {

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { pageAlternates } from "@/i18n/routes";
 import Image from "next/image";
 import { site } from "@/lib/site";
 import PageHeader from "@/components/PageHeader";
@@ -10,7 +11,7 @@ export const metadata: Metadata = {
   title: "Inspectie aanvragen: onafhankelijke stellinginspectie",
   description:
     "Vraag een onafhankelijke stellinginspectie aan bij RackCheck. Vul het formulier in, dan nemen we binnen één werkdag contact op. Bij spoed belt u ons direct.",
-  alternates: { canonical: "/inspectie-aanvragen/" },
+  alternates: pageAlternates("request"),
   robots: { index: true, follow: true },
 };
 

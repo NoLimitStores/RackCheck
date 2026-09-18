@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { pageAlternates } from "@/i18n/routes";
 import Link from "next/link";
 import Image from "next/image";
 import { site } from "@/lib/site";
@@ -20,7 +21,7 @@ export const metadata: Metadata = {
   title: "Stellinginspectie: onafhankelijke keuring van magazijnstellingen",
   description:
     "RackCheck voert onafhankelijke stellinginspecties uit conform NEN-EN 15635. Wat wordt gecontroleerd, wanneer inspectie nodig is en wat er in het rapport staat.",
-  alternates: { canonical: "/stellinginspectie/" },
+  alternates: pageAlternates("inspection"),
 };
 
 const faq = [

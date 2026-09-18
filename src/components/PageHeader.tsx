@@ -7,17 +7,19 @@ export default function PageHeader({
   crumbs,
   eyebrow,
   children,
+  home,
 }: {
   title: string;
   intro?: string;
   crumbs: Crumb[];
   eyebrow?: string;
   children?: React.ReactNode;
+  home?: Crumb;
 }) {
   return (
     <section className="bg-navy-950 text-white">
       <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6 sm:py-16">
-        <Breadcrumbs items={crumbs} dark />
+        <Breadcrumbs items={crumbs} dark home={home} />
         {eyebrow && (
           <p className="mt-6 text-sm font-bold uppercase tracking-wide text-brand-400">
             {eyebrow}

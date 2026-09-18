@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { pageAlternates } from "@/i18n/routes";
 import Link from "next/link";
 import Image from "next/image";
 import { priceIncludes, priceFactors, startingPrice } from "@/lib/pricing";
@@ -14,7 +15,7 @@ export const metadata: Metadata = {
   title: "Prijzen stellinginspectie: inspectie vanaf €395 per jaar",
   description:
     "Een stellinginspectie bij RackCheck kost vanaf €395 per jaar excl. btw. De exacte prijs bepalen we op basis van uw situatie en bevestigen we vooraf. Bekijk wat inbegrepen is.",
-  alternates: { canonical: "/prijzen/" },
+  alternates: pageAlternates("pricing"),
 };
 
 const faq = [
