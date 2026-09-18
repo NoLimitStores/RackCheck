@@ -20,6 +20,7 @@ Locatie: `public/images/praktijk/` -> pad in code: `/images/praktijk/<bestand>`
 | doorrolstelling-rollen.jpg | Detail van rollenbaan in een doorrolstelling | doorrolstelling, live storage | Rollenbaan in een doorrolstelling van dichtbij |
 | grootvakstelling-bordesvloer.jpg | Grootvakstelling met banden, met stalen bordesvloer erboven | grootvakstelling, bordes/entresol, banden | Grootvakstelling met autobanden en een stalen bordesvloer erboven |
 | ligger-geknikt-overbelast.jpg | Stalen steunbalk onder een bordesvloer, zichtbaar doorgebogen en geknikt onder een zware last van gestapelde platen | verbogen ligger, doorbuiging, overbelasting, blijvende vervorming | Stalen steunbalk die zichtbaar is doorgebogen en geknikt onder een zwaar beladen bordesvloer |
+| schoor-detail-palletstelling.jpg | Detail van een schoor (diagonale verstijving) tussen twee stellingstaanders, met een houten balk op de voorgrond | schoor, verstijving, staanderframe, palletstelling | Detail van een schoor tussen twee staanders van een palletstelling |
 
 ## Regels
 - Open de foto voordat je hem plaatst; vertrouw niet alleen op de bestandsnaam.

@@ -283,7 +283,7 @@ export const artikelen: Artikel[] = [
       { q: "Wie bepaalt de classificatie?", a: "De inspecteur, op basis van de aard en de plaats van de schade en de gevolgen voor de draagkracht. Bij twijfel wordt naar de veilige kant geclassificeerd." },
       { q: "Wat als ik een oranje punt laat liggen?", a: "Dan groeit de kans dat het bij de volgende belasting of aanrijding verergert naar rood. Oranje is een uitnodiging om gepland te herstellen, niet om te negeren." },
     ],
-    related: ["informatie-in-inspectierapport", "na-heftruckaanrijding", "magazijnstelling-afgekeurd", "duidelijk-inspectierapport", "verbogen-ligger"],
+    related: ["informatie-in-inspectierapport", "na-heftruckaanrijding", "magazijnstelling-afgekeurd", "duidelijk-inspectierapport", "verbogen-ligger", "beschadigde-schoor"],
   },
   {
     slug: "na-heftruckaanrijding",
@@ -320,7 +320,7 @@ export const artikelen: Artikel[] = [
       { q: "De stelling staat nog overeind, is dat niet genoeg?", a: "Nee. Een staander kan een groot deel van zijn draagkracht verliezen zonder direct om te vallen. Onder volgende belasting of bij een nieuwe stoot kan het alsnog misgaan." },
       { q: "Kan ik de sectie na beoordeling weer gebruiken?", a: "Als de deskundige de sectie groen classificeert wel. Bij oranje of rood volgt eerst herstel of vervanging." },
     ],
-    related: ["stelling-aangereden", "staander-rechtbuigen-lassen", "magazijnstelling-afgekeurd", "schadeclassificatie"],
+    related: ["stelling-aangereden", "staander-rechtbuigen-lassen", "magazijnstelling-afgekeurd", "schadeclassificatie", "beschadigde-schoor"],
   },
   {
     slug: "wat-wordt-gecontroleerd",
@@ -493,7 +493,7 @@ export const artikelen: Artikel[] = [
       { q: "Een hele kleine kras, moet die ook vervangen?", a: "Niet per se. Oppervlakkige gebruikssporen zonder vervorming zijn vaak groen. Het gaat om vervorming, knik of scheur in een dragend onderdeel." },
       { q: "Waar haal ik een vervangende staander?", a: "Afhankelijk van het merk via de fabrikant, dealer of een geschikte leverancier. Bij een onbekend of niet meer leverbaar merk zoeken we naar een technisch verantwoord alternatief." },
     ],
-    related: ["na-heftruckaanrijding", "schadeclassificatie", "stelling-aangereden", "verbogen-ligger"],
+    related: ["na-heftruckaanrijding", "schadeclassificatie", "stelling-aangereden", "verbogen-ligger", "beschadigde-schoor"],
   },
   {
     slug: "nulinspectie",
@@ -781,6 +781,55 @@ export const artikelen: Artikel[] = [
       { q: "Kan één verbogen ligger de hele sectie onveilig maken?", a: "Dat hangt af van de plek en de ernst van de vervorming. Een deskundige beoordeelt of alleen dat liggerniveau ontlast moet worden of dat de hele sectie aandacht nodig heeft." },
     ],
     related: ["schadeclassificatie", "staander-rechtbuigen-lassen", "na-heftruckaanrijding", "belastingbord"],
+  },
+  {
+    slug: "beschadigde-schoor",
+    category: "Schade en preventie",
+    title: "Beschadigde schoor in een palletstelling: wat moet u doen?",
+    h1: "Beschadigde schoor in een palletstelling: wat moet u doen?",
+    metaTitle: "Beschadigde schoor in een palletstelling: wat nu?",
+    metaDescription:
+      "Een beschadigde schoor tast de stabiliteit van een stellingframe aan. Lees hoe u de schade herkent, waarom snel handelen nodig is en wat de veilige vervolgstap is.",
+    excerpt:
+      "Waarom een beschadigde schoor de stabiliteit van het hele staanderframe raakt en wat u dan het beste doet.",
+    answer:
+      "Een beschadigde schoor mag u niet negeren. Schoren verbinden de staanders van een stellingframe met elkaar en houden dat frame stabiel, ook zijwaarts en in de diepte. Ziet u een knik, scheur, losse of ontbrekende bevestiging, meld dit dan bij de verantwoordelijke en laat de sectie beoordelen door een deskundige inspecteur. Die bepaalt of ontlasten nodig is en of de schoor vervangen moet worden. Buig of las een beschadigde schoor nooit zelf recht.",
+    updated: "2026-09-18",
+    image: {
+      src: "/images/praktijk/schoor-detail-palletstelling.jpg",
+      alt: "Detail van een schoor tussen twee staanders van een palletstelling",
+    },
+    blocks: [
+      { t: "p", text: "Schoren vallen minder snel op dan een verbogen ligger of een geraakte staander. Ze zitten vaak aan de achterzijde van het frame, tussen de gangpaden in, en zijn tijdens het dagelijks werk lastig te zien. Toch is een beschadigde schoor geen kosmetisch probleem: het raakt de stabiliteit van de hele stellingsectie." },
+      { t: "h2", text: "Wat doet een schoor in een stellingframe?" },
+      { t: "p", text: "Een stellingframe bestaat uit twee staanders die met horizontale en diagonale schoren aan elkaar zijn bevestigd. Samen vormen staanders en schoren een stijf geheel: de schoren voorkomen dat de staanders naar elkaar toe of van elkaar af bewegen en dat het frame scheef trekt onder belasting of bij een lichte stoot. Zonder intacte schoren verliest het frame een groot deel van zijn zijwaartse stabiliteit, ook als de staanders zelf onbeschadigd lijken." },
+      { t: "h2", text: "Hoe herkent u schade aan een schoor?" },
+      { t: "ul", items: [
+        "Een zichtbare knik of buiging in de schoor.",
+        "Een scheur of breuk in het materiaal, vaak bij een lasnaad of verbindingspunt.",
+        "Een losse, verbogen of ontbrekende boutverbinding met de staander.",
+        "Een volledig ontbrekende schoor, bijvoorbeeld na een eerdere aanrijding die niet is hersteld.",
+        "Vergevorderde roest ter plaatse van een verbinding, waardoor de bevestiging kan verzwakken.",
+      ] },
+      { t: "h2", text: "Waarom is dit risicovol?" },
+      { t: "p", text: "Een beschadigde schoor beïnvloedt niet alleen de plek waar de schade zit, maar de stijfheid van het hele frame. Bij een aanrijding of overbelasting van een naastgelegen sectie kan een frame met een verzwakte schoor minder weerstand bieden, met een groter risico op scheefstand of het verder bezwijken van de constructie. Omdat schoren vaak lastig te zien zijn tijdens normaal gebruik, wordt deze schade regelmatig pas opgemerkt bij een periodieke inspectie." },
+      { t: "note", text: "Ontbreekt een schoor of ziet u duidelijke vervorming? Ga dan uit van een verminderde stabiliteit van het hele frame, ook als de staanders zelf recht lijken." },
+      { t: "h2", text: "Wat moet u doen bij een beschadigde schoor?" },
+      { t: "ol", items: [
+        "Meld de schade bij de verantwoordelijke binnen uw organisatie (de PRSES).",
+        "Beoordeel of de sectie ontladen moet worden, zeker bij een knik, scheur of ontbrekende schoor.",
+        "Buig of las de schoor niet zelf recht en herstel de verbinding niet zelf.",
+        "Laat de schade beoordelen en classificeren door een deskundige inspecteur.",
+        "Vervang de schoor bij structurele schade door een passend origineel of gelijkwaardig onderdeel.",
+      ] },
+      { t: "h2", text: "Mag u een schoor zelf vervangen of repareren?" },
+      { t: "p", text: "Net als bij een beschadigde staander geldt: rechtbuigen of lassen van een schoor herstelt de oorspronkelijke sterkte niet en kan het materiaal juist verder verzwakken. Bij structurele schade is vervanging van de schoor de veilige route, uitgevoerd met een onderdeel dat past bij het merk en type van de stelling." },
+    ],
+    faq: [
+      { q: "Kan ik zelf zien of een schoor nog voldoende stevig is?", a: "U kunt zichtbare schade zoals een knik, scheur of losse bevestiging signaleren en melden. Of de resterende sterkte nog voldoende is, is aan een deskundige inspecteur om te beoordelen." },
+      { q: "Is één beschadigde schoor al reden om de sectie af te zetten?", a: "Dat hangt af van de aard en plaats van de schade. Bij een knik, breuk of ontbrekende schoor is voorzichtigheid verstandig; de inspecteur bepaalt op basis van de classificatie of ontlasten nodig is." },
+    ],
+    related: ["staander-rechtbuigen-lassen", "na-heftruckaanrijding", "schadeclassificatie"],
   },
 ];
 
