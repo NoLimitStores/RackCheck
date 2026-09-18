@@ -109,6 +109,49 @@ export const mainNav = [
   { label: "Contact", href: "/contact/" },
 ] as const;
 
+/**
+ * Data-gedreven dropdowns voor de hoofdnavigatie (Nederlands). Alle links
+ * verwijzen naar bestaande routes; hier worden geen URL's verzonnen. Deze
+ * structuur wordt op één plek beheerd en door de header hergebruikt.
+ */
+export const navDropdowns = {
+  inspecties: {
+    label: "Inspecties",
+    items: [
+      { label: "Stellinginspectie", href: "/stellinginspectie/" },
+      { label: "Palletstellingen", href: "/inspecties/palletstelling/" },
+      { label: "Legbordstellingen", href: "/inspecties/legbordstelling/" },
+      { label: "Draagarmstellingen", href: "/inspecties/draagarmstelling/" },
+      { label: "Inrijstellingen", href: "/inspecties/inrijstelling/" },
+      { label: "Bordes- en entresolvloeren", href: "/inspecties/bordes-entresolvloer/" },
+      { label: "Tweedehands Hovuma-stellingen", href: "/tweedehands-hovuma-stellingen/" },
+    ],
+  },
+  oplossingen: {
+    label: "Oplossingen",
+    items: [
+      { label: "Stelling aangereden", href: "/stelling-aangereden/" },
+      { label: "Jaarlijkse inspectie", href: "/jaarlijkse-stellinginspectie/" },
+      { label: "Duidelijk inspectierapport", href: "/duidelijk-inspectierapport/" },
+      { label: "Onafhankelijke inspectie", href: "/onafhankelijke-stellinginspectie/" },
+      { label: "Terugkerende schade", href: "/terugkerende-stellingschade/" },
+    ],
+  },
+} as const;
+
+/** Losse hoofditems na de dropdowns (Nederlands). */
+export const mainNavFlat = [
+  { label: "Prijzen", href: "/prijzen/" },
+  { label: "Contact", href: "/contact/" },
+] as const;
+
+/** Extra items die alleen in het mobiele menu terugkomen. */
+export const mobileExtraNav = [
+  { label: "Over RackCheck", href: "/over-rackcheck/" },
+  { label: "Werkwijze", href: "/werkwijze/" },
+  { label: "Kennisbank", href: "/kennisbank/" },
+] as const;
+
 export const footerNav = {
   inspecties: {
     title: "Inspecties",
