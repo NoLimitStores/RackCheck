@@ -73,7 +73,8 @@ locatiepagina's. **Deze routine maakt hier geen content voor.**
   - Zoekintentie: probleemgedreven
   - Gewenste CTA: inspectie aanvragen
 
-- [ ] Scheve magazijnstelling: wanneer is scheefstand te groot?
+- [x] Scheve magazijnstelling: wanneer is scheefstand te groot?
+  - Gepubliceerd: 2026-09-19 -> https://www.rackcheck.nl/kennisbank/scheve-magazijnstelling/
   - Primair zoekwoord: scheve magazijnstelling
   - Secundaire zoekwoorden: stelling staat scheef, scheefstand stelling toegestaan
   - Zoekintentie: probleemgedreven
