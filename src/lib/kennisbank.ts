@@ -320,7 +320,7 @@ export const artikelen: Artikel[] = [
       { q: "De stelling staat nog overeind, is dat niet genoeg?", a: "Nee. Een staander kan een groot deel van zijn draagkracht verliezen zonder direct om te vallen. Onder volgende belasting of bij een nieuwe stoot kan het alsnog misgaan." },
       { q: "Kan ik de sectie na beoordeling weer gebruiken?", a: "Als de deskundige de sectie groen classificeert wel. Bij oranje of rood volgt eerst herstel of vervanging." },
     ],
-    related: ["stelling-aangereden", "staander-rechtbuigen-lassen", "magazijnstelling-afgekeurd", "schadeclassificatie", "beschadigde-schoor"],
+    related: ["stelling-aangereden", "staander-rechtbuigen-lassen", "magazijnstelling-afgekeurd", "schadeclassificatie", "beschadigde-schoor", "scheve-magazijnstelling"],
   },
   {
     slug: "wat-wordt-gecontroleerd",
@@ -493,7 +493,7 @@ export const artikelen: Artikel[] = [
       { q: "Een hele kleine kras, moet die ook vervangen?", a: "Niet per se. Oppervlakkige gebruikssporen zonder vervorming zijn vaak groen. Het gaat om vervorming, knik of scheur in een dragend onderdeel." },
       { q: "Waar haal ik een vervangende staander?", a: "Afhankelijk van het merk via de fabrikant, dealer of een geschikte leverancier. Bij een onbekend of niet meer leverbaar merk zoeken we naar een technisch verantwoord alternatief." },
     ],
-    related: ["na-heftruckaanrijding", "schadeclassificatie", "stelling-aangereden", "verbogen-ligger", "beschadigde-schoor"],
+    related: ["na-heftruckaanrijding", "schadeclassificatie", "stelling-aangereden", "verbogen-ligger", "beschadigde-schoor", "scheve-magazijnstelling"],
   },
   {
     slug: "nulinspectie",
@@ -780,7 +780,7 @@ export const artikelen: Artikel[] = [
       { q: "Mag ik zelf inschatten of een ligger nog veilig is?", a: "Bij een lichte, tijdelijke doorbuiging kunt u dat als medewerker signaleren. Of de vervorming binnen de toegestane marge valt, is aan een deskundige om te beoordelen op basis van de liggerlengte en de fabrikantopgave." },
       { q: "Kan één verbogen ligger de hele sectie onveilig maken?", a: "Dat hangt af van de plek en de ernst van de vervorming. Een deskundige beoordeelt of alleen dat liggerniveau ontlast moet worden of dat de hele sectie aandacht nodig heeft." },
     ],
-    related: ["schadeclassificatie", "staander-rechtbuigen-lassen", "na-heftruckaanrijding", "belastingbord"],
+    related: ["schadeclassificatie", "staander-rechtbuigen-lassen", "na-heftruckaanrijding", "belastingbord", "scheve-magazijnstelling"],
   },
   {
     slug: "beschadigde-schoor",
@@ -829,7 +829,70 @@ export const artikelen: Artikel[] = [
       { q: "Kan ik zelf zien of een schoor nog voldoende stevig is?", a: "U kunt zichtbare schade zoals een knik, scheur of losse bevestiging signaleren en melden. Of de resterende sterkte nog voldoende is, is aan een deskundige inspecteur om te beoordelen." },
       { q: "Is één beschadigde schoor al reden om de sectie af te zetten?", a: "Dat hangt af van de aard en plaats van de schade. Bij een knik, breuk of ontbrekende schoor is voorzichtigheid verstandig; de inspecteur bepaalt op basis van de classificatie of ontlasten nodig is." },
     ],
-    related: ["staander-rechtbuigen-lassen", "na-heftruckaanrijding", "schadeclassificatie"],
+    related: ["staander-rechtbuigen-lassen", "na-heftruckaanrijding", "schadeclassificatie", "scheve-magazijnstelling"],
+  },
+  {
+    slug: "scheve-magazijnstelling",
+    category: "Schade en preventie",
+    title: "Scheve magazijnstelling: wanneer is scheefstand te groot?",
+    h1: "Scheve magazijnstelling: wanneer is scheefstand te groot?",
+    metaTitle: "Scheve magazijnstelling: wanneer is scheefstand te groot?",
+    metaDescription:
+      "Staat een magazijnstelling scheef? Lees waar scheefstand vandaan komt, hoe u het herkent, waarom u het niet op het oog beoordeelt en wat u nu moet doen.",
+    excerpt:
+      "Scheefstand is een signaal dat de stelling is geraakt, verzakt of overbelast. Zo herkent u het en handelt u verantwoord.",
+    answer:
+      "Of scheefstand te groot is, bepaalt u niet op het oog. De toelaatbare afwijking hangt af van de stelling, de hoogte en de belasting, en staat in de fabrikantgegevens en de normen (NEN-EN 15635, NPR 5055). Ziet u een stelling die zichtbaar scheef staat of die verder scheef trekt, ontlast de sectie dan, zet het gangpad af en laat een deskundige inspecteur de afwijking meten en beoordelen.",
+    updated: "2026-09-19",
+    image: {
+      src: "/images/praktijk/aangereden-staander-vervormd.jpg",
+      alt: "Vervormd onderstuk van een stellingstaander naast een gele aanrijdbeveiliging",
+    },
+    blocks: [
+      { t: "p", text: "Een stelling die niet meer recht lijkt te staan, roept meteen de vraag op of het nog veilig is om de pallets erin te laten staan. Het eerlijke antwoord is dat u dit niet zelf op het oog kunt vaststellen. Wel kunt u scheefstand vroeg signaleren en weten wat de veilige eerste stappen zijn." },
+      { t: "h2", text: "Waar komt scheefstand vandaan?" },
+      { t: "ul", items: [
+        "Een aanrijding met een heftruck of pallet, waarbij een staander of het frame is verschoven of vervormd.",
+        "Een beschadigde of ontbrekende schoor, waardoor het frame zijn zijwaartse stijfheid verliest.",
+        "Overbelasting of ongelijkmatige belasting van liggers en frames.",
+        "Een losse of beschadigde verankering of voetplaat.",
+        "Een ongelijke of verzakte vloer onder de stelling.",
+        "Een onjuiste of onvolledige montage, of een latere aanpassing van de opstelling.",
+      ] },
+      { t: "p", text: "Scheefstand kan dus een gevolg zijn van schade, maar ook een teken dat er een andere oorzaak onder ligt. Daarom is alleen het scheefstaan corrigeren niet genoeg: de oorzaak moet worden gevonden." },
+      { t: "h2", text: "Hoe herkent u scheefstand?" },
+      { t: "ul", items: [
+        "Een staander die zichtbaar niet loodrecht staat, in de gangrichting of in de diepterichting.",
+        "Liggerniveaus die niet meer op één lijn liggen met de naastgelegen secties.",
+        "Een frame dat naar een kant helt, of een rij die een zichtbare knik in het verloop vertoont.",
+        "Pallets die anders op de liggers rusten dan voorheen, of die tegen de staander aan schuren.",
+        "Een afwijking die in de loop van weken toeneemt.",
+      ] },
+      { t: "note", text: "Zichtbaar scheef is nooit een schaalkwestie die u zelf wegmeet. Ook een kleine afwijking kan bij een hoge, volgeladen stelling relevant zijn, en een grote afwijking kan bij een lege stelling nog beperkt lijken." },
+      { t: "h2", text: "Wanneer is scheefstand te groot?" },
+      { t: "p", text: "Er bestaat geen bruikbare vuistregel die voor elke stelling geldt. In de Europese norm NEN-EN 15635 en de Nederlandse praktijkrichtlijn NPR 5055 staat hoe stellingen worden gebruikt en geïnspecteerd, en de fabrikant geeft voor zijn systeem aan welke afwijkingen aanvaardbaar zijn. Die grenzen verschillen per type stelling, per hoogte en per belastingsituatie. Omdat exacte normwaarden bij de norm zelf horen te worden nagelezen, publiceren wij hier bewust geen getallen: een verkeerd overgenomen waarde geeft schijnzekerheid." },
+      { t: "p", text: "Wat u wel kunt onthouden: de beoordeling gebeurt aan de hand van een meting, niet van een indruk. Een deskundige inspecteur meet de afwijking van de staanders ten opzichte van de loodlijn, vergelijkt die met de toelaatbare waarden voor dat systeem en kijkt tegelijk naar de oorzaak, zoals schade aan staander, schoor, voetplaat en verankering." },
+      { t: "h2", text: "Wat doet u bij een scheve stelling?" },
+      { t: "ol", items: [
+        "Ontlast de betreffende sectie en de aangrenzende secties zo veel mogelijk, zeker als de afwijking groot is of toeneemt.",
+        "Zet het gangpad af en houd heftrucks en personeel op afstand.",
+        "Meld de situatie bij de verantwoordelijke binnen uw organisatie (de PRSES).",
+        "Leg de situatie vast met foto's, inclusief de plek in de stelling en het tijdstip.",
+        "Laat de afwijking meten en beoordelen door een deskundige inspecteur, en laat de oorzaak vaststellen.",
+        "Herstel schade aan onderdelen door vervanging, niet door zelf recht te buigen of te lassen.",
+        "Laat de sectie na herstel opnieuw beoordelen voordat u hem weer belast.",
+      ] },
+      { t: "h2", text: "Waarom niet zelf rechtzetten?" },
+      { t: "p", text: "Een stelling terugduwen of terugtrekken herstelt de sterkte van vervormde onderdelen niet en kan verborgen schade juist maskeren. Bij structurele schade is vervanging van het onderdeel de veilige route, zoals ook beschreven bij het rechtbuigen of lassen van een staander." },
+      { t: "h2", text: "Wat is uw verantwoordelijkheid als werkgever?" },
+      { t: "p", text: "Als werkgever moet u ervoor zorgen dat arbeidsmiddelen, en dus ook uw magazijnstellingen, veilig zijn en blijven. Schade en afwijkingen die u signaleert, moet u serieus nemen, laten beoordelen en herstellen. Meer over de periodieke inspectie leest u in het artikel over hoe vaak stellingen moeten worden gekeurd." },
+    ],
+    faq: [
+      { q: "Mag ik een lichte scheefstand negeren?", a: "Niet zonder beoordeling. Of een afwijking aanvaardbaar is, hangt af van het systeem, de hoogte en de belasting. Laat een deskundige inspecteur meten voordat u de stelling ongewijzigd blijft belasten." },
+      { q: "Kan ik zelf meten hoeveel de stelling scheef staat?", a: "U kunt met een waterpas of schietlood een indicatie krijgen en die vastleggen. De beoordeling of de waarde toelaatbaar is, hoort bij een deskundige inspecteur die de toelaatbare waarden voor uw systeem kent." },
+      { q: "Wat als de scheefstand steeds groter wordt?", a: "Dan is er mogelijk sprake van voortgaande verzakking, losraken of overbelasting. Ontlast de sectie direct en laat de stelling zo snel mogelijk beoordelen." },
+    ],
+    related: ["staander-rechtbuigen-lassen", "beschadigde-schoor", "schadeclassificatie"],
   },
 ];
 
