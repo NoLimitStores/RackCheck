@@ -81,7 +81,8 @@ locatiepagina's. **Deze routine maakt hier geen content voor.**
   - Gewenste CTA: inspectie aanvragen
   - Opmerking: onderscheid onbelaste/belaste scheefstand; verwijs naar beoordeling, geen verzonnen grens.
 
-- [ ] Losse of ontbrekende vloerankers bij magazijnstellingen: hoe gevaarlijk is dat?
+- [x] Losse of ontbrekende vloerankers bij magazijnstellingen: hoe gevaarlijk is dat?
+  - Gepubliceerd: 2026-09-20 -> https://www.rackcheck.nl/kennisbank/losse-vloerankers-magazijnstelling/
   - Primair zoekwoord: losse vloerankers magazijnstelling
   - Secundaire zoekwoorden: verankering stelling los, stelling niet verankerd
   - Zoekintentie: probleemgedreven
