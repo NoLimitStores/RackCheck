@@ -356,7 +356,7 @@ export const artikelen: Artikel[] = [
       { q: "Worden ook de hoogste niveaus beoordeeld?", a: "De inspecteur beoordeelt alle bereikbare onderdelen visueel, ook de hogere niveaus voor zover die veilig te beoordelen zijn vanaf de vloer." },
       { q: "Wordt de vloer ook meegenomen?", a: "De staat van de vloer rond de voetplaten en verankering wordt meegenomen, omdat die de stabiliteit beïnvloedt." },
     ],
-    related: ["schadeclassificatie", "belastingbord", "checklist-veilige-magazijnstelling", "verbogen-ligger"],
+    related: ["schadeclassificatie", "belastingbord", "checklist-veilige-magazijnstelling", "verbogen-ligger", "losse-vloerankers-magazijnstelling"],
   },
   {
     slug: "belastingbord",
@@ -525,7 +525,7 @@ export const artikelen: Artikel[] = [
       { q: "Is een nulinspectie verplicht?", a: "Nee, het is geen wettelijke verplichting. Het is een verstandige keuze bij nieuwe of verplaatste installaties, zeker als u de oplevering onafhankelijk wilt laten controleren." },
       { q: "Kan RackCheck de oplevering van mijn leverancier controleren?", a: "Ja. We beoordelen onafhankelijk of de stelling correct is opgebouwd en verankerd, los van de partij die heeft geleverd." },
     ],
-    related: ["wat-wordt-gecontroleerd", "belastingbord", "hoe-vaak-stellingen-keuren"],
+    related: ["wat-wordt-gecontroleerd", "belastingbord", "hoe-vaak-stellingen-keuren", "losse-vloerankers-magazijnstelling"],
   },
   {
     slug: "interne-controle-vs-externe-inspectie",
@@ -829,7 +829,7 @@ export const artikelen: Artikel[] = [
       { q: "Kan ik zelf zien of een schoor nog voldoende stevig is?", a: "U kunt zichtbare schade zoals een knik, scheur of losse bevestiging signaleren en melden. Of de resterende sterkte nog voldoende is, is aan een deskundige inspecteur om te beoordelen." },
       { q: "Is één beschadigde schoor al reden om de sectie af te zetten?", a: "Dat hangt af van de aard en plaats van de schade. Bij een knik, breuk of ontbrekende schoor is voorzichtigheid verstandig; de inspecteur bepaalt op basis van de classificatie of ontlasten nodig is." },
     ],
-    related: ["staander-rechtbuigen-lassen", "na-heftruckaanrijding", "schadeclassificatie", "scheve-magazijnstelling"],
+    related: ["staander-rechtbuigen-lassen", "na-heftruckaanrijding", "schadeclassificatie", "scheve-magazijnstelling", "losse-vloerankers-magazijnstelling"],
   },
   {
     slug: "scheve-magazijnstelling",
@@ -892,7 +892,69 @@ export const artikelen: Artikel[] = [
       { q: "Kan ik zelf meten hoeveel de stelling scheef staat?", a: "U kunt met een waterpas of schietlood een indicatie krijgen en die vastleggen. De beoordeling of de waarde toelaatbaar is, hoort bij een deskundige inspecteur die de toelaatbare waarden voor uw systeem kent." },
       { q: "Wat als de scheefstand steeds groter wordt?", a: "Dan is er mogelijk sprake van voortgaande verzakking, losraken of overbelasting. Ontlast de sectie direct en laat de stelling zo snel mogelijk beoordelen." },
     ],
-    related: ["staander-rechtbuigen-lassen", "beschadigde-schoor", "schadeclassificatie"],
+    related: ["staander-rechtbuigen-lassen", "beschadigde-schoor", "schadeclassificatie", "losse-vloerankers-magazijnstelling"],
+  },
+  {
+    slug: "losse-vloerankers-magazijnstelling",
+    category: "Schade en preventie",
+    title: "Losse of ontbrekende vloerankers bij magazijnstellingen: hoe gevaarlijk is dat?",
+    h1: "Losse of ontbrekende vloerankers: hoe gevaarlijk is dat?",
+    metaTitle: "Losse of ontbrekende vloerankers in een stelling: risico",
+    metaDescription:
+      "Los of ontbrekend vloeranker bij een magazijnstelling? Lees waarom verankering telt, hoe u het herkent en wat u nu doet: ontlasten, melden en laten beoordelen.",
+    excerpt:
+      "Een staander zonder deugdelijk vloeranker mist een deel van zijn stabiliteit. Zo herkent u het en handelt u verantwoord.",
+    answer:
+      "Een los of ontbrekend vloeranker is een reëel veiligheidsrisico, want de verankering hoort de staander conform de fabrikantspecificaties aan de vloer te verbinden. Hoe groot het risico is, hangt af van het type stelling, de belasting en de vloer, en is niet op het oog vast te stellen. Zet de sectie bij twijfel af, ontlast deze en laat een deskundige inspecteur de verankering en de oorzaak beoordelen.",
+    updated: "2026-09-20",
+    image: {
+      src: "/images/praktijk/aanrijdschade-staander-losgereden.jpg",
+      alt: "Voetplaat met bout van een stellingstaander waarvan de staander door een aanrijding is losgescheurd",
+    },
+    blocks: [
+      { t: "p", text: "Vloerankers zijn kleine onderdelen met een grote functie: ze verbinden de voetplaat van de staander met de vloer. Een los of ontbrekend anker valt zelden op, maar het kan de stabiliteit van de hele sectie beïnvloeden. Deze pagina legt uit waar u op let en wat u doet als u iets constateert." },
+      { t: "h2", text: "Waarom is verankering belangrijk?" },
+      { t: "p", text: "Een staander staat met zijn voetplaat op de vloer. De verankering houdt die voetplaat op zijn plek, zodat de staander niet kan verschuiven of kantelen, bijvoorbeeld bij een stoot van een heftruck of bij ongelijkmatige belasting. Volgens de gangbare praktijk rond NEN-EN 15635 hoort de verankering te worden uitgevoerd volgens de specificaties van de fabrikant of leverancier van de stelling. Welke ankers en welke vloer daarvoor vereist zijn, verschilt per systeem, en die gegevens noemen wij hier bewust niet." },
+      { t: "h2", text: "Hoe herkent u een los of ontbrekend anker?" },
+      { t: "ul", items: [
+        "Een voetplaat waarin een boutgat leeg is of waar een bout of anker ontbreekt.",
+        "Een bout of anker die zichtbaar los zit, scheef staat of uit de vloer omhoog komt.",
+        "Een voetplaat die zichtbaar is verschoven, gekanteld of niet meer vlak op de vloer rust.",
+        "Scheuren of afbrokkelend beton rond het anker.",
+        "Een staander die na een aanrijding is verschoven of losgescheurd van de voetplaat.",
+        "Een sectie die scheef begint te staan of waarvan de staander zich anders gedraagt dan voorheen.",
+      ] },
+      { t: "note", text: "Een anker dat er goed uitziet, is niet automatisch goed bevestigd. Of een anker voldoende vastzit, hoort een deskundige te beoordelen aan de hand van de gegevens van het systeem." },
+      { t: "h2", text: "Hoe gevaarlijk is het?" },
+      { t: "p", text: "Het risico hangt af van meerdere factoren: het type stelling, de hoogte, de belasting, de aanwezigheid van aanrijdgevaar en de staat van de vloer. Eén los anker in een lage, lichtbelaste sectie is een andere situatie dan meerdere ontbrekende ankers in een hoge, volgeladen palletstelling in een druk gangpad. Een vaste risicogrens per anker geven wij niet; die bestaat niet zonder de fabrikantgegevens." },
+      { t: "p", text: "Wat u wel kunt zeggen: verankering is een onderdeel dat een inspecteur standaard beoordeelt, en een gebrek hieraan is een reden om de situatie serieus te nemen. Vaak is het bovendien een signaal van een onderliggende oorzaak, zoals een aanrijding, trillingen of een vloer die niet in orde is." },
+      { t: "h2", text: "Waar komt het vandaan?" },
+      { t: "ul", items: [
+        "Aanrijding met een heftruck, waardoor het anker of de voetplaat is losgetrokken of vervormd.",
+        "Ankers die bij de montage niet of niet correct zijn geplaatst, zoals bij een nulinspectie aan het licht kan komen.",
+        "Verplaatsing of aanpassing van de stelling waarbij ankers niet opnieuw zijn aangebracht.",
+        "Een beschadigde of verzwakte vloer rond het anker.",
+        "Trillingen en dynamische belasting in de loop der tijd.",
+      ] },
+      { t: "h2", text: "Wat doet u bij een los of ontbrekend anker?" },
+      { t: "ol", items: [
+        "Zet de betreffende sectie af en beperk het gebruik, zeker bij een hoge of zwaarbelaste sectie.",
+        "Ontlast de sectie zo veel mogelijk als u twijfelt aan de stabiliteit.",
+        "Meld de situatie bij de verantwoordelijke binnen uw organisatie (de PRSES).",
+        "Leg de situatie vast met foto's van de voetplaat, het anker en de directe omgeving.",
+        "Laat de verankering en de oorzaak beoordelen door een deskundige inspecteur.",
+        "Laat herstel uitvoeren volgens de specificaties van de fabrikant of leverancier, niet met een willekeurig anker.",
+        "Laat na herstel vaststellen dat de sectie weer in orde is voordat u hem volledig belast.",
+      ] },
+      { t: "h2", text: "Wie is verantwoordelijk?" },
+      { t: "p", text: "Als werkgever moet u ervoor zorgen dat arbeidsmiddelen, en dus ook uw magazijnstellingen, veilig zijn en blijven. Een geconstateerd gebrek aan verankering laat u dus niet liggen. De periodieke inspectie door een deskundige is daarvoor het vaste moment, maar signalen tussendoor vraagt u direct op te volgen." },
+    ],
+    faq: [
+      { q: "Mag een stelling zonder vloerankers worden gebruikt?", a: "Of verankering vereist is en hoe, staat in de gegevens van de fabrikant of leverancier van het systeem. Ontbreekt een voorgeschreven anker, laat de situatie dan door een deskundige beoordelen voordat u de sectie volledig belast." },
+      { q: "Kan ik een los anker zelf vastzetten?", a: "Wij raden dat af. Een los anker kan wijzen op schade aan de vloer, de voetplaat of de staander. Een deskundige beoordeelt de oorzaak en het herstel volgens de specificaties van het systeem." },
+      { q: "Wordt verankering bij een stellinginspectie gecontroleerd?", a: "Ja. Voetplaten en verankering horen bij de onderdelen die een deskundige inspecteur beoordeelt, samen met staanders, liggers, schoren en borging." },
+    ],
+    related: ["wat-wordt-gecontroleerd", "na-heftruckaanrijding", "scheve-magazijnstelling", "nulinspectie"],
   },
 ];
 
