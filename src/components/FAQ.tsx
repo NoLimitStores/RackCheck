@@ -3,7 +3,7 @@
 import { useState } from "react";
 import JsonLd from "@/components/JsonLd";
 
-export type QA = { q: string; a: string };
+export type QA = { q: string; a: string; link?: { href: string; label: string } };
 
 export default function FAQ({
   items,
@@ -62,6 +62,14 @@ export default function FAQ({
               {isOpen && (
                 <p className="pb-5 pr-10 text-[0.975rem] leading-relaxed text-navy-700">
                   {item.a}
+                  {item.link && (
+                    <>
+                      {" "}
+                      <a href={item.link.href} className="font-semibold text-navy-950 underline underline-offset-2 hover:text-navy-700">
+                        {item.link.label}
+                      </a>
+                    </>
+                  )}
                 </p>
               )}
             </div>

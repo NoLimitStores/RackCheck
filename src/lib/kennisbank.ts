@@ -28,7 +28,7 @@ export type Artikel = {
   featured?: boolean;
   image?: { src: string; alt: string; caption?: string };
   blocks: Block[];
-  faq: { q: string; a: string }[];
+  faq: { q: string; a: string; link?: { href: string; label: string } }[];
   related: string[];
 };
 
@@ -144,7 +144,7 @@ export const artikelen: Artikel[] = [
     ],
     faq: [
       { q: "Moet de keuring per se jaarlijks?", a: "De wet noemt geen vaste termijn. In de praktijk is een jaarlijkse deskundige inspectie gebruikelijk, aangevuld met frequentere interne controles. De juiste frequentie hangt af van hoe intensief de stellingen worden gebruikt." },
-      { q: "Geldt dit ook voor kleine magazijnen?", a: "Ja. De zorgplicht geldt ongeacht de grootte. Bij een klein magazijn is de inspectie alleen korter en goedkoper." },
+      { q: "Geldt dit ook voor kleine magazijnen?", a: "Ja. De zorgplicht geldt ongeacht de grootte. Bij een klein magazijn is de inspectie alleen korter en goedkoper. Een inspectie bij RackCheck kost vanaf €395 per jaar excl. btw.", link: { href: "/prijzen/", label: "Bekijk de prijzen" } },
     ],
     related: ["hoe-vaak-stellingen-keuren", "nen-en-15635", "wie-mag-stellingen-inspecteren", "nulinspectie", "kosten-stellinginspectie"],
   },
