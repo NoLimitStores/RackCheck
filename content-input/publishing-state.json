@@ -1,10 +1,10 @@
 {
   "publicationFrequency": "daily",
-  "lastSuccessfulRun": "2026-09-20",
-  "lastActionType": "new",
-  "newArticlesSinceMaintenance": 5,
+  "lastSuccessfulRun": "2026-09-21",
+  "lastActionType": "maintenance",
+  "newArticlesSinceMaintenance": 0,
   "totalNewArticles": 5,
-  "totalMaintenanceUpdates": 0,
+  "totalMaintenanceUpdates": 1,
   "lastPublishedUrl": "https://www.rackcheck.nl/kennisbank/losse-vloerankers-magazijnstelling/",
-  "lastMaintenanceUrl": null
+  "lastMaintenanceUrl": "https://www.rackcheck.nl/kennisbank/is-stellingkeuring-verplicht/"
 }
