@@ -121,8 +121,13 @@ export const artikelen: Artikel[] = [
       "Wat de Arbowet en het Arbobesluit vragen, en waarom een deskundige inspectie de logische invulling is.",
     answer:
       "Er is geen wet die letterlijk zegt dat u uw stellingen jaarlijks moet laten keuren. Wel verplicht de Arbowet werkgevers om te zorgen voor een veilige werkomgeving en verplicht het Arbobesluit om arbeidsmiddelen periodiek te keuren. Magazijnstellingen vallen daaronder. Een periodieke deskundige inspectie is daarmee de gangbare en aantoonbare manier om aan die zorgplicht te voldoen.",
-    updated: "2026-07-15",
+    updated: "2026-09-21",
     featured: true,
+    image: {
+      src: "/images/praktijk/palletstelling-magazijn.jpg",
+      alt: "Volgeladen palletstelling in een magazijn met gangpadaanduiding",
+      caption: "Volgeladen palletstellingen zijn arbeidsmiddelen waarvoor de zorgplicht van de werkgever geldt.",
+    },
     blocks: [
       { t: "p", text: "Deze vraag komt vaak voor en het antwoord vraagt om precisie. Het is onjuist om te zeggen dat een specifieke norm een wet is. Tegelijk is het te kort door de bocht om te zeggen dat er geen enkele verplichting bestaat." },
       { t: "h2", text: "Wat de wet wel zegt" },
@@ -141,7 +146,7 @@ export const artikelen: Artikel[] = [
       { q: "Moet de keuring per se jaarlijks?", a: "De wet noemt geen vaste termijn. In de praktijk is een jaarlijkse deskundige inspectie gebruikelijk, aangevuld met frequentere interne controles. De juiste frequentie hangt af van hoe intensief de stellingen worden gebruikt." },
       { q: "Geldt dit ook voor kleine magazijnen?", a: "Ja. De zorgplicht geldt ongeacht de grootte. Bij een klein magazijn is de inspectie alleen korter en goedkoper." },
     ],
-    related: ["hoe-vaak-stellingen-keuren", "nen-en-15635", "wie-mag-stellingen-inspecteren"],
+    related: ["hoe-vaak-stellingen-keuren", "nen-en-15635", "wie-mag-stellingen-inspecteren", "nulinspectie", "kosten-stellinginspectie"],
   },
   {
     slug: "hoe-vaak-stellingen-keuren",
