@@ -4,7 +4,7 @@ import { PhoneIcon, WhatsAppIcon, ArrowRightIcon } from "@/components/Icons";
 
 export default function CTASection({
   title = "Weet u zeker dat uw stellingen veilig zijn?",
-  text = "Vraag een onafhankelijke inspectie aan. U krijgt een helder rapport met duidelijke prioriteiten, in principe binnen 24 uur. Bij urgente schade helpen we u direct.",
+  text = "Vraag een onafhankelijke inspectie aan. U krijgt een helder rapport met duidelijke prioriteiten binnen 24 uur. Bij urgente schade helpen we u direct.",
   primaryLabel = "Inspectie aanvragen",
   primaryHref = "/inspectie-aanvragen/",
 }: {

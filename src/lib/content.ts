@@ -19,7 +19,7 @@ export const processSteps = [
   },
   {
     title: "Rapport binnen 24 uur",
-    text: "U ontvangt een overzichtelijk inspectierapport, in principe binnen 24 uur. Elke bevinding heeft een classificatie, locatie, foto, oorzaak, actie en termijn.",
+    text: "U ontvangt een overzichtelijk inspectierapport binnen 24 uur. Elke bevinding heeft een classificatie, locatie, foto, oorzaak, actie en termijn.",
   },
   {
     title: "Opvolging en eventueel herstelvoorstel",
@@ -57,7 +57,7 @@ export const homeFaq = [
   },
   {
     q: "Hoe snel ontvang ik het rapport?",
-    a: "U ontvangt het inspectierapport in principe binnen 24 uur na de inspectie. Urgente, onveilige situaties melden we altijd al tijdens de inspectie zelf, zodat u meteen kunt handelen.",
+    a: "U ontvangt het inspectierapport binnen 24 uur na de inspectie. Urgente, onveilige situaties melden we altijd al tijdens de inspectie zelf, zodat u meteen kunt handelen.",
   },
   {
     q: "Welke stellingmerken inspecteert RackCheck?",
@@ -129,7 +129,7 @@ export const waaromRackcheck = [
   },
   {
     title: "Snelle oplevering",
-    text: "In principe binnen 24 uur het rapport, urgente zaken melden we direct op locatie.",
+    text: "Binnen 24 uur het rapport, urgente zaken melden we direct op locatie.",
   },
   {
     title: "Transparante prijs",

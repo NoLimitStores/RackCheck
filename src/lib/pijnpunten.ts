@@ -153,9 +153,9 @@ export const pijnpunten: Record<string, Pijnpunt> = {
     related: ["informatie-in-inspectierapport", "schadeclassificatie", "onafhankelijke-stellinginspectie", "stellinginspectie"],
     ctaTitle: "Ontvang een rapport waar u iets aan heeft",
     image: {
-      src: "/images/schade-perforatie-detail.jpg",
-      alt: "Detailfoto van een vervormde perforatie in een stellingstaander, zoals vastgelegd in een inspectierapport",
-      caption: "Elke bevinding krijgt in het rapport een foto, een locatie en een classificatie. Zoals hier: een vervormde perforatie in een staander.",
+      src: "/images/praktijk/aangereden-staander-vervormd.jpg",
+      alt: "Zwaar vervormd juk van een palletstelling na een aanrijding, zoals vastgelegd in een inspectierapport",
+      caption: "Elke bevinding krijgt in het rapport een foto, een locatie en een classificatie. Zoals hier: een zwaar beschadigd juk na een aanrijding.",
     },
   },
 

@@ -33,7 +33,7 @@ const howToSchema = {
 
 const beloftes = [
   { icon: WrenchIcon, title: "Directe melding bij gevaar", text: "Acuut onveilige situaties melden we tijdens de inspectie, niet pas in het rapport." },
-  { icon: DocumentIcon, title: "Rapport binnen 24 uur", text: "In principe binnen een dag een helder rapport met prioriteiten en vervolgstappen." },
+  { icon: DocumentIcon, title: "Rapport binnen 24 uur", text: "Binnen 24 uur een helder rapport met prioriteiten en vervolgstappen." },
   { icon: ClockIcon, title: "Herstelvoorstel binnen twee weken", text: "Wilt u herstel, dan streven we naar een apart voorstel binnen twee weken." },
 ];
 
@@ -52,7 +52,7 @@ export default function Page() {
         <AnswerBox question>
           Het inspectieproces van RackCheck bestaat uit zeven stappen: aanvraag en
           intake, planning, inspectie op locatie, directe terugkoppeling bij urgent
-          gevaar, een rapport in principe binnen 24 uur, opvolging met eventueel een
+          gevaar, een rapport binnen 24 uur, opvolging met eventueel een
           apart herstelvoorstel en een herbeoordeling na herstel. Zo houdt u de regie
           en blijft de beoordeling onafhankelijk.
         </AnswerBox>

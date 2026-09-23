@@ -17,7 +17,7 @@ export const site = {
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.rackcheck.nl", // primaire domein (apex rackcheck.nl redirect naar www)
   tagline: "Onafhankelijke inspecties van magazijnstellingen",
   description:
-    "RackCheck voert onafhankelijke inspecties uit van magazijnstellingen. U krijgt een helder rapport met duidelijke prioriteiten en concreet vervolgadvies, in principe binnen 24 uur.",
+    "RackCheck voert onafhankelijke inspecties uit van magazijnstellingen. U krijgt een helder rapport met duidelijke prioriteiten en concreet vervolgadvies binnen 24 uur.",
 
   // Algemeen aanspreekpunt en contactgegevens (Tjeerd Krikhaar).
   contactPerson: "Tjeerd Krikhaar",

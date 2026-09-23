@@ -417,7 +417,7 @@ export const artikelen: Artikel[] = [
         "Intake vooraf en de inspectie op locatie.",
         "Beoordeling van alle bereikbare stellingen.",
         "Vastlegging met foto's en schadeclassificatie.",
-        "Inspectierapport met prioriteiten en vervolgstappen, in principe binnen 24 uur.",
+        "Inspectierapport met prioriteiten en vervolgstappen binnen 24 uur.",
         "Directe melding van urgente situaties tijdens de inspectie.",
       ] },
       { t: "h2", text: "Welke factoren beïnvloeden de prijs?" },
@@ -626,7 +626,7 @@ export const artikelen: Artikel[] = [
       { t: "h2", text: "Tijdens de inspectie" },
       { t: "p", text: "De inspecteur loopt langs de stellingen en beoordeelt onderdeel voor onderdeel. Meestal kan het werk doorgaan. Alleen wanneer er acuut gevaar wordt gevonden, vragen we een sectie tijdelijk vrij te maken of te ontladen. Die melding krijgt u dan direct." },
       { t: "h2", text: "Na de inspectie" },
-      { t: "p", text: "U ontvangt in principe binnen 24 uur het rapport. Loop de bevindingen door met uw contactpersoon of PRSES en plan de opvolging: rood direct, oranje binnen de aangegeven termijn en groen bij de volgende inspectie." },
+      { t: "p", text: "U ontvangt binnen 24 uur het rapport. Loop de bevindingen door met uw contactpersoon of PRSES en plan de opvolging: rood direct, oranje binnen de aangegeven termijn en groen bij de volgende inspectie." },
       { t: "note", text: "Een goede voorbereiding bespaart inspectietijd en dus kosten, en zorgt dat niets over het hoofd wordt gezien." },
     ],
     faq: [

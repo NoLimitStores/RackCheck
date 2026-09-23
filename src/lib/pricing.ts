@@ -17,7 +17,7 @@ export const priceIncludes = [
   "Vastlegging van bevindingen met foto's waar relevant",
   "Schadeclassificatie volgens groen, oranje en rood",
   "Directe melding van urgente, onveilige situaties",
-  "Inspectierapport met prioriteiten en vervolgstappen, in principe binnen 24 uur",
+  "Inspectierapport met prioriteiten en vervolgstappen binnen 24 uur",
 ];
 
 export const priceFactors = [

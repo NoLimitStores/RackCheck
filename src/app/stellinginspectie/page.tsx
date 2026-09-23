@@ -60,7 +60,7 @@ export default function Page() {
               Een stellinginspectie is een deskundige beoordeling van de veiligheid van
               uw magazijnstellingen conform NEN-EN 15635. RackCheck controleert alle
               bereikbare onderdelen, classificeert elke bevinding als groen, oranje of
-              rood en levert in principe binnen 24 uur een rapport met concrete
+              rood en levert binnen 24 uur een rapport met concrete
               prioriteiten en vervolgstappen.
             </AnswerBox>
             <h2>Waarom een onafhankelijke inspectie?</h2>
@@ -86,7 +86,7 @@ export default function Page() {
             <ul className="mt-4 space-y-2.5 text-sm text-navy-800">
               {[
                 "Onafhankelijke beoordeling zonder verkoopbelang",
-                "Rapport in principe binnen 24 uur",
+                "Rapport binnen 24 uur",
                 "Classificatie groen, oranje en rood",
                 "Directe melding bij acuut gevaar",
                 "Voor verschillende merken en typen",

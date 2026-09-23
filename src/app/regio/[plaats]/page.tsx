@@ -85,7 +85,7 @@ export default async function Page({ params }: { params: Promise<{ plaats: strin
             <AnswerBox question>
               RackCheck voert onafhankelijke stellinginspecties uit in {regio.stad} en
               omliggende plaatsen zoals {regio.omgeving.slice(0, 3).join(", ")}. U krijgt
-              een helder rapport met prioriteiten, in principe binnen 24 uur, en bij
+              een helder rapport met prioriteiten binnen 24 uur en bij
               acuut gevaar een directe melding op locatie.
             </AnswerBox>
 
