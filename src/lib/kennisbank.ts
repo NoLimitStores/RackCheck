@@ -288,7 +288,7 @@ export const artikelen: Artikel[] = [
       { q: "Wie bepaalt de classificatie?", a: "De inspecteur, op basis van de aard en de plaats van de schade en de gevolgen voor de draagkracht. Bij twijfel wordt naar de veilige kant geclassificeerd." },
       { q: "Wat als ik een oranje punt laat liggen?", a: "Dan groeit de kans dat het bij de volgende belasting of aanrijding verergert naar rood. Oranje is een uitnodiging om gepland te herstellen, niet om te negeren." },
     ],
-    related: ["informatie-in-inspectierapport", "na-heftruckaanrijding", "magazijnstelling-afgekeurd", "duidelijk-inspectierapport", "verbogen-ligger", "beschadigde-schoor"],
+    related: ["informatie-in-inspectierapport", "na-heftruckaanrijding", "magazijnstelling-afgekeurd", "duidelijk-inspectierapport", "verbogen-ligger", "roest-corrosie-magazijnstelling"],
   },
   {
     slug: "na-heftruckaanrijding",
@@ -361,7 +361,7 @@ export const artikelen: Artikel[] = [
       { q: "Worden ook de hoogste niveaus beoordeeld?", a: "De inspecteur beoordeelt alle bereikbare onderdelen visueel, ook de hogere niveaus voor zover die veilig te beoordelen zijn vanaf de vloer." },
       { q: "Wordt de vloer ook meegenomen?", a: "De staat van de vloer rond de voetplaten en verankering wordt meegenomen, omdat die de stabiliteit beïnvloedt." },
     ],
-    related: ["schadeclassificatie", "belastingbord", "checklist-veilige-magazijnstelling", "verbogen-ligger", "losse-vloerankers-magazijnstelling"],
+    related: ["schadeclassificatie", "belastingbord", "checklist-veilige-magazijnstelling", "verbogen-ligger", "roest-corrosie-magazijnstelling"],
   },
   {
     slug: "belastingbord",
@@ -498,7 +498,7 @@ export const artikelen: Artikel[] = [
       { q: "Een hele kleine kras, moet die ook vervangen?", a: "Niet per se. Oppervlakkige gebruikssporen zonder vervorming zijn vaak groen. Het gaat om vervorming, knik of scheur in een dragend onderdeel." },
       { q: "Waar haal ik een vervangende staander?", a: "Afhankelijk van het merk via de fabrikant, dealer of een geschikte leverancier. Bij een onbekend of niet meer leverbaar merk zoeken we naar een technisch verantwoord alternatief." },
     ],
-    related: ["na-heftruckaanrijding", "schadeclassificatie", "stelling-aangereden", "verbogen-ligger", "beschadigde-schoor", "scheve-magazijnstelling"],
+    related: ["na-heftruckaanrijding", "schadeclassificatie", "stelling-aangereden", "verbogen-ligger", "beschadigde-schoor", "roest-corrosie-magazijnstelling"],
   },
   {
     slug: "nulinspectie",
@@ -960,6 +960,62 @@ export const artikelen: Artikel[] = [
       { q: "Wordt verankering bij een stellinginspectie gecontroleerd?", a: "Ja. Voetplaten en verankering horen bij de onderdelen die een deskundige inspecteur beoordeelt, samen met staanders, liggers, schoren en borging." },
     ],
     related: ["wat-wordt-gecontroleerd", "na-heftruckaanrijding", "scheve-magazijnstelling", "nulinspectie"],
+  },
+  {
+    slug: "roest-corrosie-magazijnstelling",
+    category: "Schade en preventie",
+    title: "Roest en corrosie op magazijnstellingen: wanneer wordt het een risico?",
+    h1: "Roest en corrosie op een magazijnstelling: wanneer is het een risico?",
+    metaTitle: "Roest op een magazijnstelling: wanneer is het risico?",
+    metaDescription:
+      "Roest op een magazijnstelling is niet altijd een probleem. Lees het verschil tussen oppervlakkige roest en corrosie die de sterkte kan aantasten.",
+    excerpt:
+      "Wanneer oppervlakkige roest onschuldig is en wanneer corrosie de sterkte van een stelling raakt.",
+    answer:
+      "Oppervlakkige roest op een magazijnstelling is meestal geen directe veiligheidskwestie, maar corrosie die doorzet in een dragend onderdeel wel: het staal verliest dan sterkte zonder dat dit van buitenaf goed is vast te stellen. Vooral vochtige of slecht geventileerde ruimtes, buitenopslag en liggers met een gesloten profiel zijn gevoelig. Laat roest die verder gaat dan de oppervlakte altijd beoordelen door een deskundige inspecteur.",
+    updated: "2026-09-23",
+    image: {
+      src: "/images/praktijk/corrosie-roest-detail.jpg",
+      alt: "Beginnende roestvorming bij de verbinding tussen een schoor en een staander van een magazijnstelling",
+      caption: "Roest bij een verbinding: een aandachtspunt tijdens de periodieke inspectie.",
+    },
+    blocks: [
+      { t: "p", text: "Een roestplekje op een staander valt vaak pas op als u er specifiek naar zoekt, en niet elke verkleuring is reden tot zorg. Toch kan corrosie, als die eenmaal doorzet in het staal, de sterkte van een dragend onderdeel aantasten zonder dat u dat van buitenaf goed kunt beoordelen. Dit artikel legt uit wanneer roest oppervlakkig is en wanneer het een zaak voor een deskundige is." },
+      { t: "h2", text: "Oppervlakkige roest versus roest die het staal aantast" },
+      { t: "table", head: ["", "Oppervlakkige roest", "Corrosie die aantast"], rows: [
+        ["Uiterlijk", "Kleine, verspreide vlekken of een beschadigde verflaag/zinklaag", "Putvorming, opbollende of afbladderende laag, roest die doorloopt bij een las of verbinding"],
+        ["Waar", "Vooral op oppervlakken die zichtbaar en bereikbaar zijn", "Vaak bij verbindingen, lasnaden en in gesloten profielen"],
+        ["Wat te doen", "Signaleren en meenemen bij de eerstvolgende controle", "Melden en laten beoordelen door een deskundige"],
+      ] },
+      { t: "note", text: "Vuistregel: roest die alleen de coating raakt en het onderliggende staal nog intact laat, is doorgaans geen probleem. Zodra het staal zelf zichtbaar is aangetast, is beoordeling nodig." },
+      { t: "h2", text: "Waarom liggers met een gesloten profiel extra aandacht vragen" },
+      { t: "p", text: "Bij liggers met een gesloten, kokervormig profiel kan roest ook aan de binnenzijde ontstaan, bijvoorbeeld doordat vocht via een naad of lasverbinding naar binnen is getrokken. Dat is vaak pas te herkennen aan roestsporen bij een lasnaad of verbindingspunt aan de buitenkant. Omdat u van buitenaf niet kunt vaststellen hoe ver de aantasting aan de binnenzijde is gevorderd, is voorzichtigheid hier op zijn plaats: bij twijfel over inwendige roest in een dragende ligger is vervanging de veilige route, niet een visuele inschatting." },
+      { t: "h2", text: "Omgevingen waarin roest sneller vat krijgt" },
+      { t: "ul", items: [
+        "Vochtige of slecht geventileerde ruimtes, waar condensvorming optreedt.",
+        "Buitenopslag of overkapte opslag die aan weersinvloeden blootstaat.",
+        "Koelruimtes en vriescellen, waar temperatuurwisselingen tot condens leiden.",
+        "Omgevingen met agressieve stoffen, stof of strooizout, bijvoorbeeld nabij een laad- of losdeur.",
+        "Plekken waar de coating of zinklaag is beschadigd door een stoot, kras of aanrijding, waardoor kaal staal blootligt.",
+      ] },
+      { t: "h2", text: "Wat te doen als u roest ziet" },
+      { t: "ol", items: [
+        "Beoordeel of het gaat om een oppervlakkige verkleuring of om zichtbare aantasting van het staal, zoals putjes of een opbollende laag.",
+        "Let extra op bij verbindingen, lasnaden en gesloten profielen: roest op die plekken kan wijzen op meer dan alleen oppervlakteschade.",
+        "Meld twijfelgevallen bij de verantwoordelijke binnen uw organisatie en laat de plek beoordelen door een deskundige.",
+        "Ga bij een dragend onderdeel niet zelf schuren en overschilderen als alternatief voor beoordeling; daarmee kunt u een onderliggend probleem aan het zicht onttrekken.",
+        "Neem corrosie mee als vast aandachtspunt bij elke periodieke inspectie, zeker in vochtige, koude of buiten gelegen opslag.",
+      ] },
+      { t: "h2", text: "Voorkomen is eenvoudiger dan genezen" },
+      { t: "p", text: "Een intacte verf- of zinklaag is de eerste bescherming tegen roest. Beschadigingen aan die laag, bijvoorbeeld door een aanrijding of een kras van een pallet, geven roest de kans om te beginnen. Een beschadigde coating tijdig laten beoordelen en waar nodig herstellen, en zorgen voor voldoende ventilatie in vochtgevoelige ruimtes, beperkt het risico aanzienlijk." },
+      { t: "h2", text: "Hoe RackCheck corrosie beoordeelt" },
+      { t: "p", text: "Tijdens de periodieke inspectie nemen we roest en corrosie mee als vast controlepunt, naast andere schade zoals vervorming en scheefstand. We onderscheiden oppervlakkige gebruikssporen van aantasting die de sterkte kan raken, classificeren de bevinding volgens groen, oranje of rood en benoemen in het rapport concreet wat de vervolgstap is." },
+    ],
+    faq: [
+      { q: "Is een beetje roest reden om een stelling af te keuren?", a: "Niet per se. Oppervlakkige roest die alleen de coating heeft aangetast, is meestal geen probleem. Zodra de roest het staal zelf aantast, of bij twijfel over een gesloten profiel, is beoordeling door een deskundige nodig." },
+      { q: "Kan ik roest zelf wegschuren en overschilderen?", a: "Bij lichte, oppervlakkige roest kan dat een redelijke maatregel zijn. Bij twijfel, of bij een dragend onderdeel, is het verstandiger dit eerst te laten beoordelen, zodat u niet onbedoeld een dieperliggend probleem afdekt." },
+    ],
+    related: ["schadeclassificatie", "wat-wordt-gecontroleerd", "staander-rechtbuigen-lassen"],
   },
 ];
 
