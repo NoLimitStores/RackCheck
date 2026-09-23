@@ -1,10 +1,10 @@
 {
   "publicationFrequency": "daily",
-  "lastSuccessfulRun": "2026-09-21",
-  "lastActionType": "maintenance",
-  "newArticlesSinceMaintenance": 0,
-  "totalNewArticles": 5,
+  "lastSuccessfulRun": "2026-09-23",
+  "lastActionType": "new",
+  "newArticlesSinceMaintenance": 1,
+  "totalNewArticles": 6,
   "totalMaintenanceUpdates": 1,
-  "lastPublishedUrl": "https://www.rackcheck.nl/kennisbank/losse-vloerankers-magazijnstelling/",
+  "lastPublishedUrl": "https://www.rackcheck.nl/kennisbank/roest-corrosie-magazijnstelling/",
   "lastMaintenanceUrl": "https://www.rackcheck.nl/kennisbank/is-stellingkeuring-verplicht/"
 }

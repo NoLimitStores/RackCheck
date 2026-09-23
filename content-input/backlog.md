@@ -101,7 +101,8 @@ locatiepagina's. **Deze routine maakt hier geen content voor.**
   - Gewenste CTA: inspectie aanvragen
   - Opmerking: benoem fabrikantinstructies en originele onderdelen; raakt staander-rechtbuigen-lassen, houd het breder.
 
-- [ ] Roest en corrosie op magazijnstellingen: wanneer wordt het een risico?
+- [x] Roest en corrosie op magazijnstellingen: wanneer wordt het een risico?
+  - Gepubliceerd: 2026-09-23 -> https://www.rackcheck.nl/kennisbank/roest-corrosie-magazijnstelling/
   - Primair zoekwoord: roest magazijnstelling
   - Secundaire zoekwoorden: corrosie stelling, verzinkte stelling roest
   - Zoekintentie: informatief / probleemgedreven
