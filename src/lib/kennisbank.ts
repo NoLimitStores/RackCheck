@@ -146,7 +146,7 @@ export const artikelen: Artikel[] = [
       { q: "Moet de keuring per se jaarlijks?", a: "De wet noemt geen vaste termijn. In de praktijk is een jaarlijkse deskundige inspectie gebruikelijk, aangevuld met frequentere interne controles. De juiste frequentie hangt af van hoe intensief de stellingen worden gebruikt." },
       { q: "Geldt dit ook voor kleine magazijnen?", a: "Ja. De zorgplicht geldt ongeacht de grootte. Bij een klein magazijn is de inspectie alleen korter en goedkoper. Een inspectie bij RackCheck kost vanaf €395 per jaar excl. btw.", link: { href: "/prijzen/", label: "Bekijk de prijzen" } },
     ],
-    related: ["hoe-vaak-stellingen-keuren", "nen-en-15635", "wie-mag-stellingen-inspecteren", "nulinspectie", "kosten-stellinginspectie"],
+    related: ["hoe-vaak-stellingen-keuren", "nen-en-15635", "wie-mag-stellingen-inspecteren", "stellingkeuringsrapport-bewaren", "kosten-stellinginspectie"],
   },
   {
     slug: "hoe-vaak-stellingen-keuren",
@@ -184,7 +184,7 @@ export const artikelen: Artikel[] = [
       { q: "Kan ik een herinnering krijgen voor de volgende inspectie?", a: "Ja. RackCheck kan een terugkerende planning of jaarlijkse herinnering afspreken, zodat u de inspectie niet vergeet." },
       { q: "Telt een interne controle mee als keuring?", a: "Nee. Interne controles zijn belangrijk, maar vervangen de periodieke deskundige inspectie niet. Ze vullen elkaar aan." },
     ],
-    related: ["is-stellingkeuring-verplicht", "interne-controle-vs-externe-inspectie", "wat-is-een-prses"],
+    related: ["is-stellingkeuring-verplicht", "interne-controle-vs-externe-inspectie", "stellingkeuringsrapport-bewaren"],
   },
   {
     slug: "wie-mag-stellingen-inspecteren",
@@ -673,7 +673,7 @@ export const artikelen: Artikel[] = [
       { q: "Krijg ik een voorbeeld van het rapport?", a: "Ja. Op de pagina over een duidelijk inspectierapport ziet u een geanonimiseerde voorbeeldweergave van hoe de bevindingen worden gepresenteerd." },
       { q: "Hoe lang moet ik het rapport bewaren?", a: "Bewaar rapporten zolang de stellingen in gebruik zijn en voor uw dossieropbouw. Ze onderbouwen uw zorgplicht en helpen bij het vergelijken over de tijd." },
     ],
-    related: ["duidelijk-inspectierapport", "schadeclassificatie", "magazijnstelling-afgekeurd", "kosten-stellinginspectie"],
+    related: ["duidelijk-inspectierapport", "schadeclassificatie", "magazijnstelling-afgekeurd", "stellingkeuringsrapport-bewaren"],
   },
   {
     slug: "magazijnstelling-afgekeurd",
@@ -1016,6 +1016,53 @@ export const artikelen: Artikel[] = [
       { q: "Kan ik roest zelf wegschuren en overschilderen?", a: "Bij lichte, oppervlakkige roest kan dat een redelijke maatregel zijn. Bij twijfel, of bij een dragend onderdeel, is het verstandiger dit eerst te laten beoordelen, zodat u niet onbedoeld een dieperliggend probleem afdekt." },
     ],
     related: ["schadeclassificatie", "wat-wordt-gecontroleerd", "staander-rechtbuigen-lassen"],
+  },
+  {
+    slug: "stellingkeuringsrapport-bewaren",
+    category: "Normen en regels",
+    title: "Hoe lang moet u een stellingkeuringsrapport bewaren?",
+    h1: "Hoe lang moet u een stellingkeuringsrapport bewaren?",
+    metaTitle: "Stellingkeuringsrapport bewaren: hoe lang en waar?",
+    metaDescription:
+      "Hoe lang bewaart u een keuringsrapport van magazijnstellingen? Lees wat de Arbowet-regels zeggen over schriftelijk bewijs en wat verstandig is.",
+    excerpt:
+      "Wat de regels zeggen over het bewijs van keuring, waarom een vaste bewaartermijn ontbreekt en hoe u uw dossier op orde houdt.",
+    answer:
+      "U moet het schriftelijk bewijs van een uitgevoerde keuring op de arbeidsplaats kunnen tonen aan de Nederlandse Arbeidsinspectie, digitaal of geprint. Een vaste wettelijke bewaartermijn noemt de Arboportaal-pagina over keuring van arbeidsmiddelen niet. Bewaar rapporten daarom minimaal zolang de stellingen in gebruik zijn, en stem een eventuele langere termijn af met uw verzekeraar of adviseur.",
+    updated: "2026-09-24",
+    image: {
+      src: "/images/palletstelling-jaarinspectie.jpg",
+      alt: "Volgeladen palletstellingen in een magazijn, waarvan de keuring vastgelegd wordt in een inspectierapport",
+    },
+    blocks: [
+      { t: "p", text: "Na elke stellinginspectie ligt er een rapport. Veel bedrijven vragen zich af hoe lang ze dat moeten bewaren en waar. Het eerlijke antwoord is genuanceerd: de regels vragen vooral dat u de keuring kunt aantonen." },
+      { t: "h2", text: "Wat vragen de regels?" },
+      { t: "p", text: "Volgens de Arboportaal-uitleg over de keuring van arbeidsmiddelen moet op de arbeidsplaats schriftelijk bewijs aanwezig zijn van de uitgevoerde keuringen. Dat bewijs mag digitaal of geprint worden bewaard en dient om richting de Nederlandse Arbeidsinspectie aan te tonen dat u aan de keuringsverplichting voldoet. De keuringsplicht zelf staat in artikel 7.4a van het Arbobesluit." },
+      { t: "note", text: "Een vaste bewaartermijn noemt de genoemde Arboportaal-pagina niet. Wij noemen daarom bewust geen wettelijk aantal jaren." },
+      { t: "h2", text: "Hoe lang is verstandig?" },
+      { t: "p", text: "Omdat een vaste termijn ontbreekt, is het een afweging. Een praktische ondergrens is: bewaar rapporten zolang de stellingen in gebruik zijn, zodat u de ontwikkeling van schade en herstel over de jaren kunt laten zien. Wilt u meer zekerheid, vraag dan uw verzekeraar of juridisch adviseur welke termijn zij aanhouden. Dat is praktijkadvies, geen wettelijke eis." },
+      { t: "h2", text: "Wat hoort in het dossier?" },
+      { t: "ul", items: [
+        "Het volledige inspectierapport met bevindingen, foto's en classificaties.",
+        "Vastlegging van herstel: wat is wanneer vervangen of gerepareerd, en door wie.",
+        "Bewijs van herkeuring of herbeoordeling na herstel.",
+        "De uitkomsten van uw interne controles.",
+        "Het belastingbord en de gegevens van de stelling, voor zover beschikbaar.",
+      ] },
+      { t: "h2", text: "Praktische tips" },
+      { t: "ol", items: [
+        "Zorg dat het rapport op de locatie zelf kan worden getoond, ook als u het centraal digitaal archiveert.",
+        "Bewaar rapport en herstelbewijs bij elkaar, zodat de afhandeling van bevindingen aantoonbaar is.",
+        "Wijs een vaste beheerder aan, bijvoorbeeld de PRSES.",
+        "Bewaar ook rapporten van stellingen die u verkoopt of afvoert tot u weet dat u ze niet meer nodig heeft.",
+      ] },
+    ],
+    faq: [
+      { q: "Moet ik het rapport op papier bewaren?", a: "Nee. Volgens de Arboportaal-uitleg mag het bewijs zowel digitaal als geprint worden bewaard, zolang u het op de arbeidsplaats kunt tonen." },
+      { q: "Is er een wettelijke bewaartermijn van bijvoorbeeld vijf jaar?", a: "De Arboportaal-pagina over keuring van arbeidsmiddelen noemt geen vaste bewaartermijn. Termijnen die u elders ziet zijn praktijkadvies. Vraag zo nodig uw verzekeraar of adviseur." },
+      { q: "Wat als ik een oud rapport kwijt ben?", a: "Vraag het aan bij de partij die de inspectie uitvoerde. Zonder aantoonbaar bewijs kunt u de keuring lastig aantonen bij een controle." },
+    ],
+    related: ["informatie-in-inspectierapport", "hoe-vaak-stellingen-keuren", "is-stellingkeuring-verplicht"],
   },
 ];
 
