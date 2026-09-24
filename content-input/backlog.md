@@ -117,7 +117,8 @@ locatiepagina's. **Deze routine maakt hier geen content voor.**
   - Gewenste CTA: vrijblijvend advies aanvragen
   - Opmerking: raakt interne-controle-vs-externe-inspectie; focus op de grens tussen signaleren en beoordelen.
 
-- [ ] Hoe lang moet u een stellingkeuringsrapport bewaren?
+- [x] Hoe lang moet u een stellingkeuringsrapport bewaren?
+  - Gepubliceerd: 2026-09-24 -> https://www.rackcheck.nl/kennisbank/stellingkeuringsrapport-bewaren/
   - Primair zoekwoord: stellingkeuringsrapport bewaren
   - Secundaire zoekwoorden: bewaartermijn keuringsrapport, inspectierapport bewaren
   - Zoekintentie: informatief
