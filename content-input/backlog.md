@@ -124,7 +124,8 @@ locatiepagina's. **Deze routine maakt hier geen content voor.**
   - Zoekintentie: informatief
   - Gewenste CTA: contact opnemen
 
-- [ ] Wat controleert de Nederlandse Arbeidsinspectie in een magazijn?
+- [x] Wat controleert de Nederlandse Arbeidsinspectie in een magazijn?
+  - Gepubliceerd: 2026-09-25 -> https://www.rackcheck.nl/kennisbank/arbeidsinspectie-magazijn/
   - Primair zoekwoord: arbeidsinspectie magazijn stellingen
   - Secundaire zoekwoorden: inspectie SZW magazijn, controle stellingen arbeidsinspectie
   - Zoekintentie: informatief
