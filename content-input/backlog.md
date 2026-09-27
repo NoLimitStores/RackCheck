@@ -132,7 +132,8 @@ locatiepagina's. **Deze routine maakt hier geen content voor.**
   - Gewenste CTA: inspectie aanvragen
   - Opmerking: baseer op Arbeidsinspectie/Arboportaal; geen verzonnen boetebedragen.
 
-- [ ] Wie is aansprakelijk bij een ingestorte magazijnstelling?
+- [x] Wie is aansprakelijk bij een ingestorte magazijnstelling?
+  - Gepubliceerd: 2026-09-27 -> https://www.rackcheck.nl/kennisbank/aansprakelijkheid-ingestorte-stelling/
   - Primair zoekwoord: aansprakelijkheid ingestorte stelling
   - Secundaire zoekwoorden: stelling ingestort aansprakelijk, ongeval magazijnstelling
   - Zoekintentie: informatief
