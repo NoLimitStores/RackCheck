@@ -142,11 +142,13 @@ locatiepagina's. **Deze routine maakt hier geen content voor.**
 
 - [ ] Stellingkeuring en verzekering: welke documenten moet u kunnen aantonen?
   - Primair zoekwoord: stellingkeuring verzekering
+  - Overgeslagen 2026-09-28: geen primaire bron voor eisen van verzekeraars (verschilt per polis); documentenkant nu gedekt door documenten-magazijnstellingen.
   - Secundaire zoekwoorden: keuringsbewijs stelling verzekeraar, aantonen onderhoud stelling
   - Zoekintentie: informatief / commercieel ondersteunend
   - Gewenste CTA: inspectie aanvragen
 
-- [ ] Welke documenten horen bij veilig gebruik van magazijnstellingen?
+- [x] Welke documenten horen bij veilig gebruik van magazijnstellingen?
+  - Gepubliceerd: 2026-09-28 -> https://www.rackcheck.nl/kennisbank/documenten-magazijnstellingen/
   - Primair zoekwoord: documenten magazijnstellingen veiligheid
   - Secundaire zoekwoorden: belastingbord tekening stelling, dossier stellingen
   - Zoekintentie: informatief
