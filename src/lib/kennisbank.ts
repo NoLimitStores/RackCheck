@@ -1232,9 +1232,9 @@ export const artikelen: Artikel[] = [
       "Bij veilig gebruik van magazijnstellingen hoort een dossier waarmee u laat zien dat de stellingen geschikt zijn, goed onderhouden worden en gekeurd zijn. Wettelijk verplicht is in elk geval schriftelijk bewijs van de uitgevoerde keuringen op de arbeidsplaats (Arbobesluit artikel 7.4a) en een schriftelijke RI&E met plan van aanpak (Arbowet artikel 5). Daarnaast horen de belastinggegevens en instructies van de fabrikant, vastlegging van interne controles en herstel, en bij wijzigingen nieuwe belastinggegevens in het dossier. Een deel daarvan komt uit de wet, een deel uit NEN-EN 15635 en de praktijk.",
     updated: "2026-09-28",
     image: {
-      src: "/images/praktijk/belastingbord-palletstelling.jpg",
-      alt: "Geel belastingbord op een palletstelling met de kop Toelaatbare belastingen, een schets van de stellingsectie en velden voor hoogte, breedte en juktype",
-      caption: "Een belastingbord legt vast voor welke configuratie de toegestane belasting geldt. Die gegevens horen ook in uw stellingdossier.",
+      src: "/images/praktijk/palletstelling-belastingborden-overkapping.jpg",
+      alt: "Nieuwe verzinkte palletstelling onder een overkapping, met gele belastingborden op de eindjukken en verankerde voetplaten",
+      caption: "Na montage en voor ingebruikname hoort er al een dossier te zijn: de belastingborden op de jukken, de bijbehorende gegevens en het bewijs van keuring.",
     },
     blocks: [
       { t: "p", text: "Bij een controle, een incident of een vraag van uw verzekeraar gaat het al snel om één ding: kunt u laten zien dat uw stellingen veilig zijn? Dat lukt alleen met een dossier dat compleet en actueel is. Hieronder leest u welke documenten erin horen, waar de eis vandaan komt en hoe u het dossier bijhoudt." },
