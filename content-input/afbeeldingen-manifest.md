@@ -21,6 +21,7 @@ Locatie: `public/images/praktijk/` -> pad in code: `/images/praktijk/<bestand>`
 | grootvakstelling-bordesvloer.jpg | Grootvakstelling met banden, met stalen bordesvloer erboven | grootvakstelling, bordes/entresol, banden | Grootvakstelling met autobanden en een stalen bordesvloer erboven |
 | ligger-geknikt-overbelast.jpg | Stalen steunbalk onder een bordesvloer, zichtbaar doorgebogen en geknikt onder een zware last van gestapelde platen | verbogen ligger, doorbuiging, overbelasting, blijvende vervorming | Stalen steunbalk die zichtbaar is doorgebogen en geknikt onder een zwaar beladen bordesvloer |
 | schoor-detail-palletstelling.jpg | Detail van een schoor (diagonale verstijving) tussen twee stellingstaanders, met een houten balk op de voorgrond | schoor, verstijving, staanderframe, palletstelling | Detail van een schoor tussen twee staanders van een palletstelling |
+| belastingbord-palletstelling.jpg | Geel belastingbord (Toelaatbare belastingen) op een palletstelling: schets van de sectie, velden voor h, b, juktype en vloertype. Uitsnede 16:9; klantgegevens onderaan weggesneden | belastingbord, belastinggegevens, documenten/dossier, stelling aanpassen, liggerhoogte | Geel belastingbord op een palletstelling met de toelaatbare belastingen en een schets van de stellingsectie |
 
 ## Regels
 - Open de foto voordat je hem plaatst; vertrouw niet alleen op de bestandsnaam.
