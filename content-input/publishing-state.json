@@ -1,10 +1,10 @@
 {
   "publicationFrequency": "daily",
-  "lastSuccessfulRun": "2026-09-28",
-  "lastActionType": "new",
-  "newArticlesSinceMaintenance": 5,
+  "lastSuccessfulRun": "2026-09-29",
+  "lastActionType": "maintenance",
+  "newArticlesSinceMaintenance": 0,
   "totalNewArticles": 10,
-  "totalMaintenanceUpdates": 1,
+  "totalMaintenanceUpdates": 2,
   "lastPublishedUrl": "https://www.rackcheck.nl/kennisbank/documenten-magazijnstellingen/",
-  "lastMaintenanceUrl": "https://www.rackcheck.nl/kennisbank/is-stellingkeuring-verplicht/"
+  "lastMaintenanceUrl": "https://www.rackcheck.nl/kennisbank/hoe-vaak-stellingen-keuren/"
 }
