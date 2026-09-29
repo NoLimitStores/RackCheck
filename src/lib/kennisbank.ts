@@ -143,7 +143,7 @@ export const artikelen: Artikel[] = [
       ] },
     ],
     faq: [
-      { q: "Moet de keuring per se jaarlijks?", a: "De wet noemt geen vaste termijn. In de praktijk is een jaarlijkse deskundige inspectie gebruikelijk, aangevuld met frequentere interne controles. De juiste frequentie hangt af van hoe intensief de stellingen worden gebruikt." },
+      { q: "Moet de keuring per se jaarlijks?", a: "Ja, reken op minimaal één keer per twaalf maanden. Het Arbobesluit verplicht tot periodieke keuring en de toelichting op het Arbobesluit noemt één keer per jaar keuren als veilige ondergrens. Bij intensief gebruik, zoals in grote distributiecentra, is twee keer per jaar in de praktijk verstandig. Tussendoor horen frequentere interne controles." },
       { q: "Geldt dit ook voor kleine magazijnen?", a: "Ja. De zorgplicht geldt ongeacht de grootte. Bij een klein magazijn is de inspectie alleen korter en goedkoper. Een inspectie bij RackCheck kost vanaf €395 per jaar excl. btw.", link: { href: "/prijzen/", label: "Bekijk de prijzen" } },
     ],
     related: ["hoe-vaak-stellingen-keuren", "nen-en-15635", "wie-mag-stellingen-inspecteren", "stellingkeuringsrapport-bewaren", "kosten-stellinginspectie", "arbeidsinspectie-magazijn", "aansprakelijkheid-ingestorte-stelling", "documenten-magazijnstellingen"],
@@ -155,11 +155,11 @@ export const artikelen: Artikel[] = [
     h1: "Hoe vaak moeten magazijnstellingen worden gekeurd?",
     metaTitle: "Hoe vaak stellingen keuren? Frequentie en wetgeving",
     metaDescription:
-      "De wet noemt geen vaste termijn, maar een jaarlijkse deskundige inspectie is gangbaar. Lees wat Arbobesluit en NEN-EN 15635 vragen en wanneer u vaker keurt.",
+      "Stellingen keurt u minimaal eens per 12 maanden door een deskundige, bij intensief gebruik vaker. Lees wat het Arbobesluit en NEN-EN 15635 vragen.",
     excerpt:
       "Van dagelijkse oplettendheid tot de jaarlijkse deskundige inspectie: wat de wet vraagt, wat de norm toevoegt en hoe u het juiste ritme bepaalt.",
     answer:
-      "De wet noemt geen vaste termijn. Artikel 7.4a van het Arbobesluit vraagt dat arbeidsmiddelen die kunnen verslechteren periodiek door een deskundige worden gekeurd, en opnieuw na uitzonderlijke gebeurtenissen zoals een ongeval of een wijziging. In de praktijk laat u magazijnstellingen minimaal één keer per jaar inspecteren door een deskundige, aangevuld met regelmatige interne visuele controles door een aangewezen medewerker. Bij intensief gebruik of na schade is vaker nodig.",
+      "Magazijnstellingen laat u minimaal één keer per twaalf maanden keuren door een deskundige. Artikel 7.4a van het Arbobesluit verplicht tot periodieke keuring van arbeidsmiddelen die kunnen verslechteren, en de toelichting op het Arbobesluit noemt één keer per jaar als veilige ondergrens. Bij intensief gebruik, zoals in grote distributiecentra met veel heftruckverkeer, is twee keer per jaar verstandig. Daarnaast horen regelmatige interne visuele controles en een extra keuring na een ongeval of wijziging.",
     updated: "2026-09-29",
     featured: true,
     image: {
@@ -168,21 +168,24 @@ export const artikelen: Artikel[] = [
       caption: "Stellingen langs rijroutes en onderdoorgangen lopen meer kans op aanrijdschade en verdienen een strakker controleritme.",
     },
     blocks: [
-      { t: "p", text: "Er is geen wettelijk vastgelegde termijn in maanden, maar wel een duidelijke wettelijke plicht om periodiek te keuren en een breed gedragen praktijk die voortkomt uit NEN-EN 15635. Die praktijk kent verschillende niveaus van controle die elkaar aanvullen." },
+      { t: "p", text: "Kort gezegd: minimaal één keer per twaalf maanden een deskundige inspectie, bij intensief gebruik vaker, en daartussen regelmatige interne controles. Hieronder leest u waar die termijn vandaan komt en hoe de verschillende niveaus van controle elkaar aanvullen." },
       { t: "h2", text: "Wat de wet zegt over de keuringsfrequentie" },
       { t: "p", text: "Artikel 7.4a van het Arbobesluit regelt de keuring van arbeidsmiddelen, en magazijnstellingen vallen daaronder. Het artikel noemt de momenten waarop keuren aan de orde is: na installatie en voor het eerste gebruik, na montage op een nieuwe plek, periodiek bij arbeidsmiddelen die door gebruik kunnen verslechteren zodat die verslechtering op tijd wordt opgespoord, en na uitzonderlijke gebeurtenissen zoals veranderingen aan het arbeidsmiddel of ongevallen. De keuring gebeurt door een deskundige persoon of instelling en het schriftelijke bewijs hoort op de arbeidsplaats aanwezig te zijn." },
-      { t: "p", text: "Een vast aantal maanden staat niet in de wet. De toelichting op Arboportaal over de keuring van arbeidsmiddelen noemt jaarlijks keuren als een veilige minimumfrequentie, waarbij de juiste frequentie afhangt van het soort arbeidsmiddel en hoe intensief het wordt gebruikt." },
+      { t: "p", text: "Hoe vaak die periodieke keuring moet, staat in de toelichting op het Arbobesluit: één keer per jaar keuren is daar de veilige ondergrens. Arboportaal neemt dat over in de uitleg over de keuring van arbeidsmiddelen. Voor magazijnstellingen betekent dat: minimaal één deskundige inspectie per twaalf maanden. Is het gebruik intensiever, dan hoort de frequentie omhoog te gaan." },
       { t: "h2", text: "Wat NEN-EN 15635 toevoegt" },
-      { t: "p", text: "NEN-EN 15635 is de Europese norm voor het gebruik en onderhoud van stalen opslagsystemen. De norm is geen wet, maar geeft een erkende invulling van de keuringsplicht. Ze werkt met lagen van controle: medewerkers melden schade direct, een aangewezen verantwoordelijke (de PRSES) voert regelmatig visuele controles uit en een deskundige inspecteert periodiek. Openbare toelichtingen op de norm noemen voor die deskundige inspectie een interval van niet meer dan twaalf maanden. De volledige normtekst is betaald en via NEN verkrijgbaar." },
+      { t: "p", text: "NEN-EN 15635 is de Europese norm voor het gebruik en onderhoud van stalen opslagsystemen. De norm is geen wet, maar geeft een erkende invulling van de keuringsplicht. Ze werkt met lagen van controle: medewerkers melden schade direct, een aangewezen verantwoordelijke (de PRSES) voert regelmatig visuele controles uit en een deskundige inspecteert periodiek. Ook in de praktijk rond de norm is een deskundige inspectie met een interval van niet meer dan twaalf maanden het uitgangspunt. De volledige normtekst is betaald en via NEN verkrijgbaar." },
       { t: "table", head: ["Soort controle", "Wie", "Frequentie", "Basis"], rows: [
         ["Direct melden van schade", "Iedere medewerker", "Doorlopend", "NEN-EN 15635 en goede praktijk"],
         ["Interne visuele controle", "Aangewezen medewerker (PRSES)", "Wekelijks tot maandelijks, afhankelijk van het gebruik", "Praktijkadvies bij de regelmatige controles uit NEN-EN 15635"],
-        ["Deskundige inspectie", "Deskundige, bij voorkeur onafhankelijk", "In de regel jaarlijks", "Arbobesluit artikel 7.4a (periodiek) en NEN-EN 15635"],
+        ["Deskundige inspectie", "Deskundige, bij voorkeur onafhankelijk", "Minimaal eens per 12 maanden", "Arbobesluit artikel 7.4a met toelichting, en NEN-EN 15635"],
+        ["Deskundige inspectie bij intensief gebruik", "Deskundige, bij voorkeur onafhankelijk", "Twee keer per jaar", "Praktijkadvies bij veel heftruckverkeer of meerploegendienst"],
         ["Keuring na incident of wijziging", "Deskundige", "Direct na de gebeurtenis", "Arbobesluit artikel 7.4a (uitzonderlijke gebeurtenissen)"],
         ["Keuring voor ingebruikname", "Deskundige", "Bij nieuwe of verplaatste stellingen", "Arbobesluit artikel 7.4a (na installatie of montage)"],
       ] },
       { t: "h2", text: "Waarom niet alleen jaarlijks?" },
       { t: "p", text: "Een jaarlijkse inspectie is een momentopname. Schade ontstaat het hele jaar door, vaak door aanrijdingen die niet worden gemeld. Daarom is de combinatie belangrijk: medewerkers die schade direct melden, een aangewezen persoon die regelmatig rondloopt en een deskundige die jaarlijks grondig beoordeelt." },
+      { t: "h2", text: "Twee keer per jaar bij intensief gebruik" },
+      { t: "p", text: "De ondergrens van één keer per jaar is geen streefwaarde. Grote distributiecentra met veel heftruckverkeer, meerploegendiensten en een hoge omloopsnelheid laten hun stellingen in de praktijk vaak twee keer per jaar deskundig inspecteren. Bij dat gebruik ontstaat in een jaar zoveel aanrijdschade dat een jaarlijkse momentopname te weinig zegt over de actuele staat van de stellingen." },
       { t: "h2", text: "Wanneer vaker of extra inspecteren?" },
       { t: "ul", items: [
         "Bij intensief heftruckverkeer, smalle gangpaden of meerploegendienst: verhoog de frequentie van de interne controles.",
@@ -204,7 +207,8 @@ export const artikelen: Artikel[] = [
       { t: "note", text: "Tip: leg de datum van elke inspectie vast en plan de volgende meteen in. Zo verdwijnt de inspectie niet tussen andere werkzaamheden." },
     ],
     faq: [
-      { q: "Is een jaarlijkse stellingkeuring wettelijk verplicht?", a: "De wet noemt geen vaste termijn. Het Arbobesluit verplicht wel tot periodieke keuring door een deskundige. Jaarlijks is de gangbare invulling daarvan en sluit aan bij de toelichting op Arboportaal en bij NEN-EN 15635." },
+      { q: "Is een jaarlijkse stellingkeuring wettelijk verplicht?", a: "Ja, minimaal één keer per twaalf maanden. Artikel 7.4a van het Arbobesluit verplicht tot periodieke keuring door een deskundige en de toelichting op het Arbobesluit noemt één keer per jaar als veilige ondergrens. Bij intensief gebruik is een hogere frequentie, zoals twee keer per jaar, verstandig." },
+      { q: "Wanneer kies ik voor twee keer per jaar?", a: "Bij intensief gebruik: veel heftruckverkeer, meerploegendienst, smalle gangpaden of regelmatig gemelde aanrijdschade. Grote distributiecentra kiezen daar in de praktijk vaak voor. Bespreek het met de inspecteur op basis van de schade uit eerdere rapporten." },
       { q: "Moet ik na een aanrijding wachten tot de jaarlijkse inspectie?", a: "Nee. Na een ongeval of andere uitzonderlijke gebeurtenis vraagt het Arbobesluit om een keuring. Ontlast of blokkeer de beschadigde sectie en laat deze beoordelen voordat u hem weer volledig gebruikt." },
       { q: "Moet een nieuwe of verplaatste stelling ook worden gekeurd?", a: "Ja. Het Arbobesluit noemt keuring na installatie en na montage op een nieuwe plek, voordat het arbeidsmiddel in gebruik wordt genomen. Voor stellingen gebeurt dat met een nulinspectie.", link: { href: "/kennisbank/nulinspectie/", label: "Lees meer over de nulinspectie" } },
       { q: "Kan ik een herinnering krijgen voor de volgende inspectie?", a: "Ja. RackCheck kan een terugkerende planning of jaarlijkse herinnering afspreken, zodat u de inspectie niet vergeet." },
@@ -575,7 +579,7 @@ export const artikelen: Artikel[] = [
       { t: "p", text: "Veel bedrijven denken dat één van beide volstaat. In werkelijkheid werkt stellingveiligheid alleen goed als beide op hun plek zijn: de frequente eigen ogen en de periodieke deskundige blik." },
       { t: "table", head: ["", "Interne controle", "Externe inspectie"], rows: [
         ["Wie", "Aangewezen medewerker (PRSES)", "Onafhankelijke deskundige"],
-        ["Frequentie", "Wekelijks tot maandelijks", "In de regel jaarlijks"],
+        ["Frequentie", "Wekelijks tot maandelijks", "Minimaal eens per 12 maanden, bij intensief gebruik vaker"],
         ["Diepgang", "Zichtbare schade signaleren", "Grondige beoordeling en classificatie"],
         ["Resultaat", "Melding en directe actie", "Rapport met prioriteiten en vervolgstappen"],
       ] },

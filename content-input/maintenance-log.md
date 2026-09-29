@@ -13,3 +13,4 @@
 - Nieuwe secties: stappenplan voor het bepalen van het ritme, vastleggen en bewaren. FAQ uitgebreid van 2 naar 5 vragen (incl. link naar nulinspectie).
 - Related uitgebreid met nulinspectie en na-heftruckaanrijding; inkomende link toegevoegd vanuit checklist-veilige-magazijnstelling.
 - Meta title/description aangescherpt; slug behouden; updated gezet op 2026-09-29.
+- Correctie 2026-09-29 (na feedback eigenaar): frequentie aangescherpt naar "minimaal eens per 12 maanden" op basis van de toelichting op het Arbobesluit (via Arboportaal: één keer per jaar keuren is de veilige ondergrens). Toegevoegd: twee keer per jaar bij intensief gebruik (grote distributiecentra) als praktijkadvies, extra tabelrij, sectie en FAQ. Consistent gemaakt in is-stellingkeuring-verplicht (FAQ) en interne-controle-vs-externe-inspectie (tabel).
