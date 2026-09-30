@@ -53,6 +53,7 @@ locatiepagina's. **Deze routine maakt hier geen content voor.**
   - Opmerking: onderscheid doorbuiging door belasting vs. aanrijdschade; geen verzonnen mm-grenzen.
 
 - [ ] Doorbuiging van een ligger: hoeveel is toegestaan?
+  - Overgeslagen 2026-09-30: zoekintentie al gedekt door verbogen-ligger (elastisch vs. blijvend, wie bepaalt de toegestane doorbuiging); concrete tolerantie alleen in betaalde norm/fabrikantopgave.
   - Primair zoekwoord: doorbuiging ligger stelling toegestaan
   - Secundaire zoekwoorden: maximale doorbuiging ligger, ligger doorhangt
   - Zoekintentie: informatief / probleemgedreven
@@ -60,6 +61,7 @@ locatiepagina's. **Deze routine maakt hier geen content voor.**
   - Opmerking: verwijs naar fabrikantopgave en beoordeling door deskundige; noem geen concrete tolerantie zonder bron.
 
 - [ ] Beschadigde staander: vervangen of repareren?
+  - Overgeslagen 2026-09-30: afweging vervangen vs. herstellen al gedekt door staander-rechtbuigen-lassen en magazijnstelling-afgekeurd.
   - Primair zoekwoord: beschadigde staander stelling vervangen
   - Secundaire zoekwoorden: stellingstaander repareren, staander vervangen kosten
   - Zoekintentie: probleemgedreven / commercieel ondersteunend
@@ -89,12 +91,14 @@ locatiepagina's. **Deze routine maakt hier geen content voor.**
   - Gewenste CTA: inspectie aanvragen
 
 - [ ] Wanneer moet een beschadigde stelling direct worden ontlast?
+  - Overgeslagen 2026-09-30: ontlasten bij rood al gedekt door magazijnstelling-afgekeurd, schadeclassificatie en na-heftruckaanrijding.
   - Primair zoekwoord: beschadigde stelling ontlasten
   - Secundaire zoekwoorden: stelling leeghalen schade, stelling afzetten
   - Zoekintentie: urgent / probleemgedreven
   - Gewenste CTA: inspectie aanvragen
 
 - [ ] Mag een beschadigde magazijnstelling worden gerepareerd?
+  - Overgeslagen 2026-09-30: herstel met originele onderdelen al gedekt door magazijnstelling-afgekeurd en staander-rechtbuigen-lassen.
   - Primair zoekwoord: beschadigde stelling repareren mag dat
   - Secundaire zoekwoorden: stelling herstellen regels, reparatie stelling toegestaan
   - Zoekintentie: informatief / probleemgedreven
@@ -111,6 +115,7 @@ locatiepagina's. **Deze routine maakt hier geen content voor.**
 ## PRIORITEIT 2 - Compliance, verantwoordelijkheid en aansprakelijkheid
 
 - [ ] Mag een medewerker zelf stellingschade beoordelen?
+  - Overgeslagen 2026-09-30: grens signaleren vs. beoordelen al gedekt door interne-controle-vs-externe-inspectie.
   - Primair zoekwoord: stellingschade zelf beoordelen
   - Secundaire zoekwoorden: interne controle stelling medewerker, wie beoordeelt schade
   - Zoekintentie: informatief
@@ -155,7 +160,8 @@ locatiepagina's. **Deze routine maakt hier geen content voor.**
   - Gewenste CTA: contact opnemen
   - Opmerking: raakt belastingbord; houd dit breder (dossier/aantoonbaarheid).
 
-- [ ] Magazijnstellingen aanpassen: wanneer is een nieuwe draagkrachtberekening nodig?
+- [x] Magazijnstellingen aanpassen: wanneer is een nieuwe draagkrachtberekening nodig?
+  - Gepubliceerd: 2026-09-30 -> https://www.rackcheck.nl/kennisbank/draagkrachtberekening-stelling-aanpassen/
   - Primair zoekwoord: draagkrachtberekening magazijnstelling
   - Secundaire zoekwoorden: stelling ombouwen draagvermogen, liggerniveau wijzigen
   - Zoekintentie: informatief / probleemgedreven

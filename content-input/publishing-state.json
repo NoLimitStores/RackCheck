@@ -1,10 +1,10 @@
 {
   "publicationFrequency": "daily",
-  "lastSuccessfulRun": "2026-09-29",
-  "lastActionType": "maintenance",
-  "newArticlesSinceMaintenance": 0,
-  "totalNewArticles": 10,
+  "lastSuccessfulRun": "2026-09-30",
+  "lastActionType": "new",
+  "newArticlesSinceMaintenance": 1,
+  "totalNewArticles": 11,
   "totalMaintenanceUpdates": 2,
-  "lastPublishedUrl": "https://www.rackcheck.nl/kennisbank/documenten-magazijnstellingen/",
+  "lastPublishedUrl": "https://www.rackcheck.nl/kennisbank/draagkrachtberekening-stelling-aanpassen/",
   "lastMaintenanceUrl": "https://www.rackcheck.nl/kennisbank/hoe-vaak-stellingen-keuren/"
 }
