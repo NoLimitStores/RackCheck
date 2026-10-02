@@ -168,6 +168,7 @@ locatiepagina's. **Deze routine maakt hier geen content voor.**
   - Gewenste CTA: inspectie aanvragen
 
 - [ ] Liggerhoogte veranderen: moet het belastingbord worden aangepast?
+  - Overgeslagen 2026-10-02: zoekintentie al gedekt door draagkrachtberekening-stelling-aanpassen (liggers verhangen, bord aanpassen) en de FAQ in belastingbord.
   - Primair zoekwoord: liggerhoogte veranderen belastingbord
   - Secundaire zoekwoorden: stelling verstellen belasting, veldlast aanpassen
   - Zoekintentie: informatief
@@ -177,6 +178,7 @@ locatiepagina's. **Deze routine maakt hier geen content voor.**
 ## PRIORITEIT 3 - Stellingtypen en praktische inspectievragen
 
 - [ ] Inrijstellingen (drive-in) inspecteren: waar wordt op gelet?
+  - Overgeslagen 2026-10-02: zelfde zoekwoord en intentie als bestaande pagina /inspecties/inrijstelling (inspectiepunten, schade, risico staan daar al).
   - Primair zoekwoord: inrijstelling inspecteren
   - Secundaire zoekwoorden: drive-in stelling keuren, inrijstelling aanrijdschade
   - Zoekintentie: informatief / commercieel ondersteunend
@@ -184,13 +186,15 @@ locatiepagina's. **Deze routine maakt hier geen content voor.**
   - Opmerking: benadruk verhoogd aanrijdrisico bij inrijden.
 
 - [ ] Draagarmstellingen inspecteren: aandachtspunten bij langgoed
+  - Overgeslagen 2026-10-02: zelfde zoekwoord en intentie als bestaande pagina /inspecties/draagarmstelling (armen, verankering, kantelmoment staan daar al).
   - Primair zoekwoord: draagarmstelling inspecteren
   - Secundaire zoekwoorden: draagarmstelling keuren, cantilever stelling veiligheid
   - Zoekintentie: informatief / commercieel ondersteunend
   - Gewenste CTA: inspectie aanvragen
   - Opmerking: onderscheiden van commerciele pagina /inspecties/draagarmstelling; puur inhoudelijk (armen, verankering, uitkraging).
 
-- [ ] Doorrolstellingen inspecteren: rollenbanen en veiligheid
+- [x] Doorrolstellingen inspecteren: rollenbanen en veiligheid
+  - Gepubliceerd: 2026-10-02 -> https://www.rackcheck.nl/kennisbank/doorrolstelling-inspecteren/
   - Primair zoekwoord: doorrolstelling inspecteren
   - Secundaire zoekwoorden: doorrolstelling keuren, live storage inspectie
   - Zoekintentie: informatief
