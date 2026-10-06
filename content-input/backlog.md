@@ -201,13 +201,15 @@ locatiepagina's. **Deze routine maakt hier geen content voor.**
   - Gewenste CTA: inspectie aanvragen
 
 - [ ] Entresolvloer en bordes: wat komt er bij inspectie kijken?
+  - Overgeslagen 2026-10-06: zelfde zoekwoord en intentie als bestaande pagina /inspecties/bordes-entresolvloer.
   - Primair zoekwoord: entresolvloer inspecteren
   - Secundaire zoekwoorden: bordes keuren, verdiepingsvloer magazijn veiligheid
   - Zoekintentie: informatief / commercieel ondersteunend
   - Gewenste CTA: inspectie aanvragen
   - Opmerking: hekwerk, leuningen, vloerbelasting, valbeveiliging; geen verzonnen normwaarden.
 
-- [ ] Stellingen keuren na verplaatsing of herinrichting
+- [x] Stellingen keuren na verplaatsing of herinrichting
+  - Gepubliceerd: 2026-10-06 -> https://www.rackcheck.nl/kennisbank/stellingen-keuren-na-verplaatsing/
   - Primair zoekwoord: stellingen keuren na verplaatsing
   - Secundaire zoekwoorden: stelling verplaatst opnieuw keuren, magazijn herinrichten stelling
   - Zoekintentie: probleemgedreven / commercieel ondersteunend
