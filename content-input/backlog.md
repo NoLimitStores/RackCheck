@@ -216,7 +216,8 @@ locatiepagina's. **Deze routine maakt hier geen content voor.**
   - Gewenste CTA: inspectie aanvragen
   - Opmerking: raakt nulinspectie; focus op verplaatsing/hermontage.
 
-- [ ] Gebruikte magazijnstellingen gekocht: wanneer laten keuren?
+- [x] Gebruikte magazijnstellingen gekocht: wanneer laten keuren?
+  - Gepubliceerd: 2026-10-07 -> https://www.rackcheck.nl/kennisbank/gebruikte-magazijnstellingen-keuren/
   - Primair zoekwoord: gebruikte magazijnstellingen keuren
   - Secundaire zoekwoorden: tweedehands stelling veilig, overgenomen stelling keuren
   - Zoekintentie: probleemgedreven / commercieel ondersteunend
