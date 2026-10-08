@@ -223,7 +223,8 @@ locatiepagina's. **Deze routine maakt hier geen content voor.**
   - Zoekintentie: probleemgedreven / commercieel ondersteunend
   - Gewenste CTA: inspectie aanvragen
 
-- [ ] Jaarlijkse stellingkeuring verlopen: wat nu?
+- [x] Jaarlijkse stellingkeuring verlopen: wat nu?
+  - Gepubliceerd: 2026-10-08 -> https://www.rackcheck.nl/kennisbank/stellingkeuring-verlopen/
   - Primair zoekwoord: stellingkeuring verlopen
   - Secundaire zoekwoorden: keuring te laat stelling, herkeuring stelling
   - Zoekintentie: probleemgedreven / urgent
