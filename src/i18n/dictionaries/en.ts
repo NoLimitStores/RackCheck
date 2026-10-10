@@ -18,7 +18,7 @@ export const en: LocaleDict = {
   },
   footer: {
     tagline:
-      "Independent inspection of warehouse racking. A clear report with prioritised findings, usually within 24 hours.",
+      "Independent inspection of warehouse racking. A clear report with prioritised findings; the delivery timeframe is agreed in advance.",
     colServices: "Inspections",
     colCompany: "Company",
     contactTitle: "Contact",
@@ -26,10 +26,11 @@ export const en: LocaleDict = {
     rights: "All rights reserved.",
     kvk: "Chamber of Commerce",
     vat: "VAT",
+    certified: "TÜV SÜD certified (Germany)",
   },
   cta: {
     title: "Are you sure your racking is still safe?",
-    text: "Request an independent inspection. You receive a clear report with prioritised findings, usually within 24 hours.",
+    text: "Request an independent inspection. You receive a clear report with prioritised findings; the delivery timeframe is agreed in advance.",
     primary: "Request an inspection",
     phone: "Call us",
     whatsapp: "WhatsApp",
@@ -90,12 +91,12 @@ export const en: LocaleDict = {
         imageAlt: "Warehouse with tall, fully loaded racking along a long aisle",
       },
       answer:
-        "A racking inspection is an expert assessment of the safety of your warehouse racking in line with EN 15635. You receive a clear report with prioritised findings and concrete next steps, usually within 24 hours.",
+        "A racking inspection is an expert assessment of the safety of your warehouse racking in line with EN 15635. You receive a clear report with prioritised findings and concrete next steps; the delivery timeframe is agreed in advance.",
       blocks: [
         { t: "h2", text: "Why RackCheck" },
         { t: "ul", items: [
           "Independent assessment with no sales interest",
-          "A prioritised report, usually within 24 hours",
+          "A prioritised report; delivery timeframe agreed in advance",
           "One dedicated inspector and personal contact",
           "Active in the Netherlands and Belgium, and in Germany by arrangement",
           "Repairs can be arranged separately through Hovuma",
@@ -113,7 +114,7 @@ export const en: LocaleDict = {
       intro:
         "An independent inspection of your warehouse racking, with a clear report, prioritised findings and concrete next-step advice.",
       answer:
-        "A racking inspection is an expert assessment of the safety of your warehouse racking in line with EN 15635. Every finding is graded green, amber or red, with a report usually delivered within 24 hours.",
+        "A racking inspection is an expert assessment of the safety of your warehouse racking in line with EN 15635. The report distinguishes between what can be repaired, what has been condemned and must be replaced, and general safety observations, with a concrete next step for each finding. Photos support the report for condemnations and serious findings.",
       image: {
         src: "/images/magazijn-palletstellingen-overzicht.jpg",
         alt: "Warehouse with tall, fully loaded pallet racking",
@@ -135,7 +136,7 @@ export const en: LocaleDict = {
     "how-we-work": {
       metaTitle: "How we work | From request to report",
       metaDescription:
-        "How a racking inspection works at RackCheck: intake, planning, on-site inspection, immediate warning of danger and a report usually within 24 hours.",
+        "How a racking inspection works at RackCheck: intake, planning, on-site inspection, immediate warning of danger and a clear digital report.",
       breadcrumb: "How we work",
       eyebrow: "How we work",
       h1: "From request to report",
@@ -150,7 +151,7 @@ export const en: LocaleDict = {
           "Planning at a time that suits your operation",
           "On-site inspection of all accessible racking",
           "Immediate feedback in case of acute danger",
-          "A prioritised report, usually within 24 hours",
+          "A prioritised report; delivery timeframe agreed in advance",
           "An optional separate repair proposal on request",
         ] },
       ],

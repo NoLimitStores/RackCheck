@@ -10,7 +10,7 @@ import { Section, SectionHeading } from "@/components/Section";
 import AnswerBox from "@/components/AnswerBox";
 import ProcessSteps from "@/components/ProcessSteps";
 import PrijsVanaf from "@/components/PrijsVanaf";
-import SchadeClassificatie from "@/components/SchadeClassificatie";
+import RapportIndeling from "@/components/RapportIndeling";
 import RelatedContent from "@/components/RelatedContent";
 import FAQ from "@/components/FAQ";
 import CTASection from "@/components/CTASection";
@@ -25,10 +25,10 @@ export const metadata: Metadata = {
 };
 
 const faq = [
-  { q: "Wat is een stellinginspectie?", a: "Een stellinginspectie is een deskundige beoordeling van de veiligheid van uw magazijnstellingen. De inspecteur controleert alle dragende en veiligheidsrelevante onderdelen, classificeert de bevindingen en levert een rapport met prioriteiten en vervolgstappen." },
+  { q: "Wat is een stellinginspectie?", a: "Een stellinginspectie is een deskundige beoordeling van de veiligheid van uw magazijnstellingen. De inspecteur controleert alle dragende en veiligheidsrelevante onderdelen en levert een rapport dat onderscheid maakt tussen wat gerepareerd kan worden, wat is afgekeurd en vervangen moet worden en algemene veiligheidsopmerkingen." },
   { q: "Hoe lang duurt een inspectie?", a: "Van ongeveer twee uur voor een klein magazijn tot een volledige dag voor een zeer groot of complex magazijn. De duur hangt af van de omvang, het aantal stellingen en de bereikbaarheid." },
   { q: "Moet de operatie stilliggen?", a: "In de meeste gevallen niet. De inspecteur stemt de route af op uw magazijn. Alleen bij acuut gevaar vragen we een sectie tijdelijk vrij te maken." },
-  { q: "Ontvang ik een certificaat of sticker?", a: "U ontvangt een inspectierapport met de bevindingen en classificaties. Dat rapport onderbouwt uw dossier en uw zorgplicht." },
+  { q: "Ontvang ik een certificaat of sticker?", a: "U ontvangt een inspectierapport met de bevindingen en de vervolgstappen. Dat rapport onderbouwt uw dossier en uw zorgplicht." },
 ];
 
 const serviceSchema = {
@@ -59,9 +59,9 @@ export default function Page() {
             <AnswerBox question>
               Een stellinginspectie is een deskundige beoordeling van de veiligheid van
               uw magazijnstellingen conform NEN-EN 15635. RackCheck controleert alle
-              bereikbare onderdelen, classificeert elke bevinding als groen, oranje of
-              rood en levert binnen 24 uur een rapport met concrete
-              prioriteiten en vervolgstappen.
+              bereikbare onderdelen en legt per bevinding vast wat gerepareerd kan
+              worden, wat is afgekeurd en vervangen moet worden en welke algemene
+              veiligheidspunten er zijn.
             </AnswerBox>
             <h2>Waarom een onafhankelijke inspectie?</h2>
             <p>
@@ -86,8 +86,8 @@ export default function Page() {
             <ul className="mt-4 space-y-2.5 text-sm text-navy-800">
               {[
                 "Onafhankelijke beoordeling zonder verkoopbelang",
-                "Rapport binnen 24 uur",
-                "Classificatie groen, oranje en rood",
+                "Digitaal rapport, oplevertermijn vooraf afgestemd",
+                "Onderscheid tussen reparatie, vervanging en veiligheid",
                 "Directe melding bij acuut gevaar",
                 "Voor verschillende merken en typen",
               ].map((t) => (
@@ -226,10 +226,11 @@ export default function Page() {
             <SectionHeading eyebrow="Het rapport" title="Wat staat er in het rapport?" />
             <div className="content mt-4 max-w-none">
               <p>
-                U ontvangt een overzichtelijk rapport dat leest als werkdocument. Per
-                bevinding ziet u de omschrijving, de exacte locatie, een foto, de
-                classificatie, de oorzaak, de benodigde actie en een termijn. Bovenaan
-                staat een samenvatting met de urgente punten.
+                U ontvangt een overzichtelijk rapport dat leest als werkdocument. Het
+                maakt onderscheid tussen wat gerepareerd kan worden, wat is afgekeurd en
+                vervangen moet worden en algemene veiligheidsopmerkingen. Per bevinding
+                ziet u de omschrijving, de locatie, de oorzaak en de vervolgstap. Bij
+                afkeur en ernstige bevindingen ondersteunen foto&apos;s het rapport.
               </p>
               <p>
                 Zo weet uw team direct waar het aan de slag moet en met welke
@@ -240,11 +241,11 @@ export default function Page() {
               href="/duidelijk-inspectierapport/"
               className="mt-2 inline-flex items-center gap-1.5 text-sm font-bold text-brand-700 hover:text-brand-800"
             >
-              Bekijk een voorbeeldrapport
+              Zo is het rapport ingedeeld
               <ArrowRightIcon className="h-4 w-4" />
             </Link>
           </div>
-          <SchadeClassificatie />
+          <RapportIndeling />
         </div>
       </Section>
 

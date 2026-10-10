@@ -22,7 +22,7 @@ import {
 export const metadata: Metadata = {
   title: { absolute: "RackCheck | Professionele magazijninspecties in Nederland" },
   description:
-    "RackCheck is dé specialist in professionele magazijninspecties in Nederland. Onafhankelijke stellinginspecties conform NEN-EN 15635 en NPR 5055, met een rapport binnen 24 uur.",
+    "RackCheck is dé specialist in professionele magazijninspecties in Nederland. Onafhankelijke stellinginspecties conform NEN-EN 15635 en NPR 5055, met een duidelijk digitaal rapport.",
   alternates: pageAlternates("home"),
 };
 
@@ -36,7 +36,7 @@ const serviceSchema = {
     { "@type": "Country", name: "België" },
   ],
   description:
-    "Onafhankelijke inspectie van magazijnstellingen conform NEN-EN 15635 en NPR 5055, met een helder rapport binnen 24 uur.",
+    "Onafhankelijke inspectie van magazijnstellingen conform NEN-EN 15635 en NPR 5055, met een helder digitaal rapport.",
 };
 
 const diensten = [
@@ -44,7 +44,7 @@ const diensten = [
     num: "01",
     icon: CheckIcon,
     title: "Periodieke Inspectie",
-    desc: "Verplichte jaarlijkse of halfjaarlijkse inspectie conform NEN-EN 15635 en NPR 5055.",
+    desc: "Periodieke deskundige inspectie conform NEN-EN 15635 en NPR 5055, in de praktijk meestal jaarlijks.",
     href: "/jaarlijkse-stellinginspectie/",
   },
   {
@@ -58,14 +58,14 @@ const diensten = [
     num: "03",
     icon: DocumentIcon,
     title: "Inspectierapporten",
-    desc: "Digitale rapporten binnen 24 uur. Met foto's, locatieaanduidingen en prioriteitsclassificaties.",
+    desc: "Digitale rapporten met onderscheid tussen reparatie, vervanging en algemene veiligheid. Foto's bij afkeur en ernstige bevindingen.",
     href: "/duidelijk-inspectierapport/",
   },
   {
     num: "04",
     icon: WrenchIcon,
-    title: "Reparatie Offerte",
-    desc: "Na inspectie een op maat gemaakte offerte voor alle herstelwerkzaamheden, zodat u weer compliant bent.",
+    title: "Herstel apart geregeld",
+    desc: "Herstel staat los van de inspectie. Wilt u laten repareren of vervangen, dan kan dat in een apart traject, onder meer via Hovuma.",
     href: "/werkwijze/",
   },
 ];
@@ -74,12 +74,12 @@ const stappen = [
   { num: "01", title: "Aanvraag", desc: "Vul het contactformulier in. Reactie binnen één werkdag met offerte op maat." },
   { num: "02", title: "Planning", desc: "We plannen de inspectie op uw gewenste moment. Bij een periodieke inspectie komen wij jaarlijks op een vast moment terug: geen extra actie vereist." },
   { num: "03", title: "Inspectie", desc: "Gecertificeerde inspecteur voert een grondige keuring uit conform NEN-EN 15635 en NPR 5055." },
-  { num: "04", title: "Rapport", desc: "Binnen 24 uur een gedetailleerd digitaal rapport met bevindingen en prioriteiten." },
+  { num: "04", title: "Rapport", desc: "Een gedetailleerd digitaal rapport met bevindingen en prioriteiten. De oplevertermijn stemmen we vooraf met u af." },
 ];
 
 const voordelen = [
-  { icon: ShieldIcon, title: "Volledig gecertificeerd", desc: "Al onze inspecteurs zijn gecertificeerd conform Europese normen. Uw inspectie voldoet altijd aan alle wettelijke vereisten." },
-  { icon: ClockIcon, title: "Rapport binnen 24 uur", desc: "Na de inspectie ontvangt u altijd binnen 24 uur uw volledige rapport. Duidelijk, overzichtelijk en direct bruikbaar." },
+  { icon: ShieldIcon, title: "TÜV SÜD gecertificeerd (Duitsland)", desc: "Onze inspecties worden uitgevoerd door een TÜV SÜD gecertificeerde inspecteur. De inspectie onderbouwt uw zorgplicht en uw dossier." },
+  { icon: ClockIcon, title: "Duidelijk rapport", desc: "U ontvangt een digitaal inspectierapport met onderscheid tussen reparatie, vervanging en veiligheid. De oplevertermijn stemmen we vooraf af." },
   { icon: ScaleIcon, title: "Onafhankelijk advies", desc: "Wij verkopen zelf geen stellingen. Onze inspectiebeoordeling is volledig onafhankelijk, altijd in uw belang." },
   { icon: PhoneIcon, title: "Persoonlijk & betrokken", desc: "Direct contact met uw vaste inspecteur. Wij kennen uw magazijn en zijn het hele jaar bereikbaar." },
 ];
@@ -117,7 +117,7 @@ export default function Home() {
           <div className="max-w-2xl">
             <span className="inline-flex items-center gap-2 rounded-full border border-brand-500/30 bg-brand-500/10 px-4 py-1.5 text-[11px] font-semibold uppercase tracking-[0.12em] text-brand-300">
               <span aria-hidden className="h-1.5 w-1.5 rounded-full bg-brand-400" />
-              TÜV SÜD Gecertificeerd
+              TÜV SÜD gecertificeerd (Duitsland)
             </span>
             <h1
               className="display mt-7 uppercase leading-[0.95] text-white"
@@ -126,8 +126,9 @@ export default function Home() {
               Veiligheid begint bij een <span className="text-brand-500">keuring</span>
             </h1>
             <p className="mt-6 max-w-lg text-lg leading-relaxed text-navy-200">
-              RackCheck is dé specialist in professionele <strong className="font-semibold text-white">magazijninspecties</strong> in
-              Nederland. Wij zorgen dat uw stellingen altijd voldoen aan de hoogste veiligheidsnormen.
+              RackCheck inspecteert uw <strong className="font-semibold text-white">magazijnstellingen</strong> onafhankelijk
+              en legt vast wat gerepareerd kan worden, wat vervangen moet worden en welke algemene
+              veiligheidspunten er zijn. Zo weet u precies wat uw volgende stap is.
             </p>
             <div className="mt-9">
               <a

@@ -106,7 +106,7 @@ export const regios: Regio[] = [
     land: "Nederland",
     metaTitle: "Stellinginspectie Breda | Magazijnstellingen keuren",
     metaDescription:
-      "Stellinginspectie in Breda en omgeving? RackCheck keurt magazijnstellingen onafhankelijk, van Hazeldonk tot Moerdijk, met een helder rapport binnen 24 uur.",
+      "Stellinginspectie in Breda en omgeving? RackCheck keurt magazijnstellingen onafhankelijk, van Hazeldonk tot Moerdijk, met een helder rapport en duidelijke prioriteiten.",
     context:
       "Breda ligt strategisch tussen de havens van Rotterdam en Antwerpen, ontsloten door de A16, A27 en A58. Op bedrijventerreinen als Hazeldonk aan de Belgische grens, Steenakker en het nabijgelegen haven- en industriecomplex Moerdijk zit een mix van distributie, groothandel, productie en transport. Die grensligging maakt de regio tot een logisch overslag- en verdeelpunt voor internationale stromen.",
     relevantie:

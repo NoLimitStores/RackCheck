@@ -14,10 +14,10 @@ export const priceIncludes = [
   "Telefonische of digitale intake vooraf",
   "Inspectie op locatie door een RackCheck-inspecteur",
   "Beoordeling van alle bereikbare stellingen",
-  "Vastlegging van bevindingen met foto's waar relevant",
-  "Schadeclassificatie volgens groen, oranje en rood",
+  "Onderscheid tussen reparatie, afkeur en algemene veiligheid",
+  "Foto's bij afkeur en ernstige bevindingen",
   "Directe melding van urgente, onveilige situaties",
-  "Inspectierapport met prioriteiten en vervolgstappen binnen 24 uur",
+  "Digitaal inspectierapport; oplevertermijn vooraf afgestemd",
 ];
 
 export const priceFactors = [

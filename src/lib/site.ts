@@ -17,7 +17,7 @@ export const site = {
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.rackcheck.nl", // primaire domein (apex rackcheck.nl redirect naar www)
   tagline: "Onafhankelijke inspecties van magazijnstellingen",
   description:
-    "RackCheck voert onafhankelijke inspecties uit van magazijnstellingen. U krijgt een helder rapport met duidelijke prioriteiten en concreet vervolgadvies binnen 24 uur.",
+    "RackCheck voert onafhankelijke inspecties uit van magazijnstellingen. U krijgt een helder rapport met duidelijke prioriteiten en concreet vervolgadvies: wat gerepareerd kan worden, wat vervangen moet worden en welke algemene veiligheidspunten er zijn.",
 
   // Algemeen aanspreekpunt en contactgegevens (Tjeerd Krikhaar).
   contactPerson: "Tjeerd Krikhaar",
@@ -26,8 +26,10 @@ export const site = {
   phoneE164: "+31653817775", // voor structured data
   whatsappNumber: "31653817775", // internationaal, zonder +
   whatsappHref:
-    "https://wa.me/31653817775?text=Hallo%20Tjeerd%2C%20ik%20wil%20graag%20meer%20informatie%20over%20een%20inspectie%20van%20onze%20magazijnstellingen.",
-  email: "t.krikhaar@rackcheck.nl",
+    "https://wa.me/31653817775?text=Hallo%2C%20ik%20wil%20graag%20meer%20informatie%20over%20een%20inspectie%20van%20onze%20magazijnstellingen.",
+  // Centraal, algemeen contactadres voor de hele site. Persoonlijke e-mailadressen
+  // van de inspecteurs staan in `inspecteurs`.
+  email: "planning@rackcheck.nl",
 
   // Bedrijfsgegevens.
   address: {
@@ -76,6 +78,8 @@ export type Inspecteur = {
   phoneDisplay: string;
   phoneHref: string;
   email: string;
+  /** Persoonlijk LinkedIn-profiel. */
+  linkedin?: string;
   algemeen?: boolean;
 };
 
@@ -87,16 +91,20 @@ export const inspecteurs: Inspecteur[] = [
     phoneDisplay: "06 53817775",
     phoneHref: "tel:+31653817775",
     email: "t.krikhaar@rackcheck.nl",
+    linkedin: "https://www.linkedin.com/in/tjeerdkrikhaar",
     algemeen: true,
   },
   {
-    naam: "Marcel Huijs",
+    // Alleen de voornaam: de achternaamspelling verschilt tussen bronnen
+    // (e-mail m.huijs vs. LinkedIn-URL marcel-huys). Door de eigenaar te bevestigen.
+    naam: "Marcel",
     regio: "Midden- en Noord-Nederland",
     regioDetail:
       "Aanspreekpunt voor magazijnen in Midden- en Noord-Nederland.",
     phoneDisplay: "+31 6 28 80 89 92",
     phoneHref: "tel:+31628808992",
     email: "m.huijs@rackcheck.nl",
+    linkedin: "https://www.linkedin.com/in/marcel-huys-93252939/",
   },
 ];
 

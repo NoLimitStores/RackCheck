@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { getPijnpunt } from "@/lib/pijnpunten";
 import PijnpuntTemplate from "@/components/PijnpuntTemplate";
-import RapportVoorbeeld from "@/components/RapportVoorbeeld";
+import RapportIndeling from "@/components/RapportIndeling";
 
 const data = getPijnpunt("duidelijk-inspectierapport");
 
@@ -17,12 +17,14 @@ export default function Page() {
       data={data}
       extra={
         <div>
-          <h2 className="display text-2xl text-navy-950">Voorbeeldweergave van bevindingen</h2>
+          <h2 className="display text-2xl text-navy-950">De indeling van het rapport</h2>
           <p className="mt-2 text-navy-600">
-            Een geanonimiseerde weergave, uitsluitend ter illustratie.
+            Het rapport werkt met drie herkenbare secties, zodat u in één oogopslag
+            ziet wat gerepareerd kan worden, wat vervangen moet worden en welke
+            algemene veiligheidspunten er zijn.
           </p>
           <div className="mt-5">
-            <RapportVoorbeeld />
+            <RapportIndeling />
           </div>
         </div>
       }

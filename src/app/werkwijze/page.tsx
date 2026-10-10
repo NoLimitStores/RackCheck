@@ -15,7 +15,7 @@ import { ClockIcon, DocumentIcon, WrenchIcon, ArrowRightIcon } from "@/component
 export const metadata: Metadata = {
   title: "Werkwijze: van aanvraag tot rapport in zeven stappen",
   description:
-    "Zo verloopt een stellinginspectie bij RackCheck: intake, planning, inspectie op locatie, directe melding bij gevaar, rapport binnen 24 uur en eventueel herstelvoorstel.",
+    "Zo verloopt een stellinginspectie bij RackCheck: intake, planning, inspectie op locatie, directe melding bij gevaar, een duidelijk digitaal rapport en eventueel herstelvoorstel.",
   alternates: pageAlternates("how-we-work"),
 };
 
@@ -33,8 +33,8 @@ const howToSchema = {
 
 const beloftes = [
   { icon: WrenchIcon, title: "Directe melding bij gevaar", text: "Acuut onveilige situaties melden we tijdens de inspectie, niet pas in het rapport." },
-  { icon: DocumentIcon, title: "Rapport binnen 24 uur", text: "Binnen 24 uur een helder rapport met prioriteiten en vervolgstappen." },
-  { icon: ClockIcon, title: "Herstelvoorstel binnen twee weken", text: "Wilt u herstel, dan streven we naar een apart voorstel binnen twee weken." },
+  { icon: DocumentIcon, title: "Duidelijk inspectierapport", text: "Een helder digitaal rapport met prioriteiten en vervolgstappen; de oplevertermijn stemmen we vooraf met u af." },
+  { icon: ClockIcon, title: "Herstel apart geregeld", text: "Wilt u herstel, dan volgt een apart voorstel, los van de inspectiebeoordeling." },
 ];
 
 export default function Page() {
@@ -52,7 +52,7 @@ export default function Page() {
         <AnswerBox question>
           Het inspectieproces van RackCheck bestaat uit zeven stappen: aanvraag en
           intake, planning, inspectie op locatie, directe terugkoppeling bij urgent
-          gevaar, een rapport binnen 24 uur, opvolging met eventueel een
+          gevaar, een duidelijk digitaal rapport, opvolging met eventueel een
           apart herstelvoorstel en een herbeoordeling na herstel. Zo houdt u de regie
           en blijft de beoordeling onafhankelijk.
         </AnswerBox>

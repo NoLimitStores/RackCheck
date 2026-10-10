@@ -18,7 +18,7 @@ export const de: LocaleDict = {
   },
   footer: {
     tagline:
-      "Unabhängige Prüfung von Lagerregalen. Ein klarer Prüfbericht mit priorisierten Befunden, in der Regel innerhalb von 24 Stunden.",
+      "Unabhängige Prüfung von Lagerregalen. Ein klarer Prüfbericht mit priorisierten Befunden; die Lieferfrist stimmen wir vorab ab.",
     colServices: "Prüfungen",
     colCompany: "Unternehmen",
     contactTitle: "Kontakt",
@@ -26,10 +26,11 @@ export const de: LocaleDict = {
     rights: "Alle Rechte vorbehalten.",
     kvk: "Handelsregister (KvK)",
     vat: "USt-IdNr.",
+    certified: "TÜV SÜD zertifiziert (Deutschland)",
   },
   cta: {
     title: "Sind Ihre Regalanlagen noch sicher?",
-    text: "Fordern Sie eine unabhängige Prüfung an. Sie erhalten einen klaren Prüfbericht mit priorisierten Befunden, in der Regel innerhalb von 24 Stunden.",
+    text: "Fordern Sie eine unabhängige Prüfung an. Sie erhalten einen klaren Prüfbericht mit priorisierten Befunden; die Lieferfrist stimmen wir vorab ab.",
     primary: "Prüfung anfragen",
     phone: "Anrufen",
     whatsapp: "WhatsApp",
@@ -90,12 +91,12 @@ export const de: LocaleDict = {
         imageAlt: "Lager mit hohen, voll beladenen Regalen entlang eines langen Gangs",
       },
       answer:
-        "Eine Regalprüfung ist eine sachkundige Beurteilung der Sicherheit Ihrer Lagerregale gemäß EN 15635. Sie erhalten einen klaren Prüfbericht mit priorisierten Befunden und konkreten nächsten Schritten, in der Regel innerhalb von 24 Stunden.",
+        "Eine Regalprüfung ist eine sachkundige Beurteilung der Sicherheit Ihrer Lagerregale gemäß EN 15635. Sie erhalten einen klaren Prüfbericht mit priorisierten Befunden und konkreten nächsten Schritten; die Lieferfrist stimmen wir vorab ab.",
       blocks: [
         { t: "h2", text: "Warum RackCheck" },
         { t: "ul", items: [
           "Unabhängige Beurteilung ohne Verkaufsinteresse",
-          "Ein priorisierter Prüfbericht, in der Regel innerhalb von 24 Stunden",
+          "Ein priorisierter Prüfbericht; Lieferfrist vorab abgestimmt",
           "Ein fester Prüfer und persönlicher Kontakt",
           "Aktiv in den Niederlanden und Belgien, nach Absprache auch in Deutschland",
           "Reparaturen können separat über Hovuma erfolgen",
@@ -113,7 +114,7 @@ export const de: LocaleDict = {
       intro:
         "Eine unabhängige Prüfung Ihrer Lagerregale, mit einem klaren Prüfbericht, priorisierten Befunden und konkreten Empfehlungen.",
       answer:
-        "Eine Regalprüfung ist eine sachkundige Beurteilung der Sicherheit Ihrer Lagerregale gemäß EN 15635. Jeder Befund wird grün, orange oder rot eingestuft, mit einem Prüfbericht in der Regel innerhalb von 24 Stunden.",
+        "Eine Regalprüfung ist eine sachkundige Beurteilung der Sicherheit Ihrer Lagerregale gemäß EN 15635. Der Prüfbericht unterscheidet zwischen dem, was repariert werden kann, was gesperrt ist und ersetzt werden muss, und allgemeinen Sicherheitshinweisen, mit einem konkreten nächsten Schritt je Befund. Bei Beanstandungen und schwerwiegenden Befunden stützen Fotos den Bericht.",
       image: {
         src: "/images/magazijn-palletstellingen-overzicht.jpg",
         alt: "Lager mit hohen, voll beladenen Palettenregalen",
@@ -135,7 +136,7 @@ export const de: LocaleDict = {
     "how-we-work": {
       metaTitle: "Arbeitsweise | Von der Anfrage bis zum Prüfbericht",
       metaDescription:
-        "So läuft eine Regalprüfung bei RackCheck ab: Aufnahme, Planung, Prüfung vor Ort, sofortige Meldung bei Gefahr und ein Bericht in der Regel innerhalb von 24 Stunden.",
+        "So läuft eine Regalprüfung bei RackCheck ab: Aufnahme, Planung, Prüfung vor Ort, sofortige Meldung bei Gefahr und ein klarer digitaler Bericht.",
       breadcrumb: "Arbeitsweise",
       eyebrow: "Arbeitsweise",
       h1: "Von der Anfrage bis zum Prüfbericht",
@@ -150,7 +151,7 @@ export const de: LocaleDict = {
           "Planung zu einem für Ihren Betrieb passenden Zeitpunkt",
           "Prüfung aller zugänglichen Regale vor Ort",
           "Sofortige Rückmeldung bei akuter Gefahr",
-          "Ein priorisierter Prüfbericht, in der Regel innerhalb von 24 Stunden",
+          "Ein priorisierter Prüfbericht; Lieferfrist vorab abgestimmt",
           "Auf Wunsch ein separates Reparaturangebot",
         ] },
       ],

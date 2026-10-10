@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 
 const punten = [
   "Onafhankelijke beoordeling zonder verkoopbelang",
-  "Rapport binnen 24 uur",
+  "Digitaal rapport, oplevertermijn vooraf afgestemd",
   "Directe melding bij acuut gevaar",
   "Inspectie vanaf €395 per jaar",
   "Aanvragen is volledig vrijblijvend",

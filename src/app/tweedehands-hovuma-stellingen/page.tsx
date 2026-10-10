@@ -246,9 +246,11 @@ export default function Page() {
             </ul>
             <h3 className="mt-6 font-bold text-navy-950">Wat u na de inspectie ontvangt</h3>
             <p className="mt-1.5 text-sm text-navy-700">
-              Een helder rapport met per bevinding de locatie, een foto, de classificatie
-              en een concrete vervolgstap, zodat u weet wat veilig is, wat aandacht vraagt
-              en wat eventueel hersteld of nagerekend moet worden.
+              Een helder rapport dat onderscheid maakt tussen wat gerepareerd kan worden,
+              wat is afgekeurd en vervangen moet worden en algemene veiligheidsopmerkingen,
+              met per bevinding de locatie en een concrete vervolgstap. Bij afkeur en
+              ernstige bevindingen ondersteunt een foto het rapport. Zo weet u wat veilig
+              is, wat aandacht vraagt en wat eventueel hersteld of nagerekend moet worden.
             </p>
           </div>
         </div>

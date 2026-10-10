@@ -57,6 +57,9 @@ export default function Page() {
               zorgplicht onderbouwt. Zo wordt veiligheid een werkbaar onderdeel van uw
               bedrijfsvoering.
             </p>
+            <p className="mt-6 inline-flex items-center gap-2 rounded border border-navy-200 bg-navy-50 px-3 py-1.5 text-sm font-semibold text-navy-900">
+              TÜV SÜD gecertificeerd (Duitsland)
+            </p>
           </div>
           <div className="overflow-hidden rounded-lg border border-navy-200">
             <Image

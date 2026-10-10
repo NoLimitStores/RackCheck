@@ -18,8 +18,8 @@ export const processSteps = [
     text: "Wordt er een acuut onveilige situatie gevonden, dan melden we dat direct op locatie. U weet meteen welke sectie afgezet of ontladen moet worden.",
   },
   {
-    title: "Rapport binnen 24 uur",
-    text: "U ontvangt een overzichtelijk inspectierapport binnen 24 uur. Elke bevinding heeft een classificatie, locatie, foto, oorzaak, actie en termijn.",
+    title: "Inspectierapport",
+    text: "U ontvangt een digitaal inspectierapport. De oplevertermijn stemmen we vooraf met u af. Per bevinding leest u wat gerepareerd kan worden, wat is afgekeurd en vervangen moet worden en welke algemene veiligheidspunten er zijn.",
   },
   {
     title: "Opvolging en eventueel herstelvoorstel",
@@ -56,8 +56,8 @@ export const homeFaq = [
     a: "In de meeste gevallen wel. De inspecteur werkt langs de stellingen en stemt de route af op uw operatie, zodat de verstoring beperkt blijft. Alleen bij acuut gevaar vragen we een sectie tijdelijk vrij te maken.",
   },
   {
-    q: "Hoe snel ontvang ik het rapport?",
-    a: "U ontvangt het inspectierapport binnen 24 uur na de inspectie. Urgente, onveilige situaties melden we altijd al tijdens de inspectie zelf, zodat u meteen kunt handelen.",
+    q: "Hoe ontvang ik het rapport?",
+    a: "U ontvangt een digitaal inspectierapport. De oplevertermijn stemmen we vooraf met u af. Urgente, onveilige situaties melden we al tijdens de inspectie zelf, zodat u meteen kunt handelen.",
   },
   {
     q: "Welke stellingmerken inspecteert RackCheck?",
@@ -65,7 +65,7 @@ export const homeFaq = [
   },
   {
     q: "Wat gebeurt er wanneer schade wordt gevonden?",
-    a: "Elke bevinding krijgt een classificatie: groen, oranje of rood. Groen kan blijven staan, oranje moet binnen een termijn hersteld worden en rood vraagt directe actie. In het rapport staat per punt wat de vervolgstap is.",
+    a: "Het rapport maakt onderscheid tussen wat gerepareerd kan worden, wat is afgekeurd en vervangen moet worden en algemene veiligheidsopmerkingen. Per punt staat de concrete vervolgstap. Bij afkeur en ernstige bevindingen ondersteunen foto's het rapport.",
   },
   {
     q: "Kan RackCheck ook na een aanrijding langskomen?",
@@ -124,12 +124,12 @@ export const waaromRackcheck = [
     text: "Een rapport dat leest als werkdocument, niet als een lijst losse technische opmerkingen.",
   },
   {
-    title: "Duidelijke prioriteiten",
-    text: "Per bevinding weet u of het urgent is, gepland kan worden of kan wachten.",
+    title: "Duidelijke indeling",
+    text: "Per bevinding weet u wat gerepareerd kan worden, wat vervangen moet worden en wat een algemene veiligheidsopmerking is.",
   },
   {
-    title: "Snelle oplevering",
-    text: "Binnen 24 uur het rapport, urgente zaken melden we direct op locatie.",
+    title: "Digitaal rapport",
+    text: "U ontvangt een digitaal inspectierapport. De oplevertermijn spreken we vooraf af. Urgente zaken melden we direct op locatie.",
   },
   {
     title: "Transparante prijs",
@@ -141,56 +141,22 @@ export const waaromRackcheck = [
   },
 ];
 
-/** Voorbeeldregels voor de geanonimiseerde rapportweergave. */
-export const rapportVoorbeeld = [
+/**
+ * Indeling van het RackCheck-inspectierapport. Geen kleurcodering: het rapport
+ * werkt met drie herkenbare secties. Bij afkeur en ernstige bevindingen
+ * ondersteunen foto's het rapport.
+ */
+export const rapportSecties = [
   {
-    bevinding: "Deuk in staander, onderste 400 mm",
-    locatie: "Gang C, stelling 12, veld 3",
-    prioriteit: "Rood",
-    risico: "Hoog",
-    actie: "Sectie ontladen en staander vervangen",
-    termijn: "Direct",
+    titel: "Te repareren",
+    text: "Bevindingen die hersteld kunnen worden, zodat de stelling veilig in gebruik blijft. Het rapport beschrijft wat er aan de hand is en wat de vervolgstap is.",
   },
   {
-    bevinding: "Ligger licht doorgebogen",
-    locatie: "Gang A, stelling 4, niveau 2",
-    prioriteit: "Oranje",
-    risico: "Gemiddeld",
-    actie: "Belasting controleren en ligger vervangen",
-    termijn: "Binnen 4 weken",
+    titel: "Afkeur / Verplichte vervanging",
+    text: "Onderdelen die bij de inspectie zijn afgekeurd en vervangen moeten worden. De vervanging volgt uit de beoordeling; niet elke beschadiging is automatisch afkeur.",
   },
   {
-    bevinding: "Borgpen ontbreekt",
-    locatie: "Gang B, stelling 7, niveau 3",
-    prioriteit: "Oranje",
-    risico: "Gemiddeld",
-    actie: "Borgpen plaatsen",
-    termijn: "Binnen 4 weken",
-  },
-  {
-    bevinding: "Oppervlakkige kras op ligger",
-    locatie: "Gang A, stelling 9, niveau 1",
-    prioriteit: "Groen",
-    risico: "Laag",
-    actie: "Registreren en monitoren",
-    termijn: "Volgende inspectie",
-  },
-];
-
-export const schadeClassificatie = [
-  {
-    kleur: "Groen",
-    label: "Aanvaardbaar",
-    text: "Lichte gebruikssporen zonder gevolgen voor de veiligheid. De stelling kan in gebruik blijven. Registreren en meenemen bij de volgende inspectie.",
-  },
-  {
-    kleur: "Oranje",
-    label: "Herstel binnen termijn",
-    text: "Schade die aandacht vraagt maar geen direct gevaar oplevert. Herstel binnen een afgesproken termijn, meestal binnen enkele weken.",
-  },
-  {
-    kleur: "Rood",
-    label: "Direct handelen",
-    text: "Schade die de veiligheid direct raakt. De betreffende sectie moet worden ontlast of afgezet tot het herstel is uitgevoerd.",
+    titel: "Algemene veiligheid",
+    text: "Algemene veiligheidsopmerkingen en ontbrekende elementen, bijvoorbeeld ontbrekende belastingborden of aanrijdbeveiliging, die de veilige situatie verbeteren.",
   },
 ];

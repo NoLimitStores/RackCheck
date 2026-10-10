@@ -18,7 +18,7 @@ export const fr: LocaleDict = {
   },
   footer: {
     tagline:
-      "Inspection independante des rayonnages d'entrepot. Un rapport clair avec des priorites, en general sous 24 heures.",
+      "Inspection independante des rayonnages d'entrepot. Un rapport clair avec des priorites; le delai de remise est convenu a l'avance.",
     colServices: "Inspections",
     colCompany: "Entreprise",
     contactTitle: "Contact",
@@ -26,10 +26,11 @@ export const fr: LocaleDict = {
     rights: "Tous droits reserves.",
     kvk: "Registre du commerce (KvK)",
     vat: "TVA",
+    certified: "Certifie TÜV SÜD (Allemagne)",
   },
   cta: {
     title: "Etes-vous certain que vos rayonnages sont surs ?",
-    text: "Demandez une inspection independante. Vous recevez un rapport clair avec des priorites, en general sous 24 heures.",
+    text: "Demandez une inspection independante. Vous recevez un rapport clair avec des priorites; le delai de remise est convenu a l'avance.",
     primary: "Demander une inspection",
     phone: "Appeler",
     whatsapp: "WhatsApp",
@@ -90,12 +91,12 @@ export const fr: LocaleDict = {
         imageAlt: "Entrepot avec des rayonnages hauts et entierement charges le long d'une longue allee",
       },
       answer:
-        "Une inspection de rayonnages est une evaluation experte de la securite de vos rayonnages d'entrepot conformement a la norme EN 15635. Vous recevez un rapport clair avec des priorites et des etapes concretes, en general sous 24 heures.",
+        "Une inspection de rayonnages est une evaluation experte de la securite de vos rayonnages d'entrepot conformement a la norme EN 15635. Vous recevez un rapport clair avec des priorites et des etapes concretes; le delai de remise est convenu a l'avance.",
       blocks: [
         { t: "h2", text: "Pourquoi RackCheck" },
         { t: "ul", items: [
           "Une evaluation independante, sans interet commercial",
-          "Un rapport priorise, en general sous 24 heures",
+          "Un rapport priorise; delai de remise convenu a l'avance",
           "Un inspecteur attitre et un contact personnel",
           "Actif aux Pays-Bas et en Belgique, et en Allemagne sur demande",
           "Les reparations peuvent etre organisees separement via Hovuma",
@@ -113,7 +114,7 @@ export const fr: LocaleDict = {
       intro:
         "Une inspection independante de vos rayonnages d'entrepot, avec un rapport clair, des constats priorises et des recommandations concretes.",
       answer:
-        "Une inspection de rayonnages est une evaluation experte de la securite de vos rayonnages conformement a la norme EN 15635. Chaque constat est classe en vert, orange ou rouge, avec un rapport en general sous 24 heures.",
+        "Une inspection de rayonnages est une evaluation experte de la securite de vos rayonnages conformement a la norme EN 15635. Le rapport distingue ce qui peut etre repare, ce qui est refuse et doit etre remplace, et les observations generales de securite, avec une etape concrete pour chaque constat. En cas de refus et de constats graves, des photos appuient le rapport.",
       image: {
         src: "/images/magazijn-palletstellingen-overzicht.jpg",
         alt: "Entrepot avec de hauts rayonnages a palettes entierement charges",
@@ -135,7 +136,7 @@ export const fr: LocaleDict = {
     "how-we-work": {
       metaTitle: "Methode de travail | De la demande au rapport",
       metaDescription:
-        "Le deroulement d'une inspection de rayonnages chez RackCheck : prise en charge, planification, inspection sur site, alerte immediate en cas de danger et rapport en general sous 24 heures.",
+        "Le deroulement d'une inspection de rayonnages chez RackCheck : prise en charge, planification, inspection sur site, alerte immediate en cas de danger et un rapport numerique clair.",
       breadcrumb: "Methode de travail",
       eyebrow: "Methode de travail",
       h1: "De la demande au rapport",
@@ -150,7 +151,7 @@ export const fr: LocaleDict = {
           "Planification a un moment adapte a votre exploitation",
           "Inspection sur site de tous les rayonnages accessibles",
           "Retour immediat en cas de danger aigu",
-          "Un rapport priorise, en general sous 24 heures",
+          "Un rapport priorise; delai de remise convenu a l'avance",
           "Sur demande, une proposition de reparation distincte",
         ] },
       ],

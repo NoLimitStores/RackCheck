@@ -35,7 +35,11 @@ const trackingKeys = [...utmKeys, "gclid"];
 const TRACKING_STORAGE_KEY = "rc_tracking";
 
 // Web3Forms access key. Deze sleutel is per ontwerp openbaar (client-side gebruik)
-// en gekoppeld aan het account dat aanvragen ontvangt op t.krikhaar@rackcheck.nl.
+// en gekoppeld aan het Web3Forms-account dat de inzendingen ontvangt.
+// LET OP (openstaand controlepunt): de ontvanger wordt bepaald in het Web3Forms-
+// account, niet door het e-mailadres dat op de site staat. Het centrale adres is
+// inmiddels planning@rackcheck.nl; om aanvragen daar te laten binnenkomen moet het
+// ontvangstadres in het Web3Forms-account op planning@rackcheck.nl worden gezet.
 // Web3Forms staat op het gratis plan alleen inzendingen vanuit de browser toe,
 // daarom versturen we rechtstreeks naar Web3Forms (niet via een server-route).
 const WEB3FORMS_ACCESS_KEY = "73bd0fef-dc68-4b3c-b68e-fdf1bca0b47f";

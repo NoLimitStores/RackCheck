@@ -22,6 +22,7 @@ export type FooterDict = {
   rights: string;
   kvk: string;
   vat: string;
+  certified: string;
 };
 
 export type CtaDict = {
@@ -115,7 +116,7 @@ export const nl: Dictionary = {
   },
   footer: {
     tagline:
-      "Onafhankelijke inspectie van magazijnstellingen. Een helder rapport met duidelijke prioriteiten binnen 24 uur.",
+      "Onafhankelijke inspectie van magazijnstellingen. Een helder rapport met duidelijke prioriteiten.",
     colServices: "Inspecties",
     colCompany: "Organisatie",
     contactTitle: "Contact",
@@ -123,10 +124,11 @@ export const nl: Dictionary = {
     rights: "Alle rechten voorbehouden.",
     kvk: "KvK",
     vat: "Btw",
+    certified: "TÜV SÜD gecertificeerd (Duitsland)",
   },
   cta: {
     title: "Weet u zeker dat uw stellingen veilig zijn?",
-    text: "Vraag een onafhankelijke inspectie aan. U krijgt een helder rapport met duidelijke prioriteiten binnen 24 uur.",
+    text: "Vraag een onafhankelijke inspectie aan. U krijgt een helder rapport met duidelijke prioriteiten.",
     primary: "Inspectie aanvragen",
     phone: "Bellen",
     whatsapp: "WhatsApp",
@@ -186,12 +188,12 @@ export const nl: Dictionary = {
         imageAlt: "Magazijn met hoge, volledig gevulde stellingen in een lange gang",
       },
       answer:
-        "Een stellinginspectie is een deskundige beoordeling van de veiligheid van uw magazijnstellingen conform NEN-EN 15635. U krijgt binnen 24 uur een rapport met duidelijke prioriteiten en concrete vervolgstappen.",
+        "Een stellinginspectie is een deskundige beoordeling van de veiligheid van uw magazijnstellingen conform NEN-EN 15635. U krijgt een digitaal rapport met duidelijke prioriteiten en concrete vervolgstappen; de oplevertermijn stemmen we vooraf af.",
       blocks: [
         { t: "h2", text: "Waarom RackCheck" },
         { t: "ul", items: [
           "Onafhankelijke beoordeling zonder verkoopbelang",
-          "Rapport binnen 24 uur, met prioriteiten",
+          "Digitaal rapport met duidelijke prioriteiten",
           "Een vaste inspecteur en persoonlijk contact",
           "Actief in Nederland en België, in overleg ook in Duitsland",
           "Herstel kan apart via Hovuma worden geregeld",
@@ -209,7 +211,7 @@ export const nl: Dictionary = {
       intro:
         "Onafhankelijke inspectie van uw magazijnstellingen, met een helder rapport, duidelijke prioriteiten en concreet vervolgadvies.",
       answer:
-        "Een stellinginspectie is een deskundige beoordeling van de veiligheid van uw magazijnstellingen conform NEN-EN 15635. Elke bevinding wordt geclassificeerd als groen, oranje of rood, met een rapport binnen 24 uur.",
+        "Een stellinginspectie is een deskundige beoordeling van de veiligheid van uw magazijnstellingen conform NEN-EN 15635. Het rapport maakt onderscheid tussen wat gerepareerd kan worden, wat is afgekeurd en vervangen moet worden en algemene veiligheidsopmerkingen, met per bevinding een concrete vervolgstap.",
       image: {
         src: "/images/magazijn-palletstellingen-overzicht.jpg",
         alt: "Magazijn met hoge, volledig gevulde palletstellingen",
@@ -231,7 +233,7 @@ export const nl: Dictionary = {
     "how-we-work": {
       metaTitle: "Werkwijze | Van aanvraag tot rapport",
       metaDescription:
-        "Zo verloopt een stellinginspectie bij RackCheck: intake, planning, inspectie op locatie, directe melding bij gevaar en een rapport binnen 24 uur.",
+        "Zo verloopt een stellinginspectie bij RackCheck: intake, planning, inspectie op locatie, directe melding bij gevaar en een duidelijk digitaal rapport.",
       breadcrumb: "Werkwijze",
       eyebrow: "Werkwijze",
       h1: "Van aanvraag tot rapport",
@@ -246,7 +248,7 @@ export const nl: Dictionary = {
           "Planning op een moment dat past bij uw operatie",
           "Inspectie op locatie van alle bereikbare stellingen",
           "Directe terugkoppeling bij acuut gevaar",
-          "Rapport met prioriteiten binnen 24 uur",
+          "Digitaal rapport met duidelijke prioriteiten",
           "Op verzoek een apart herstelvoorstel",
         ] },
       ],

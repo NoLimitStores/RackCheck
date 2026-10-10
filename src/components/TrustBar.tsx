@@ -2,7 +2,7 @@ import { ShieldIcon, ClockIcon, EuroIcon, ScaleIcon } from "@/components/Icons";
 
 const items = [
   { icon: ScaleIcon, label: "Onafhankelijke beoordeling" },
-  { icon: ClockIcon, label: "Rapport binnen 24 uur" },
+  { icon: ClockIcon, label: "Duidelijk digitaal rapport" },
   { icon: EuroIcon, label: "Inspectie vanaf €395 per jaar" },
   { icon: ShieldIcon, label: "Voor verschillende merken en typen" },
 ];

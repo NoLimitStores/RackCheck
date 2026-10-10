@@ -29,7 +29,7 @@ export async function generateMetadata({
     regio.metaTitle ?? `Stellinginspectie ${regio.stad} | Onafhankelijke keuring`;
   const description =
     regio.metaDescription ??
-    `Onafhankelijke stellinginspectie in ${regio.stad} en omgeving (${regio.provincie}). RackCheck keurt uw magazijnstellingen met een helder rapport binnen 24 uur.`;
+    `Onafhankelijke stellinginspectie in ${regio.stad} en omgeving (${regio.provincie}). RackCheck keurt uw magazijnstellingen met een helder rapport en duidelijke prioriteiten.`;
   const url = `/regio/${regio.slug}/`;
   return {
     title,
@@ -85,7 +85,7 @@ export default async function Page({ params }: { params: Promise<{ plaats: strin
             <AnswerBox question>
               RackCheck voert onafhankelijke stellinginspecties uit in {regio.stad} en
               omliggende plaatsen zoals {regio.omgeving.slice(0, 3).join(", ")}. U krijgt
-              een helder rapport met prioriteiten binnen 24 uur en bij
+              een helder rapport met duidelijke prioriteiten en bij
               acuut gevaar een directe melding op locatie.
             </AnswerBox>
 

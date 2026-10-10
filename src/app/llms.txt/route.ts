@@ -13,7 +13,7 @@ export function GET() {
   lines.push(`> ${site.description}`);
   lines.push("");
   lines.push(
-    "RackCheck voert onafhankelijke inspecties uit van magazijnstellingen in Nederland. De inspectiebeoordeling staat los van herstelverkoop: er wordt niet onnodig afgekeurd. Elke bevinding krijgt een classificatie (groen, oranje of rood) met een concrete actie en termijn. Het inspectierapport volgt binnen 24 uur."
+    "RackCheck voert onafhankelijke inspecties uit van magazijnstellingen in Nederland en België. De inspectiebeoordeling staat los van herstelverkoop: er wordt niet onnodig afgekeurd. Het inspectierapport maakt onderscheid tussen wat gerepareerd kan worden, wat is afgekeurd en vervangen moet worden en algemene veiligheidsopmerkingen, met per bevinding een concrete vervolgstap. Bij afkeur en ernstige bevindingen ondersteunen foto's het rapport. U ontvangt een digitaal inspectierapport; de oplevertermijn wordt vooraf afgestemd."
   );
   lines.push("");
 

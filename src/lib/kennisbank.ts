@@ -68,7 +68,7 @@ export const artikelen: Artikel[] = [
       { t: "h2", text: "Verhouding tot de wet" },
       { t: "p", text: "NEN-EN 15635 is een norm, geen wet. In Nederland komt de wettelijke verplichting voort uit de Arbowet en het Arbobesluit: een werkgever moet zorgen voor een veilige werkomgeving en arbeidsmiddelen periodiek keuren. De norm geeft een erkende, praktische invulling van die zorgplicht. Wie de norm volgt, maakt aantoonbaar dat de stellingen veilig worden gebruikt en gecontroleerd." },
       { t: "h2", text: "Hoe RackCheck de norm toepast" },
-      { t: "p", text: "RackCheck voert de periodieke deskundige inspectie uit conform NEN-EN 15635. We beoordelen alle bereikbare stellingen, classificeren de bevindingen als groen, oranje of rood en leveren een rapport met concrete prioriteiten en vervolgstappen. Daarmee ondersteunen we de PRSES bij zijn of haar verantwoordelijkheid." },
+      { t: "p", text: "RackCheck voert de periodieke deskundige inspectie uit conform NEN-EN 15635. We beoordelen alle bereikbare stellingen, maken onderscheid tussen wat gerepareerd kan worden, wat is afgekeurd en vervangen moet worden en algemene veiligheidsopmerkingen, met per bevinding een concrete vervolgstap. Daarmee ondersteunen we de PRSES bij zijn of haar verantwoordelijkheid." },
     ],
     faq: [
       { q: "Is NEN-EN 15635 verplicht?", a: "De norm zelf is niet wettelijk verplicht, maar de onderliggende zorgplicht uit de Arbowet wel. De norm volgen is de meest praktische manier om aan die zorgplicht te voldoen." },
@@ -290,33 +290,33 @@ export const artikelen: Artikel[] = [
     h1: "Wat betekenen de schadeclassificaties?",
     metaTitle: "Schadeclassificatie stellingen: groen, oranje en rood uitgelegd",
     metaDescription:
-      "Bij een stellinginspectie krijgt elke bevinding een classificatie: groen, oranje of rood. Lees wat de kleuren betekenen en welke actie erbij hoort.",
+      "In de praktijk wordt bij stellinginspecties soms een kleurindeling (groen, oranje, rood) gebruikt om urgentie aan te geven. Lees wat die betekent en hoe RackCheck het rapport indeelt.",
     excerpt:
-      "Groen, oranje of rood: wat de kleurcodes betekenen en welke vervolgactie erbij hoort.",
+      "Wat een kleurindeling (groen, oranje, rood) aangeeft, en hoe het RackCheck-rapport is ingedeeld.",
     answer:
-      "Bij een stellinginspectie krijgt elke bevinding een kleurcode. Groen betekent aanvaardbaar: de stelling kan in gebruik blijven. Oranje betekent herstel binnen een afgesproken termijn. Rood betekent direct handelen: de sectie moet worden ontlast of afgezet tot het herstel is uitgevoerd. Deze systematiek maakt in één oogopslag duidelijk wat urgent is.",
-    updated: "2026-07-15",
+      "Een kleurindeling met groen, oranje en rood wordt in de praktijk gebruikt om de urgentie van bevindingen aan te geven: groen is aanvaardbaar, oranje vraagt herstel binnen een termijn en rood vraagt direct handelen. RackCheck gebruikt in zijn eigen rapporten geen kleurcodering, maar drie herkenbare secties: te repareren, afkeur en verplichte vervanging, en algemene veiligheid.",
+    updated: "2026-10-10",
     featured: true,
     blocks: [
-      { t: "p", text: "De kleurclassificatie is het hart van een bruikbaar inspectierapport. Ze vertaalt een technische bevinding naar een heldere actie, ook voor iemand zonder technische achtergrond." },
+      { t: "p", text: "Een kleurindeling vertaalt een technische bevinding naar een urgentie, ook voor iemand zonder technische achtergrond. In de sector wordt die aanpak soms gebruikt. Hieronder leest u wat de kleuren doorgaans aangeven." },
       { t: "table", head: ["Kleur", "Betekenis", "Actie"], rows: [
         ["Groen", "Aanvaardbaar, lichte gebruikssporen", "In gebruik houden, registreren en monitoren"],
         ["Oranje", "Vraagt aandacht, geen direct gevaar", "Herstel binnen een afgesproken termijn"],
         ["Rood", "Raakt de veiligheid direct", "Sectie ontlasten of afzetten en direct herstellen"],
       ] },
-      { t: "h2", text: "Waarom niet alles rood of groen is" },
-      { t: "p", text: "De kracht van het systeem zit in de middelste categorie. Niet elke deuk of kras is gevaarlijk, maar niet elke beschadiging kan onbeperkt wachten. Oranje geeft ruimte om herstel gepland en beheerst uit te voeren, zonder de operatie onnodig stil te leggen en zonder een risico te negeren." },
-      { t: "h2", text: "Van kleur naar termijn" },
+      { t: "h2", text: "Hoe RackCheck het rapport indeelt" },
+      { t: "p", text: "RackCheck werkt in het eigen rapport bewust niet met een kleurcodering, maar met drie herkenbare secties. Zo ziet u in één oogopslag wat u te doen staat, zonder dat een kleur de nuance overneemt." },
       { t: "ul", items: [
-        "Rood: direct, voordat de sectie weer belast wordt.",
-        "Oranje: binnen een termijn die past bij de ernst, vaak enkele weken.",
-        "Groen: meenemen bij de volgende reguliere inspectie.",
+        "Te repareren: bevindingen die hersteld kunnen worden.",
+        "Afkeur en verplichte vervanging: onderdelen die zijn afgekeurd en vervangen moeten worden.",
+        "Algemene veiligheid: veiligheidsopmerkingen en ontbrekende elementen.",
       ] },
-      { t: "note", text: "In een goed rapport staat bij oranje en rood altijd een concrete termijn en actie, niet alleen de kleur." },
+      { t: "p", text: "Vervanging volgt uit de inspectiebeoordeling; niet elke beschadiging is automatisch afkeur of een wettelijke vervangingsplicht. Bij afkeur en ernstige bevindingen ondersteunen foto's het rapport." },
+      { t: "note", text: "Acuut gevaar melden we al tijdens de inspectie op locatie, niet pas in het rapport." },
     ],
     faq: [
-      { q: "Wie bepaalt de classificatie?", a: "De inspecteur, op basis van de aard en de plaats van de schade en de gevolgen voor de draagkracht. Bij twijfel wordt naar de veilige kant geclassificeerd." },
-      { q: "Wat als ik een oranje punt laat liggen?", a: "Dan groeit de kans dat het bij de volgende belasting of aanrijding verergert naar rood. Oranje is een uitnodiging om gepland te herstellen, niet om te negeren." },
+      { q: "Wie bepaalt of iets hersteld moet of afgekeurd is?", a: "De inspecteur, op basis van de aard en de plaats van de schade en de gevolgen voor de draagkracht. Bij twijfel wordt naar de veilige kant beoordeeld." },
+      { q: "Werkt RackCheck zelf met kleurcodes?", a: "Nee. Het RackCheck-rapport gebruikt drie secties: te repareren, afkeur en verplichte vervanging, en algemene veiligheid. Een kleurindeling komt in de sector voor, maar is niet onze rapportmethodiek." },
     ],
     related: ["informatie-in-inspectierapport", "na-heftruckaanrijding", "magazijnstelling-afgekeurd", "duidelijk-inspectierapport", "verbogen-ligger", "roest-corrosie-magazijnstelling"],
   },
@@ -353,7 +353,7 @@ export const artikelen: Artikel[] = [
     ],
     faq: [
       { q: "De stelling staat nog overeind, is dat niet genoeg?", a: "Nee. Een staander kan een groot deel van zijn draagkracht verliezen zonder direct om te vallen. Onder volgende belasting of bij een nieuwe stoot kan het alsnog misgaan." },
-      { q: "Kan ik de sectie na beoordeling weer gebruiken?", a: "Als de deskundige de sectie groen classificeert wel. Bij oranje of rood volgt eerst herstel of vervanging." },
+      { q: "Kan ik de sectie na beoordeling weer gebruiken?", a: "Als de inspecteur de sectie veilig bevindt wel. Is een onderdeel afgekeurd, dan volgt eerst herstel of vervanging voordat de sectie weer wordt belast." },
     ],
     related: ["stelling-aangereden", "staander-rechtbuigen-lassen", "magazijnstelling-afgekeurd", "schadeclassificatie", "beschadigde-schoor", "scheve-magazijnstelling"],
   },
@@ -416,7 +416,7 @@ export const artikelen: Artikel[] = [
       { t: "h2", text: "Wat een visuele inspectie niet is" },
       { t: "p", text: "Een periodieke stellinginspectie is een visuele beoordeling van de staat en het gebruik. Het is geen nieuwe constructieberekening en geen controle van het oorspronkelijke ontwerp. Wilt u een stelling anders indelen of zwaarder belasten dan het belastingbord aangeeft, dan zijn de gegevens van de fabrikant of een berekening nodig. Onderdelen die volledig achter lading schuilgaan, kunnen niet altijd worden beoordeeld. Bespreek daarom vooraf welke delen van het magazijn bereikbaar moeten zijn." },
       { t: "h2", text: "Van bevinding naar rapport" },
-      { t: "p", text: "Elke afwijking krijgt een classificatie: groen, oranje of rood. Groen kan in gebruik blijven en wordt gevolgd, oranje vraagt om herstel binnen een afgesproken termijn en rood betekent dat de sectie direct wordt ontlast of afgezet. Acuut gevaar meldt de inspecteur meteen op locatie, niet pas in het rapport." },
+      { t: "p", text: "Elke bevinding krijgt een plek in het rapport: te repareren, afkeur en verplichte vervanging, of algemene veiligheid. Per bevinding staat de concrete vervolgstap. Acuut gevaar meldt de inspecteur meteen op locatie, niet pas in het rapport." },
       { t: "note", text: "Alles wat de veiligheid raakt, wordt vastgelegd met locatie, foto, classificatie en vervolgstap, zodat het rapport direct bruikbaar is." },
     ],
     faq: [
@@ -482,7 +482,7 @@ export const artikelen: Artikel[] = [
         "Intake vooraf en de inspectie op locatie.",
         "Beoordeling van alle bereikbare stellingen.",
         "Vastlegging met foto's en schadeclassificatie.",
-        "Inspectierapport met prioriteiten en vervolgstappen binnen 24 uur.",
+        "Digitaal inspectierapport met prioriteiten en vervolgstappen; oplevertermijn vooraf afgestemd.",
         "Directe melding van urgente situaties tijdens de inspectie.",
       ] },
       { t: "h2", text: "Welke factoren beïnvloeden de prijs?" },
@@ -560,7 +560,7 @@ export const artikelen: Artikel[] = [
       ] },
     ],
     faq: [
-      { q: "Een hele kleine kras, moet die ook vervangen?", a: "Niet per se. Oppervlakkige gebruikssporen zonder vervorming zijn vaak groen. Het gaat om vervorming, knik of scheur in een dragend onderdeel." },
+      { q: "Een hele kleine kras, moet die ook vervangen?", a: "Niet per se. Oppervlakkige gebruikssporen zonder vervorming leiden meestal niet tot afkeur. Het gaat om vervorming, knik of scheur in een dragend onderdeel." },
       { q: "Waar haal ik een vervangende staander?", a: "Afhankelijk van het merk via de fabrikant, dealer of een geschikte leverancier. Bij een onbekend of niet meer leverbaar merk zoeken we naar een technisch verantwoord alternatief." },
     ],
     related: ["na-heftruckaanrijding", "schadeclassificatie", "stelling-aangereden", "verbogen-ligger", "beschadigde-schoor", "roest-corrosie-magazijnstelling"],
@@ -608,7 +608,7 @@ export const artikelen: Artikel[] = [
     excerpt:
       "Twee soorten controle die elkaar aanvullen: wie doet wat, hoe vaak en waarom u beide nodig heeft.",
     answer:
-      "Een interne controle is een regelmatige visuele check door een eigen, aangewezen medewerker, gericht op het snel opmerken van zichtbare schade. Een externe inspectie is de periodieke, grondige beoordeling door een onafhankelijke deskundige die schade classificeert en rapporteert. De twee vervangen elkaar niet, ze vullen elkaar aan.",
+      "Een interne controle is een regelmatige visuele check door een eigen, aangewezen medewerker, gericht op het snel opmerken van zichtbare schade. Een externe inspectie is de periodieke, grondige beoordeling door een onafhankelijke deskundige die schade beoordeelt en rapporteert. De twee vervangen elkaar niet, ze vullen elkaar aan.",
     updated: "2026-07-15",
     blocks: [
       { t: "p", text: "Veel bedrijven denken dat één van beide volstaat. In werkelijkheid werkt stellingveiligheid alleen goed als beide op hun plek zijn: de frequente eigen ogen en de periodieke deskundige blik." },
@@ -691,7 +691,7 @@ export const artikelen: Artikel[] = [
       { t: "h2", text: "Tijdens de inspectie" },
       { t: "p", text: "De inspecteur loopt langs de stellingen en beoordeelt onderdeel voor onderdeel. Meestal kan het werk doorgaan. Alleen wanneer er acuut gevaar wordt gevonden, vragen we een sectie tijdelijk vrij te maken of te ontladen. Die melding krijgt u dan direct." },
       { t: "h2", text: "Na de inspectie" },
-      { t: "p", text: "U ontvangt binnen 24 uur het rapport. Loop de bevindingen door met uw contactpersoon of PRSES en plan de opvolging: rood direct, oranje binnen de aangegeven termijn en groen bij de volgende inspectie." },
+      { t: "p", text: "U ontvangt een digitaal rapport; de oplevertermijn stemmen we vooraf af. Loop de bevindingen door met uw contactpersoon of PRSES en plan de opvolging: afkeur en verplichte vervanging eerst, reparaties volgens de aangegeven vervolgstap en algemene veiligheidspunten als doorlopende verbetering." },
       { t: "note", text: "Een goede voorbereiding bespaart inspectietijd en dus kosten, en zorgt dat niets over het hoofd wordt gezien." },
     ],
     faq: [
@@ -705,25 +705,29 @@ export const artikelen: Artikel[] = [
     category: "Inspectie en keuring",
     title: "Welke informatie hoort in een inspectierapport?",
     h1: "Welke informatie hoort in een inspectierapport?",
-    metaTitle: "Wat hoort in een stellinginspectierapport? De 7 elementen",
+    metaTitle: "Wat hoort in een stellinginspectierapport?",
     metaDescription:
-      "Een bruikbaar inspectierapport bevat per bevinding een classificatie, locatie, foto, oorzaak, actie en termijn. Lees welke informatie niet mag ontbreken.",
+      "Een bruikbaar inspectierapport maakt onderscheid tussen reparatie, vervanging en algemene veiligheid, met per bevinding de locatie, oorzaak en vervolgstap. Lees welke informatie niet mag ontbreken.",
     excerpt:
-      "De zeven elementen die een inspectierapport tot een bruikbaar werkdocument maken.",
+      "De informatie die een inspectierapport tot een bruikbaar werkdocument maakt.",
     answer:
-      "Een goed inspectierapport bevat per bevinding: een duidelijke omschrijving, de exacte locatie, een foto, de schadeclassificatie (groen, oranje of rood), de oorzaak, de benodigde actie en een termijn. Daarnaast horen de datum, de scope van de inspectie en een samenvatting van de urgente punten erin. Alleen een lijst met gebreken is niet genoeg.",
-    updated: "2026-07-15",
+      "Een goed inspectierapport maakt onderscheid tussen wat gerepareerd kan worden, wat is afgekeurd en vervangen moet worden en algemene veiligheidsopmerkingen. Per bevinding staat een duidelijke omschrijving, de exacte locatie, de oorzaak en de concrete vervolgstap. Bij afkeur en ernstige bevindingen ondersteunt een foto het rapport. Daarnaast horen de datum, de scope van de inspectie en een samenvatting van de urgente punten erin. Alleen een lijst met gebreken is niet genoeg.",
+    updated: "2026-10-10",
     blocks: [
       { t: "p", text: "Een rapport is pas nuttig als iemand ermee aan de slag kan zonder de inspecteur erbij te hoeven halen. Dat vraagt om meer dan een opsomming van wat er mis is." },
-      { t: "h2", text: "De zeven elementen per bevinding" },
+      { t: "h2", text: "De drie secties van het rapport" },
+      { t: "ul", items: [
+        "Te repareren: bevindingen die hersteld kunnen worden.",
+        "Afkeur en verplichte vervanging: onderdelen die zijn afgekeurd en vervangen moeten worden.",
+        "Algemene veiligheid: veiligheidsopmerkingen en ontbrekende elementen.",
+      ] },
+      { t: "h2", text: "Wat per bevinding in het rapport staat" },
       { t: "ol", items: [
         "Omschrijving: wat is er precies aan de hand.",
         "Locatie: gang, stelling, veld en niveau, zodat de plek meteen te vinden is.",
-        "Foto: een beeld dat de bevinding ondersteunt.",
-        "Classificatie: groen, oranje of rood.",
         "Oorzaak: bijvoorbeeld aanrijding, overbelasting of ontbrekend onderdeel.",
         "Actie: de concrete vervolgstap, zoals vervangen, borgen of monitoren.",
-        "Termijn: direct, binnen enkele weken of bij de volgende inspectie.",
+        "Foto: bij afkeur en ernstige bevindingen.",
       ] },
       { t: "h2", text: "En het rapport als geheel" },
       { t: "ul", items: [
@@ -735,7 +739,7 @@ export const artikelen: Artikel[] = [
       { t: "note", text: "Met deze opzet is het rapport een werkdocument: uw team weet direct waar, wat en wanneer, en u kunt de opvolging aantonen." },
     ],
     faq: [
-      { q: "Krijg ik een voorbeeld van het rapport?", a: "Ja. Op de pagina over een duidelijk inspectierapport ziet u een geanonimiseerde voorbeeldweergave van hoe de bevindingen worden gepresenteerd." },
+      { q: "Krijg ik een voorbeeld van het rapport?", a: "Ja. Op de pagina over een duidelijk inspectierapport ziet u hoe het rapport is ingedeeld en hoe de bevindingen worden gepresenteerd." },
       { q: "Hoe lang moet ik het rapport bewaren?", a: "Bewaar rapporten zolang de stellingen in gebruik zijn en voor uw dossieropbouw. Ze onderbouwen uw zorgplicht en helpen bij het vergelijken over de tijd." },
     ],
     related: ["duidelijk-inspectierapport", "schadeclassificatie", "magazijnstelling-afgekeurd", "stellingkeuringsrapport-bewaren"],
@@ -747,27 +751,27 @@ export const artikelen: Artikel[] = [
     h1: "Wat gebeurt er als een magazijnstelling wordt afgekeurd?",
     metaTitle: "Magazijnstelling afgekeurd: wat betekent het en wat nu?",
     metaDescription:
-      "Een stelling of sectie afgekeurd bij de inspectie? Lees wat oranje en rood betekenen, welke actie direct nodig is, wie mag herstellen en hoe herkeuring werkt.",
+      "Een stelling of sectie afgekeurd bij de inspectie? Lees wat een afkeuring betekent, welke actie direct nodig is, wie mag herstellen en hoe herkeuring werkt.",
     excerpt:
       "Wat een afkeuring betekent, welke stappen direct nodig zijn en hoe u de sectie weer veilig in gebruik neemt.",
     answer:
-      "Afgekeurd betekent dat een bevinding de veiligheid raakt. Bij een rode classificatie moet de betreffende sectie direct worden ontlast of afgezet tot het herstel is uitgevoerd. Bij oranje mag de sectie meestal in gebruik blijven, maar moet het herstel binnen een afgesproken termijn gebeuren. Laat herstel uitvoeren met originele onderdelen en laat de sectie daarna opnieuw beoordelen voordat u die weer volledig belast.",
-    updated: "2026-09-15",
+      "Afgekeurd betekent dat een bevinding de veiligheid raakt en dat het onderdeel vervangen of de sectie hersteld moet worden. Raakt de schade de veiligheid direct, dan moet de betreffende sectie direct worden ontlast of afgezet tot het herstel is uitgevoerd. Is er geen direct gevaar, dan mag de sectie meestal in gebruik blijven, maar moet het herstel binnen een afgesproken termijn gebeuren. Laat herstel uitvoeren met originele onderdelen en laat de sectie daarna opnieuw beoordelen voordat u die weer volledig belast.",
+    updated: "2026-10-10",
     image: {
       src: "/images/praktijk/aanrijdschade-staander-losgereden.jpg",
       alt: "Stellingstaander die na een aanrijding is losgescheurd van de voetplaat",
-      caption: "Voorbeeld van een rode bevinding: een staander die is losgescheurd van de voetplaat. Zo'n sectie wordt direct ontlast.",
+      caption: "Voorbeeld van een ernstige bevinding: een staander die is losgescheurd van de voetplaat. Zo'n sectie wordt direct ontlast.",
     },
     blocks: [
-      { t: "p", text: "Een afkeuring klinkt ingrijpend, en soms is dat ook zo. Maar afgekeurd betekent niet automatisch dat uw hele magazijn stil moet. Het betekent dat een of meer bevindingen de veiligheid raken en dat er iets moet gebeuren. Wat precies, hangt af van de classificatie en de plaats van de schade." },
+      { t: "p", text: "Een afkeuring klinkt ingrijpend, en soms is dat ook zo. Maar afgekeurd betekent niet automatisch dat uw hele magazijn stil moet. Het betekent dat een of meer bevindingen de veiligheid raken en dat er iets moet gebeuren. Wat precies, hangt af van de ernst en de plaats van de schade." },
       { t: "h2", text: "Wat betekent afgekeurd precies?" },
-      { t: "p", text: "Bij een inspectie volgens NEN-EN 15635 krijgt elke bevinding een kleurcode. Afgekeurd gaat over de categorieen oranje en rood. Groen betekent aanvaardbaar. Het onderscheid tussen oranje en rood bepaalt hoe snel u moet handelen." },
-      { t: "table", head: ["Classificatie", "Betekenis", "Wat u moet doen"], rows: [
-        ["Oranje", "Raakt de veiligheid, geen direct gevaar", "Herstel binnen een afgesproken termijn, gebruik mag doorgaan"],
-        ["Rood", "Raakt de veiligheid direct", "Sectie direct ontlasten of afzetten en herstellen voor hergebruik"],
+      { t: "p", text: "Bij een inspectie volgens NEN-EN 15635 wordt elke bevinding beoordeeld op de ernst. Afgekeurd betekent dat een onderdeel niet veilig in gebruik kan blijven en vervangen of hersteld moet worden. Hoe snel u moet handelen, hangt af van of de schade de veiligheid direct raakt. Niet elke beschadiging is overigens een afkeuring: lichte gebruikssporen kunnen vaak in gebruik blijven." },
+      { t: "table", head: ["Ernst", "Betekenis", "Wat u moet doen"], rows: [
+        ["Direct gevaar", "Raakt de veiligheid direct", "Sectie direct ontlasten of afzetten en herstellen voor hergebruik"],
+        ["Geen direct gevaar", "Raakt de veiligheid, maar niet acuut", "Herstel binnen een afgesproken termijn, gebruik mag doorgaan"],
       ] },
       { t: "note", text: "Een afkeuring geldt vrijwel altijd voor een specifieke sectie of onderdeel, niet voor het hele magazijn. Zo blijft de rest gewoon in bedrijf." },
-      { t: "h2", text: "Direct na een rode afkeuring" },
+      { t: "h2", text: "Direct na een ernstige afkeuring" },
       { t: "ol", items: [
         "Ontlast de afgekeurde sectie zo snel als veilig kan en houd mensen uit de directe omgeving.",
         "Zet de sectie duidelijk af of markeer die, zodat er niet verder wordt gestapeld of gereden.",
@@ -783,12 +787,12 @@ export const artikelen: Artikel[] = [
       { t: "h2", text: "Is een afkeuring wettelijk bindend?" },
       { t: "p", text: "De classificatie zelf komt uit de norm NEN-EN 15635 en is geen wet. De onderliggende verplichting is dat wel: op grond van de Arbowet heeft de werkgever een zorgplicht voor een veilige werkomgeving, en het Arbobesluit vraagt om periodieke keuring en goed onderhoud van arbeidsmiddelen. Een afkeuring negeren betekent dus dat u een bekend veiligheidsrisico laat bestaan. Dat raakt zowel de veiligheid van uw medewerkers als uw verantwoordelijkheid als werkgever." },
       { t: "h2", text: "Hoe RackCheck u verder helpt" },
-      { t: "p", text: "RackCheck beoordeelt uw stellingen onafhankelijk en los van herstel of verkoop. In het rapport staat per bevinding wat er aan de hand is, waar, met welke classificatie en welke vervolgstap eraan hangt. Acuut gevaar melden we direct op locatie. Zo weet u meteen welke secties door kunnen en welke aandacht nodig hebben." },
+      { t: "p", text: "RackCheck beoordeelt uw stellingen onafhankelijk en los van herstel of verkoop. In het rapport staat per bevinding wat er aan de hand is, waar en welke vervolgstap eraan hangt: te repareren, afkeur en verplichte vervanging, of algemene veiligheid. Acuut gevaar melden we direct op locatie. Zo weet u meteen welke secties door kunnen en welke aandacht nodig hebben." },
     ],
     faq: [
-      { q: "Moet mijn hele magazijn dicht na een afkeuring?", a: "Nee. Een afkeuring geldt voor de betreffende sectie of het betreffende onderdeel. Bij rood ontlast u die sectie; de overige stellingen kunnen in gebruik blijven zolang die niet zijn afgekeurd." },
+      { q: "Moet mijn hele magazijn dicht na een afkeuring?", a: "Nee. Een afkeuring geldt voor de betreffende sectie of het betreffende onderdeel. Bij direct gevaar ontlast u die sectie; de overige stellingen kunnen in gebruik blijven zolang die niet zijn afgekeurd." },
       { q: "Mag ik een afgekeurde staander laten rechtbuigen?", a: "Dat wordt afgeraden. Rechtbuigen of lassen herstelt de oorspronkelijke sterkte niet en kan het staal verder verzwakken. Vervanging door een origineel onderdeel is de veilige route." },
-      { q: "Hoe snel moet een rode bevinding hersteld zijn?", a: "Een rode sectie moet direct worden ontlast of afgezet en mag pas weer belast worden na herstel. De exacte hersteltermijn hangt af van de bevinding en de beschikbaarheid van onderdelen." },
+      { q: "Hoe snel moet een afgekeurde bevinding hersteld zijn?", a: "Een sectie met direct gevaar moet meteen worden ontlast of afgezet en mag pas weer belast worden na herstel. De exacte hersteltermijn hangt af van de bevinding en de beschikbaarheid van onderdelen." },
     ],
     related: ["schadeclassificatie", "na-heftruckaanrijding", "staander-rechtbuigen-lassen", "aansprakelijkheid-ingestorte-stelling"],
   },
@@ -843,7 +847,7 @@ export const artikelen: Artikel[] = [
       { t: "h2", text: "Wie bepaalt of de doorbuiging toegestaan is?" },
       { t: "p", text: "De toegestane doorbuiging verschilt per liggerlengte, profiel en merk, en staat in de fabrikantopgave en in NEN-EN 15635. Dat maakt het geen kwestie van op het oog inschatten: een deskundige inspecteur meet de doorbuiging en toetst die aan de gegevens die bij die specifieke ligger horen. Zonder die vergelijking is niet met zekerheid te zeggen of een doorbuiging nog binnen de marge valt." },
       { t: "h2", text: "Hoe RackCheck dit beoordeelt" },
-      { t: "p", text: "Bij een inspectie beoordelen we liggers op doorbuiging, vervorming en de staat van de inhaakverbinding, en vergelijken we opvallende bevindingen met wat voor die ligger toelaatbaar is. Een verbogen ligger die de veiligheid raakt, classificeren we als oranje of rood, met een concrete vervolgstap in het rapport." },
+      { t: "p", text: "Bij een inspectie beoordelen we liggers op doorbuiging, vervorming en de staat van de inhaakverbinding, en vergelijken we opvallende bevindingen met wat voor die ligger toelaatbaar is. Een verbogen ligger die de veiligheid raakt, keuren we af of benoemen we als dringend herstelpunt, met een concrete vervolgstap in het rapport." },
     ],
     faq: [
       { q: "Moet ik een lichte doorbuiging altijd melden?", a: "Een lichte, elastische doorbuiging die verdwijnt zodra de sectie leeg is, hoeft u niet te melden. Blijft de ligger zichtbaar vervormd, of ziet u een knik of beschadigde inhaakverbinding, meld dat dan wel bij de verantwoordelijke." },
@@ -1074,7 +1078,7 @@ export const artikelen: Artikel[] = [
       { t: "h2", text: "Voorkomen is eenvoudiger dan genezen" },
       { t: "p", text: "Een intacte verf- of zinklaag is de eerste bescherming tegen roest. Beschadigingen aan die laag, bijvoorbeeld door een aanrijding of een kras van een pallet, geven roest de kans om te beginnen. Een beschadigde coating tijdig laten beoordelen en waar nodig herstellen, en zorgen voor voldoende ventilatie in vochtgevoelige ruimtes, beperkt het risico aanzienlijk." },
       { t: "h2", text: "Hoe RackCheck corrosie beoordeelt" },
-      { t: "p", text: "Tijdens de periodieke inspectie nemen we roest en corrosie mee als vast controlepunt, naast andere schade zoals vervorming en scheefstand. We onderscheiden oppervlakkige gebruikssporen van aantasting die de sterkte kan raken, classificeren de bevinding volgens groen, oranje of rood en benoemen in het rapport concreet wat de vervolgstap is." },
+      { t: "p", text: "Tijdens de periodieke inspectie nemen we roest en corrosie mee als vast controlepunt, naast andere schade zoals vervorming en scheefstand. We onderscheiden oppervlakkige gebruikssporen van aantasting die de sterkte kan raken, benoemen of de bevinding hersteld kan worden, is afgekeurd of een algemene veiligheidsopmerking is, met concreet de vervolgstap in het rapport." },
     ],
     faq: [
       { q: "Is een beetje roest reden om een stelling af te keuren?", a: "Niet per se. Oppervlakkige roest die alleen de coating heeft aangetast, is meestal geen probleem. Zodra de roest het staal zelf aantast, of bij twijfel over een gesloten profiel, is beoordeling door een deskundige nodig." },
@@ -1258,7 +1262,7 @@ export const artikelen: Artikel[] = [
       { t: "ul", items: [
         "Een actuele RI&E met plan van aanpak waarin stellingen en intern transport zijn opgenomen.",
         "Periodieke keuringsrapporten van de stellingen door een deskundige, met datum en bevindingen.",
-        "Aantoonbare opvolging: wat is na een oranje of rode bevinding wanneer hersteld of vervangen, en door wie.",
+        "Aantoonbare opvolging: wat is na een herstel- of afkeurbevinding wanneer hersteld of vervangen, en door wie.",
         "Een logboek van interne controles, bijvoorbeeld bijgehouden door de PRSES.",
         "Belastinggegevens die kloppen met de huidige opstelling, zoals een belastingbord.",
         "Instructie aan medewerkers en heftruckchauffeurs over veilig laden en het melden van schade.",
@@ -1473,7 +1477,7 @@ export const artikelen: Artikel[] = [
         ["Vervuiling en vreemde voorwerpen", "Folie, houtsplinters en losse planken tussen de rollen", "Vervuiling is een veelvoorkomende oorzaak van vastlopers"],
       ] },
       { t: "h2", text: "De dragende stelling: hetzelfde als bij een palletstelling, met een verschil" },
-      { t: "p", text: "De staanders, liggers, schoren, voetplaten en ankers van een doorrolstelling worden beoordeeld zoals bij een gewone palletstelling: op aanrijdschade, vervorming, scheefstand, corrosie, borging en verankering. Schade wordt op dezelfde manier geclassificeerd in groen, oranje en rood." },
+      { t: "p", text: "De staanders, liggers, schoren, voetplaten en ankers van een doorrolstelling worden beoordeeld zoals bij een gewone palletstelling: op aanrijdschade, vervorming, scheefstand, corrosie, borging en verankering. Schade beoordelen we op dezelfde manier: wat gerepareerd kan worden, wat is afgekeurd en wat een algemene veiligheidsopmerking is." },
       { t: "p", text: "Het verschil zit in de belasting. Een doorrolkanaal is diep en bevat meerdere pallets achter elkaar, waardoor er per sectie veel gewicht op een compacte constructie rust. Bovendien komt er bij het stoppen van een pallet een kracht in de lengterichting van het kanaal op de constructie. De fabrikant houdt daar in het ontwerp rekening mee. Voor u als gebruiker betekent het dat beschadigde staanders of losse ankers in een doorrolstelling zwaar wegen, en dat u de opbouw niet zelf wijzigt zonder nieuwe gegevens van de leverancier." },
       { t: "h2", text: "De rollenbanen: slijtage die u niet in één oogopslag ziet" },
       { t: "p", text: "Rollen, lagers en remmen zijn slijtdelen. Anders dan een deuk in een staander ontstaat slijtage geleidelijk en is die van buitenaf lastig te beoordelen, zeker in een gevuld kanaal. Signalen uit het dagelijks gebruik zijn daarom net zo waardevol als de inspectie zelf." },
@@ -1779,7 +1783,7 @@ export const artikelen: Artikel[] = [
       { t: "h2", text: "Stappenplan: wat doet u nu?" },
       { t: "ol", items: [
         "Zoek het laatste keuringsrapport op en stel vast wanneer de keuring was, wie haar uitvoerde en welke stellingen erin staan.",
-        "Loop na of de bevindingen uit dat rapport zijn opgevolgd. Openstaande oranje of rode punten hebben voorrang op al het andere.",
+        "Loop na of de bevindingen uit dat rapport zijn opgevolgd. Openstaande herstel- en afkeurpunten hebben voorrang op al het andere.",
         "Plan direct een inspectie door een deskundige in en leg de afspraak schriftelijk vast.",
         "Laat tot die tijd een interne visuele controle uitvoeren door een aangewezen medewerker, bij voorkeur met een vaste checklist, en noteer datum en bevindingen.",
         "Ontlast of blokkeer secties met zichtbare schade en markeer ze, zodat ze niet opnieuw worden gevuld.",

@@ -49,6 +49,9 @@ export default function Footer() {
                 Onafhankelijke inspecties van magazijnstellingen. Een helder rapport,
                 duidelijke prioriteiten en concreet vervolgadvies.
               </p>
+              <p className="mt-4 inline-flex items-center gap-2 rounded border border-navy-700 bg-navy-900 px-3 py-1.5 text-xs font-semibold text-navy-100">
+                TÜV SÜD gecertificeerd (Duitsland)
+              </p>
               {contact}
             </div>
             {columns.map((col) => (
@@ -107,6 +110,9 @@ export default function Footer() {
           <div>
             {logo}
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-navy-300">{dict.footer.tagline}</p>
+            <p className="mt-4 inline-flex items-center gap-2 rounded border border-navy-700 bg-navy-900 px-3 py-1.5 text-xs font-semibold text-navy-100">
+              {dict.footer.certified}
+            </p>
             {contact}
           </div>
           <div>

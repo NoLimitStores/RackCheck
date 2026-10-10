@@ -29,7 +29,7 @@ export const stellingtypen: StellingType[] = [
       "Palletstelling met gele liggers en gegalvaniseerde staanders, volledig gevuld met pallets in een magazijn",
     metaTitle: "Palletstelling inspecteren | Onafhankelijke keuring",
     metaDescription:
-      "Laat uw palletstelling onafhankelijk inspecteren door RackCheck. Controle van staanders, liggers, borging en aanrijdschade, met een helder rapport binnen 24 uur.",
+      "Laat uw palletstelling onafhankelijk inspecteren door RackCheck. Controle van staanders, liggers, borging en aanrijdschade, met een helder rapport en concrete vervolgstappen.",
     h1: "Palletstelling inspecteren",
     intro:
       "De palletstelling is het meest gebruikte opslagsysteem in Nederlandse magazijnen en tegelijk het gevoeligst voor aanrijdschade. RackCheck beoordeelt uw palletstellingen onafhankelijk en vertaalt elke bevinding naar een duidelijke prioriteit en vervolgstap.",
@@ -52,12 +52,12 @@ export const stellingtypen: StellingType[] = [
       "Scheefstand en loodrechtheid van de staanders",
     ],
     risicos:
-      "Bij palletstellingen is het grootste risico een progressieve instorting: als één zwaar belaste staander bezwijkt, kan een hele rij meegaan. Daarom weegt aanrijdschade aan staanders zwaar in de beoordeling en krijgt die vaak een rode of oranje classificatie.",
+      "Bij palletstellingen is het grootste risico een progressieve instorting: als één zwaar belaste staander bezwijkt, kan een hele rij meegaan. Daarom weegt aanrijdschade aan staanders zwaar in de beoordeling en wordt die vaak afgekeurd of als dringend herstelpunt benoemd.",
     rapportage:
-      "In het rapport ziet u per bevinding de exacte locatie (gang, stelling, veld en niveau), een foto, de classificatie en de vervolgstap. Zo weet uw team precies waar het aan de slag moet en met welke prioriteit.",
+      "In het rapport ziet u per bevinding de exacte locatie (gang, stelling, veld en niveau), een foto, de oorzaak en de vervolgstap. Zo weet uw team precies waar het aan de slag moet en met welke prioriteit.",
     faq: [
       { q: "Moet de palletstelling leeg zijn voor de inspectie?", a: "Nee. We beoordelen alle bereikbare stellingen terwijl ze gevuld zijn. Alleen bij acuut gevaar vragen we een sectie tijdelijk te ontladen." },
-      { q: "Wat gebeurt er met een beschadigde staander?", a: "Afhankelijk van de ernst krijgt die groen, oranje of rood. Bij rood adviseren we de sectie direct te ontlasten en de staander te vervangen. Rechtbuigen of lassen raden we af." },
+      { q: "Wat gebeurt er met een beschadigde staander?", a: "Afhankelijk van de ernst kan die hersteld worden of wordt die afgekeurd en moet vervangen worden. Bij ernstige schade adviseren we de sectie direct te ontlasten en de staander te vervangen. Rechtbuigen of lassen raden we af." },
       { q: "Inspecteert RackCheck ook oudere of onbekende merken?", a: "Ja. We beoordelen de constructie en de staat. Als een merk niet meer leverbaar is, benoemen we dat transparant in het rapport." },
     ],
   },
@@ -94,7 +94,7 @@ export const stellingtypen: StellingType[] = [
     risicos:
       "Bij legbordstellingen zit het risico vooral in geleidelijke overbelasting en in aanpassingen die niet zijn doorgerekend. Bij bordesconstructies komt daar de veiligheid van personen op de vloer bij: leuningen, trap en toegestane vloerbelasting zijn dan extra aandachtspunten.",
     rapportage:
-      "Het rapport benoemt per bevinding de locatie en de classificatie. Bij bordesvloeren geven we apart aandacht aan de personenveiligheid, zoals leuningen en de aangegeven vloerbelasting.",
+      "Het rapport benoemt per bevinding de locatie en de vervolgstap. Bij bordesvloeren geven we apart aandacht aan de personenveiligheid, zoals leuningen en de aangegeven vloerbelasting.",
     faq: [
       { q: "Beoordeelt RackCheck ook de bordesvloer boven de stelling?", a: "Ja. Bij een geïntegreerde bordesconstructie beoordelen we ook de kolommen, de vloer, de leuningen en de trap, voor zover bereikbaar." },
       { q: "Onze legborden zijn verhangen, is dat een probleem?", a: "Verhangen op zich hoeft geen probleem te zijn, maar het verandert de belasting. We controleren of de opstelling nog past bij de toegestane waarden en benoemen het in het rapport." },
@@ -134,9 +134,9 @@ export const stellingtypen: StellingType[] = [
     risicos:
       "Doordat de last uitkraagt, ontstaat er een kantelmoment op de kolom en de verankering. Beschadiging aan de basis of losse ankers wegen daarom zwaar. Ook een enkele verbogen arm kan de veilige belasting van dat niveau flink verlagen.",
     rapportage:
-      "In het rapport staat per arm of kolom de bevinding, de classificatie en de vervolgstap. Bij draagarmstellingen letten we extra op de basis van de kolom en de staat van de verankering, omdat daar de grootste krachten samenkomen.",
+      "In het rapport staat per arm of kolom de bevinding, de oorzaak en de vervolgstap. Bij draagarmstellingen letten we extra op de basis van de kolom en de staat van de verankering, omdat daar de grootste krachten samenkomen.",
     faq: [
-      { q: "Kan een verbogen draagarm nog gebruikt worden?", a: "Dat hangt af van de mate van verbuiging. Bij twijfel classificeren we de arm als oranje of rood en adviseren we vervanging. Rechtbuigen raden we af, omdat dat het staal verzwakt." },
+      { q: "Kan een verbogen draagarm nog gebruikt worden?", a: "Dat hangt af van de mate van verbuiging. Bij twijfel keuren we de arm af en adviseren we vervanging. Rechtbuigen raden we af, omdat dat het staal verzwakt." },
       { q: "Worden dubbelzijdige en enkelzijdige stellingen anders beoordeeld?", a: "De aandachtspunten zijn vergelijkbaar, maar bij enkelzijdige draagarmstellingen weegt de verankering nog zwaarder omdat de kantelkracht maar één kant op werkt." },
       { q: "Inspecteren jullie ook buiten opgestelde draagarmstellingen?", a: "Ja. Bij buitenopstelling kijken we extra naar corrosie en naar de staat van de fundering en verankering." },
     ],
@@ -175,7 +175,7 @@ export const stellingtypen: StellingType[] = [
     risicos:
       "Omdat de heftruck zich binnen de constructie beweegt en de zichtlijnen beperkt zijn, ontstaat schade vaak onopgemerkt en op moeilijk bereikbare plekken. Beschadiging aan staanders of draagrails in een sterk gevulde inrijstelling weegt zwaar, omdat veel pallets op een compacte constructie steunen.",
     rapportage:
-      "In het rapport benoemen we per bevinding de locatie in de rijgang, de classificatie en de vervolgstap. Bij inrijstellingen letten we extra op de staanders langs de rijgang, de draagrails en de geleiding, omdat daar de meeste aanrijdschade ontstaat.",
+      "In het rapport benoemen we per bevinding de locatie in de rijgang, de oorzaak en de vervolgstap. Bij inrijstellingen letten we extra op de staanders langs de rijgang, de draagrails en de geleiding, omdat daar de meeste aanrijdschade ontstaat.",
     faq: [
       { q: "Moet de inrijstelling leeg zijn voor de inspectie?", a: "Een volledig gevulde inrijstelling is lastiger te beoordelen, omdat rails en staanders in de rijgang deels aan het zicht onttrokken zijn. We beoordelen wat bereikbaar is en geven aan als delen alleen in ontladen toestand goed te controleren zijn." },
       { q: "Wat is het verschil tussen drive-in en drive-through?", a: "Bij een drive-in is de rijgang aan één kant toegankelijk; bij een drive-through aan twee kanten. De inspectiepunten zijn vergelijkbaar, maar de looproutes en de manier van vullen verschillen." },
@@ -222,7 +222,7 @@ export const stellingtypen: StellingType[] = [
     risicos:
       "Op een bordes of entresolvloer werken mensen, waardoor gebreken aan leuningen, trappen of de vloer direct raken aan de veiligheid van personen. Aanrijding van een dragende kolom kan bovendien de stabiliteit van het hele bordes beïnvloeden. Daarom wegen randbeveiliging, vloer en draagconstructie allemaal mee in de beoordeling.",
     rapportage:
-      "In het rapport beschrijven we per bevinding de locatie, de classificatie en de vervolgstap, met aparte aandacht voor de personenveiligheid zoals leuningen, trappen en de aangegeven vloerbelasting. Een visuele inspectie is iets anders dan een constructieve herberekening; als een berekening nodig is, geven we dat aan.",
+      "In het rapport beschrijven we per bevinding de locatie, de oorzaak en de vervolgstap, met aparte aandacht voor de personenveiligheid zoals leuningen, trappen en de aangegeven vloerbelasting. Een visuele inspectie is iets anders dan een constructieve herberekening; als een berekening nodig is, geven we dat aan.",
     faq: [
       { q: "Voert RackCheck een constructieve berekening van de vloer uit?", a: "Nee. Wij voeren een visuele, deskundige inspectie uit van de staat en het veilige gebruik. Is er een constructieve herberekening nodig, bijvoorbeeld bij twijfel over de draagkracht of bij zwaarder gebruik, dan geven we dat aan zodat een constructeur dat kan verzorgen." },
       { q: "Beoordelen jullie ook de stellingen op en onder het bordes?", a: "Ja, voor zover bereikbaar. Bordessen worden vaak gecombineerd met stellingen; die kunnen we in dezelfde inspectie meenemen." },
