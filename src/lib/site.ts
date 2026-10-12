@@ -95,9 +95,9 @@ export const inspecteurs: Inspecteur[] = [
     algemeen: true,
   },
   {
-    // Alleen de voornaam: de achternaamspelling verschilt tussen bronnen
-    // (e-mail m.huijs vs. LinkedIn-URL marcel-huys). Door de eigenaar te bevestigen.
-    naam: "Marcel",
+    // Achternaam "Huijs" bevestigd door de eigenaar (2026-10-12). De LinkedIn-URL
+    // gebruikt de spelling "huys", maar dat is slechts de profiel-slug.
+    naam: "Marcel Huijs",
     regio: "Midden- en Noord-Nederland",
     regioDetail:
       "Aanspreekpunt voor magazijnen in Midden- en Noord-Nederland.",
