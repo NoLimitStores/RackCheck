@@ -232,7 +232,8 @@ locatiepagina's. **Deze routine maakt hier geen content voor.**
 
 ## PRIORITEIT 4 - Terminologie, scope en offerte
 
-- [ ] Wat is het verschil tussen een stellinginspectie en een stellingkeuring?
+- [x] Wat is het verschil tussen een stellinginspectie en een stellingkeuring?
+  - Gepubliceerd: 2026-10-13 -> https://www.rackcheck.nl/kennisbank/verschil-stellinginspectie-stellingkeuring/
   - Primair zoekwoord: verschil stellinginspectie en stellingkeuring
   - Secundaire zoekwoorden: keuring of inspectie stelling, terminologie stelling
   - Zoekintentie: informatief
