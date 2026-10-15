@@ -1,10 +1,10 @@
 {
   "publicationFrequency": "daily",
-  "lastSuccessfulRun": "2026-10-13",
-  "lastActionType": "new",
-  "newArticlesSinceMaintenance": 1,
+  "lastSuccessfulRun": "2026-10-15",
+  "lastActionType": "maintenance",
+  "newArticlesSinceMaintenance": 0,
   "totalNewArticles": 16,
-  "totalMaintenanceUpdates": 3,
+  "totalMaintenanceUpdates": 4,
   "lastPublishedUrl": "https://www.rackcheck.nl/kennisbank/verschil-stellinginspectie-stellingkeuring/",
-  "lastMaintenanceUrl": "https://www.rackcheck.nl/kennisbank/wat-wordt-gecontroleerd/"
+  "lastMaintenanceUrl": "https://www.rackcheck.nl/kennisbank/nulinspectie/"
 }

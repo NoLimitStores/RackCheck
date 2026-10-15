@@ -240,7 +240,8 @@ locatiepagina's. **Deze routine maakt hier geen content voor.**
   - Gewenste CTA: uitleg over stellinginspecties
   - Opmerking: begripsverheldering; link naar nen-en-15635 en is-stellingkeuring-verplicht.
 
-- [ ] Nulkeuring versus periodieke keuring: wat is het verschil?
+- [x] Nulkeuring versus periodieke keuring: wat is het verschil?
+  - Gepubliceerd: 2026-10-15 -> https://www.rackcheck.nl/kennisbank/nulinspectie/ (opgenomen via onderhoud van nulinspectie; apart artikel zou cannibaliseren)
   - Primair zoekwoord: nulkeuring versus periodieke keuring
   - Secundaire zoekwoorden: eerste keuring stelling, periodieke inspectie stelling
   - Zoekintentie: informatief
