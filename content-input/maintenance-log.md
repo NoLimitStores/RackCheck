@@ -23,3 +23,11 @@
 - FAQ uitgebreid van 2 naar 5 vragen, met links naar magazijn-voorbereiden-op-inspectie en draagkrachtberekening-stelling-aanpassen.
 - Related uitgebreid met losse-vloerankers-magazijnstelling, beschadigde-schoor en magazijn-voorbereiden-op-inspectie.
 - Geen toleranties of mm-grenzen toegevoegd; slug behouden; updated gezet op 2026-10-10.
+
+## 2026-10-15: nulinspectie
+- Reden: aantoonbaar onjuiste claim. De FAQ stelde dat een nulinspectie "geen wettelijke verplichting" is, terwijl Arbobesluit artikel 7.4a lid 1 en 2 een keuring na installatie en voor eerste ingebruikname (en na elke montage op een nieuwe plek) vraagt; dat stond al correct in hoe-vaak-stellingen-keuren, stellingen-keuren-na-verplaatsing en documenten-magazijnstellingen. Daarnaast dun artikel zonder eigen foto.
+- Backlog-item "Nulkeuring versus periodieke keuring" niet als nieuw artikel gemaakt (zou nulinspectie cannibaliseren) maar in dit artikel opgenomen.
+- Gecorrigeerd: verplichting toegelicht (woord nulinspectie staat niet in de wet, de keuring voor ingebruikname wel), met duidelijk gemarkeerde interpretatie dat stellingen onder lid 1 vallen. Bron: Arboportaal "Keuring van arbeidsmiddelen" (geraadpleegd 2026-10-15) en Arbobesluit artikel 7.4a.
+- Nieuwe secties: vergelijkingstabel nulkeuring vs periodieke keuring, wanneer aan de orde (incl. ombouw, lid 4), wat wordt beoordeeld, bewaren en vervolg. FAQ van 2 naar 5 vragen.
+- Hoofdafbeelding toegevoegd (palletstelling-belastingborden-overkapping.jpg). Title/h1/meta aangescherpt op nulinspectie + nulkeuring; slug behouden; updated 2026-10-15.
+- Related aangevuld met verschil-stellinginspectie-stellingkeuring; inkomende links toegevoegd vanuit verschil-stellinginspectie-stellingkeuring en interne-controle-vs-externe-inspectie.
