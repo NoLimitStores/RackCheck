@@ -248,7 +248,8 @@ locatiepagina's. **Deze routine maakt hier geen content voor.**
   - Gewenste CTA: inspectie aanvragen
   - Opmerking: raakt nulinspectie; hier de vergelijking centraal.
 
-- [ ] Welke soorten magazijnstellingen moeten worden gekeurd?
+- [x] Welke soorten magazijnstellingen moeten worden gekeurd?
+  - Gepubliceerd: 2026-10-20 -> https://www.rackcheck.nl/kennisbank/welke-stellingen-keuren/
   - Primair zoekwoord: welke stellingen moeten gekeurd worden
   - Secundaire zoekwoorden: soorten magazijnstellingen keuren, stellingtypen inspectie
   - Zoekintentie: informatief
