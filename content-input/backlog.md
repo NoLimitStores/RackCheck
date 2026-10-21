@@ -256,18 +256,21 @@ locatiepagina's. **Deze routine maakt hier geen content voor.**
   - Gewenste CTA: inspectie aanvragen
 
 - [ ] Moeten kleine of lichte magazijnstellingen ook worden gekeurd?
+  - Overgeslagen 2026-10-21: kernvraag al beantwoord in welke-stellingen-keuren (H2 "En kleine of lichte stellingen?") en /inspecties/legbordstelling.
   - Primair zoekwoord: kleine stellingen keuren verplicht
   - Secundaire zoekwoorden: lichte stelling inspectie, legbordstelling keuren verplicht
   - Zoekintentie: informatief
   - Gewenste CTA: vrijblijvend advies aanvragen
 
 - [ ] Moeten stellingen zonder heftruckverkeer ook worden gekeurd?
+  - Overgeslagen 2026-10-21: kernantwoord (ook handmatig beladen stellingen vallen onder 7.4a) al gedekt door welke-stellingen-keuren en /inspecties/legbordstelling.
   - Primair zoekwoord: stellingen zonder heftruck keuren
   - Secundaire zoekwoorden: handmatig laden stelling inspectie, magazijn zonder heftruck
   - Zoekintentie: informatief
   - Gewenste CTA: vrijblijvend advies aanvragen
 
-- [ ] Wie betaalt de stellingkeuring: huurder of verhuurder?
+- [x] Wie betaalt de stellingkeuring: huurder of verhuurder?
+  - Gepubliceerd: 2026-10-21 -> https://www.rackcheck.nl/kennisbank/stellingkeuring-huurder-of-verhuurder/
   - Primair zoekwoord: stellingkeuring huurder of verhuurder
   - Secundaire zoekwoorden: stellingen huurpand keuren, verantwoordelijkheid huurder stelling
   - Zoekintentie: informatief
