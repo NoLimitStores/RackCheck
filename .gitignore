@@ -34,6 +34,8 @@ next-env.d.ts
 # large local source archives and backups (never commit)
 /Content van F-schijf-*/
 /legacy/
+# raw fotoshoot-originelen (geoptimaliseerde webkopieën staan in public/images)
+/bron-fotos/
 
 # loose local source assets in repo root (not used by the app)
 /90029765_2.webp

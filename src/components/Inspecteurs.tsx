@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { inspecteurs } from "@/lib/site";
 import { PhoneIcon, MailIcon, ShieldIcon } from "@/components/Icons";
 
@@ -38,8 +39,20 @@ export default function Inspecteurs({
         {inspecteurs.map((ins) => (
           <div
             key={ins.email}
-            className="flex flex-col rounded-lg border border-navy-200 bg-white p-6"
+            className="flex flex-col overflow-hidden rounded-lg border border-navy-200 bg-white"
           >
+            {ins.foto && (
+              <div className="relative aspect-[4/5] w-full bg-navy-100">
+                <Image
+                  src={ins.foto}
+                  alt={ins.fotoAlt ?? `RackCheck-inspecteur ${ins.naam}`}
+                  fill
+                  sizes="(max-width: 640px) 100vw, 400px"
+                  className="object-cover object-center"
+                />
+              </div>
+            )}
+            <div className={`flex flex-col ${ins.foto ? "p-6 pt-5" : "p-6"}`}>
             <div className="flex items-center gap-2">
               <ShieldIcon className="h-5 w-5 shrink-0 text-brand-600" />
               <p className="text-sm font-bold uppercase tracking-wide text-navy-600">
@@ -96,8 +109,7 @@ export default function Inspecteurs({
                 </div>
               )}
             </dl>
-            {/* Ruimte voor een actiefoto van de inspecteur zodra die is aangeleverd
-                (bewust geen leeg fotovak tonen). */}
+            </div>
           </div>
         ))}
       </div>

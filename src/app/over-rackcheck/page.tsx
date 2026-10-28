@@ -63,10 +63,10 @@ export default function Page() {
           </div>
           <div className="overflow-hidden rounded-lg border border-navy-200">
             <Image
-              src="/images/draagarmstelling.jpg"
-              alt="Draagarmstelling met zwarte draagarmen voor langgoed in een magazijn"
+              src="/images/inspecteur-tjeerd-rapport.jpg"
+              alt="RackCheck-inspecteur Tjeerd Krikhaar legt bevindingen vast op een tablet tijdens een stellinginspectie"
               width={700}
-              height={800}
+              height={840}
               sizes="(max-width: 1024px) 100vw, 40vw"
               className="h-full w-full object-cover"
             />

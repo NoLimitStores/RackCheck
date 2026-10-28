@@ -50,6 +50,7 @@ export default async function Page({ params }: { params: Promise<{ plaats: strin
   if (!regio) notFound();
 
   const regioImages = [
+    { src: "/images/inspectie-waterpas.jpg", alt: "RackCheck-inspecteur controleert met een waterpas een magazijnstelling" },
     { src: "/images/magazijn-palletstellingen-overzicht.jpg", alt: "Overzicht van volgeladen palletstellingen in een magazijn" },
     { src: "/images/inrijstelling-magazijn.jpg", alt: "Hoge inrijstelling volledig gevuld met pallets in een magazijn" },
     { src: "/images/legbordstelling.jpg", alt: "Legbordstelling met legborden en blauwe staanders in een magazijn" },

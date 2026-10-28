@@ -60,16 +60,16 @@ export default function Page() {
         <figure className="mx-auto mt-8 max-w-3xl overflow-hidden rounded-xl border border-navy-200">
           <div className="relative aspect-[16/10]">
             <Image
-              src="/images/verankering-voetplaat-detail.jpg"
-              alt="Detail van de verankering en boutverbindingen aan de voet van een stellingconstructie"
+              src="/images/inspectie-waterpas.jpg"
+              alt="RackCheck-inspecteur Marcel Huijs controleert met een waterpas of een staander nog recht staat"
               fill
               sizes="(max-width: 768px) 100vw, 768px"
               className="object-cover object-center"
             />
           </div>
           <figcaption className="bg-navy-50 px-4 py-3 text-sm text-navy-600">
-            Tijdens de inspectie beoordelen we ook de details: verankering,
-            boutverbindingen en de voetplaten waarop de constructie rust.
+            Tijdens de inspectie beoordelen we de constructie tot in de details,
+            van verankering en boutverbindingen tot de uitlijning van de staanders.
           </figcaption>
         </figure>
 

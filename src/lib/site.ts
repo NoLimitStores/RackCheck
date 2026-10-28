@@ -80,6 +80,9 @@ export type Inspecteur = {
   email: string;
   /** Persoonlijk LinkedIn-profiel. */
   linkedin?: string;
+  /** Echte portretfoto (fotoshoot), getoond bovenaan de inspecteurskaart. */
+  foto?: string;
+  fotoAlt?: string;
   algemeen?: boolean;
 };
 
@@ -92,6 +95,8 @@ export const inspecteurs: Inspecteur[] = [
     phoneHref: "tel:+31653817775",
     email: "t.krikhaar@rackcheck.nl",
     linkedin: "https://www.linkedin.com/in/tjeerdkrikhaar",
+    foto: "/images/inspecteur-tjeerd.jpg",
+    fotoAlt: "RackCheck-inspecteur Tjeerd Krikhaar bij een magazijnstelling",
     algemeen: true,
   },
   {
@@ -105,6 +110,8 @@ export const inspecteurs: Inspecteur[] = [
     phoneHref: "tel:+31628808992",
     email: "m.huijs@rackcheck.nl",
     linkedin: "https://www.linkedin.com/in/marcel-huys-93252939/",
+    foto: "/images/inspecteur-marcel.jpg",
+    fotoAlt: "RackCheck-inspecteur Marcel Huijs bij een magazijnstelling",
   },
 ];
 

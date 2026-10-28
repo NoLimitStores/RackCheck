@@ -179,8 +179,8 @@ export default function Home() {
         <div className="mx-auto grid max-w-6xl gap-10 px-4 py-16 sm:px-6 lg:grid-cols-2 lg:items-center lg:py-20">
           <div className="relative order-last h-64 overflow-hidden rounded-lg sm:h-80 lg:order-first lg:h-full lg:min-h-[420px]">
             <Image
-              src="/images/inrijstelling-magazijn.jpg"
-              alt="Hoge blauwe inrijstelling volledig gevuld met pallets in een magazijn"
+              src="/images/inspectie-laser-meten.jpg"
+              alt="RackCheck-inspecteur meet een magazijnstelling op met een lasermeter tijdens de keuring"
               fill
               sizes="(max-width: 1024px) 100vw, 50vw"
               className="object-cover"
