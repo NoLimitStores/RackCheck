@@ -276,7 +276,8 @@ locatiepagina's. **Deze routine maakt hier geen content voor.**
   - Zoekintentie: informatief
   - Gewenste CTA: contact opnemen
 
-- [ ] Hoeveel stellingsecties heeft mijn magazijn en hoe tel ik ze?
+- [x] Hoeveel stellingsecties heeft mijn magazijn en hoe tel ik ze?
+  - Gepubliceerd: 2026-11-08 -> https://www.rackcheck.nl/kennisbank/stellingsecties-tellen/
   - Primair zoekwoord: stellingsecties tellen
   - Secundaire zoekwoorden: aantal secties stelling offerte, hoeveel velden stelling
   - Zoekintentie: commercieel ondersteunend
