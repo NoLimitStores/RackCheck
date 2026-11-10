@@ -25,7 +25,7 @@ is-stellingkeuring-verplicht, hoe-vaak-stellingen-keuren, wie-mag-stellingen-ins
 wat-is-een-prses, schadeclassificatie, na-heftruckaanrijding, wat-wordt-gecontroleerd,
 belastingbord, kosten-stellinginspectie, aanrijdschade-voorkomen, staander-rechtbuigen-lassen,
 nulinspectie, interne-controle-vs-externe-inspectie, checklist-veilige-magazijnstelling,
-magazijn-voorbereiden-op-inspectie, informatie-in-inspectierapport.
+magazijn-voorbereiden-op-inspectie, informatie-in-inspectierapport, hoe-lang-duurt-stellinginspectie.
 
 Bestaande pagina's buiten deze routine: `/inspecties/palletstelling`, `/inspecties/legbordstelling`,
 `/inspecties/draagarmstelling`, `/regio/[plaats]`, `/stellinginspectie`, `/prijzen`,
@@ -284,7 +284,8 @@ locatiepagina's. **Deze routine maakt hier geen content voor.**
   - Gewenste CTA: inspectie aanvragen
   - Opmerking: helpt bezoeker een offerte voor te bereiden; link naar prijzen.
 
-- [ ] Hoe lang duurt een stellinginspectie en moet het magazijn stil?
+- [x] Hoe lang duurt een stellinginspectie en moet het magazijn stil?
+  - Gepubliceerd: 2026-11-10 -> https://www.rackcheck.nl/kennisbank/hoe-lang-duurt-stellinginspectie/
   - Primair zoekwoord: hoe lang duurt stellinginspectie
   - Secundaire zoekwoorden: magazijn stilleggen inspectie, doorlooptijd stellingkeuring
   - Zoekintentie: informatief / commercieel ondersteunend
