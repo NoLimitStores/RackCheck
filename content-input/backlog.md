@@ -292,6 +292,7 @@ locatiepagina's. **Deze routine maakt hier geen content voor.**
   - Gewenste CTA: inspectie aanvragen
 
 - [ ] Welke informatie heeft de inspecteur vooraf van u nodig?
+  - Overgeslagen 2026-11-19: aan te leveren gegevens (type, rijen/secties, hoogte, niveaus, locaties, tekening, merk, vorig rapport, bekende schade) staan al in stellingsecties-tellen (H2 "Wat u aanlevert bij een aanvraag"); klaarleggen van tekeningen/belastinggegevens/rapport en contactpersoon in magazijn-voorbereiden-op-inspectie en hoe-lang-duurt-stellinginspectie; dossier in documenten-magazijnstellingen.
   - Primair zoekwoord: informatie voor stellinginspectie
   - Secundaire zoekwoorden: voorbereiden stellingkeuring gegevens, inspecteur aanleveren
   - Zoekintentie: informatief
