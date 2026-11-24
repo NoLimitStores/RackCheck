@@ -298,3 +298,79 @@ locatiepagina's. **Deze routine maakt hier geen content voor.**
   - Zoekintentie: informatief
   - Gewenste CTA: inspectie aanvragen
   - Opmerking: raakt magazijn-voorbereiden-op-inspectie; focus op aan te leveren gegevens/tekeningen.
+
+## PRIORITEIT 5 - Aanvulling 2026-11-24 (gebruik, organisatie en randvoorwaarden)
+
+Toegevoegd na uitputting van de eerdere backlog. Per item staat welke bestaande content al
+raakvlak heeft; houd het artikel binnen de genoemde focus. Bronnen zijn een startpunt en moeten
+tijdens de run actueel worden gecontroleerd; niets uit deze notities is al geverifieerd.
+
+- [ ] Ontbrekende of losse liggerborgingen: hoe gevaarlijk is dat?
+  - Primair zoekwoord: liggerborging ontbreekt
+  - Secundaire zoekwoorden: borgpen ligger stelling, ligger springt uit staander, veiligheidspen palletstelling
+  - Zoekintentie: informatief (schade/urgentie)
+  - Gewenste CTA: inspectie aanvragen
+  - Opmerking: vergelijkbaar format als losse-vloerankers-magazijnstelling. Raakvlak: wat-wordt-gecontroleerd en checklist noemen borging alleen als controlepunt; hier focus op functie, oorzaken (aanrijding van onderaf, herinrichting) en wat te doen. Bron: fabrikantinstructie, NEN-EN 15635 (alleen benoemen, niet citeren), Arbobesluit 7.4a. Geen classificatie verzinnen.
+
+- [ ] Klimmen in een magazijnstelling: mag dat?
+  - Primair zoekwoord: klimmen in stelling
+  - Secundaire zoekwoorden: stelling beklimmen verboden, op liggers staan magazijn, werken op hoogte stelling
+  - Zoekintentie: informatief (veiligheid/gedrag)
+  - Gewenste CTA: vrijblijvend advies aanvragen
+  - Opmerking: geen bestaand artikel. Bronnen: Arbobesluit hoofdstuk 3 (valgevaar, art. 3.16) en hoofdstuk 7 (gebruik arbeidsmiddelen volgens bestemming), Arboportaal "Werken op hoogte". Alternatieven benoemen (orderpicker, rolsteiger, trap) zonder merkadvies.
+
+- [ ] Doorvalbeveiliging in palletstellingen: wanneer is die nodig?
+  - Primair zoekwoord: doorvalbeveiliging palletstelling
+  - Secundaire zoekwoorden: doorvalnet stelling, rugleuning palletstelling, vallende lading magazijn
+  - Zoekintentie: informatief / oplossingsgericht
+  - Gewenste CTA: vrijblijvend advies aanvragen
+  - Opmerking: geen bestaande treffers op "doorval" in src. Bronnen: Arbobesluit (vallende voorwerpen, art. 3.16 en hoofdstuk 7), RI&E, fabrikantinstructie. Niet stellen dat het altijd verplicht is; het hangt af van de risicobeoordeling. Benoemen wat de inspecteur hierbij beoordeelt.
+
+- [ ] Pallets in een stelling plaatsen: welke fouten ziet u het vaakst?
+  - Primair zoekwoord: pallets correct plaatsen stelling
+  - Secundaire zoekwoorden: palletoverstek ligger, beschadigde pallet stelling, pallet dwars op ligger
+  - Zoekintentie: informatief (dagelijks gebruik)
+  - Gewenste CTA: inspectie aanvragen
+  - Opmerking: raakvlak doorrolstelling-inspecteren (alleen doorrol) en belastingbord (gewicht). Hier focus op plaatsing in conventionele palletstellingen: oriëntatie, overstek, beschadigde pallets, ladingen tegen schoren/staanders. Overstekmaten en toleranties NIET noemen tenzij uit een openbare primaire bron; anders verwijzen naar fabrikant/belastinggegevens.
+
+- [ ] Verrijdbare (mobiele) stellingen keuren: waar let u op?
+  - Primair zoekwoord: verrijdbare stelling keuren
+  - Secundaire zoekwoorden: mobiele stelling inspectie, rijdende archiefstelling keuring, verrijdbare palletstelling
+  - Zoekintentie: informatief
+  - Gewenste CTA: inspectie aanvragen
+  - Opmerking: alleen een tabelrij in welke-stellingen-keuren; geen /inspecties-pagina voor dit type. Onderscheid staalconstructie (stellinginspectie) vs onderwagens/aandrijving/beveiligingen (onderhoud volgens fabrikant). Machinerichtlijn/Machineverordening alleen noemen als de bron dat bevestigt.
+
+- [ ] Stellingkeuring in België: wat zegt de Codex over het welzijn op het werk?
+  - Primair zoekwoord: stellingkeuring België
+  - Secundaire zoekwoorden: rekkeuring verplicht België, inspectie magazijnrekken Codex, palletrekken keuring
+  - Zoekintentie: informatief (BE-doelgroep)
+  - Gewenste CTA: inspectie aanvragen
+  - Opmerking: welke-stellingen-keuren en stellingkeuring-huurder-of-verhuurder hebben alleen een korte alinea over België. Bron uitsluitend primair: Codex boek IV (arbeidsmiddelen) via werk.belgie.be / FOD WASO. Let op Belgische terminologie (rekken, preventieadviseur). Geen frequentie of erkenningsplicht noemen die niet in de Codex staat.
+
+- [ ] Magazijnstellingen in de RI&E: wat neemt u op?
+  - Primair zoekwoord: RI&E magazijnstellingen
+  - Secundaire zoekwoorden: risico-inventarisatie stellingen, plan van aanpak magazijn, RI&E palletstelling
+  - Zoekintentie: informatief (compliance)
+  - Gewenste CTA: vrijblijvend advies aanvragen
+  - Opmerking: arbeidsinspectie-magazijn noemt de RI&E alleen als controlepunt; hoe-vaak-stellingen-keuren noemt vastleggen in RI&E. Hier focus op concrete risico's en maatregelen voor stellingen in RI&E en plan van aanpak. Bron: Arbowet art. 5, Arboportaal RI&E, RI&E-instrumenten (alleen noemen als ze bestaan).
+
+- [ ] Stellingschade melden: hoe richt u een meldprocedure in?
+  - Primair zoekwoord: stellingschade melden
+  - Secundaire zoekwoorden: meldprocedure aanrijdschade, schade stelling melden medewerkers, schaderegistratie magazijn
+  - Zoekintentie: informatief / organisatorisch
+  - Gewenste CTA: vrijblijvend advies aanvragen
+  - Opmerking: raakvlak na-heftruckaanrijding (acute stappen), aanrijdschade-voorkomen ("melden zonder schuldvraag") en wat-is-een-prses. Hier focus op het proces: wie meldt, hoe, registratie, opvolging door PRSES. Bron: Arbowet art. 8 (voorlichting), NEN-EN 15635 rol PRSES (benoemen, niet citeren). Geen statistieken verzinnen.
+
+- [ ] Medewerkers instrueren over veilig stellinggebruik: wat moet erin?
+  - Primair zoekwoord: instructie stellinggebruik medewerkers
+  - Secundaire zoekwoorden: toolbox magazijnstelling, voorlichting stellingen Arbowet, heftruckchauffeur instructie stelling
+  - Zoekintentie: informatief
+  - Gewenste CTA: vrijblijvend advies aanvragen
+  - Opmerking: documenten-magazijnstellingen heeft een korte H3 over voorlichting. Pak dit alleen op als stellingschade-melden de instructiekant niet al afdekt; anders overslaan met reden. Bron: Arbowet art. 8, Arbobesluit art. 7.5 (voorlichting/onderricht arbeidsmiddelen; nummer verifiëren).
+
+- [ ] Stellingen in koel- en vriescellen: extra aandachtspunten bij inspectie
+  - Primair zoekwoord: stelling vriescel inspectie
+  - Secundaire zoekwoorden: palletstelling koelcel, stellingen lage temperatuur, ijsvorming stelling
+  - Zoekintentie: informatief
+  - Gewenste CTA: inspectie aanvragen
+  - Opmerking: roest-corrosie-magazijnstelling noemt koelcellen alleen bij condens. Alleen publiceren als er een betrouwbare primaire of fabrikantbron is voor de aandachtspunten; anders overslaan met reden. Geen materiaal- of temperatuurgrenzen verzinnen.
