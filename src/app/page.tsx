@@ -215,20 +215,6 @@ export default function Home() {
           intro="Van aanvraag tot rapport: transparant, snel en professioneel."
           center
         />
-        <figure className="mx-auto mt-10 max-w-3xl overflow-hidden rounded-xl border border-navy-200">
-          <div className="relative aspect-[16/9]">
-            <Image
-              src="/images/inspectie-waterpas.jpg"
-              alt="RackCheck-inspecteur Marcel Huijs controleert met een waterpas of een staander nog recht staat"
-              fill
-              sizes="(max-width: 768px) 100vw, 768px"
-              className="object-cover object-center"
-            />
-          </div>
-          <figcaption className="bg-navy-50 px-4 py-2 text-xs text-navy-600">
-            Onze inspecteurs beoordelen elke stelling ter plekke, van uitlijning en verankering tot schade aan liggers en staanders.
-          </figcaption>
-        </figure>
         <ol className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {stappen.map((s) => (
             <li key={s.num} className="relative rounded-lg border border-navy-100 bg-white p-6">
@@ -252,6 +238,20 @@ export default function Home() {
       <Section tone="white">
         <div id="waarom" className="scroll-mt-20" />
         <SectionHeading eyebrow="Waarom RackCheck" title="De juiste keuze voor uw magazijn" />
+        <figure className="mx-auto mt-10 max-w-3xl overflow-hidden rounded-xl border border-navy-200">
+          <div className="relative aspect-[16/9]">
+            <Image
+              src="/images/inspectie-waterpas.jpg"
+              alt="RackCheck-inspecteur Marcel Huijs controleert met een waterpas of een staander nog recht staat"
+              fill
+              sizes="(max-width: 768px) 100vw, 768px"
+              className="object-cover object-center"
+            />
+          </div>
+          <figcaption className="bg-navy-50 px-4 py-2 text-xs text-navy-600">
+            Onze inspecteurs beoordelen elke stelling ter plekke, van uitlijning en verankering tot schade aan liggers en staanders.
+          </figcaption>
+        </figure>
         <div className="mt-10 grid gap-5 sm:grid-cols-2">
           {voordelen.map((v) => (
             <div key={v.title} className="flex gap-4 rounded-lg border border-navy-100 bg-white p-6">
