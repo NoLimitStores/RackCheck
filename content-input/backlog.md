@@ -25,7 +25,8 @@ is-stellingkeuring-verplicht, hoe-vaak-stellingen-keuren, wie-mag-stellingen-ins
 wat-is-een-prses, schadeclassificatie, na-heftruckaanrijding, wat-wordt-gecontroleerd,
 belastingbord, kosten-stellinginspectie, aanrijdschade-voorkomen, staander-rechtbuigen-lassen,
 nulinspectie, interne-controle-vs-externe-inspectie, checklist-veilige-magazijnstelling,
-magazijn-voorbereiden-op-inspectie, informatie-in-inspectierapport, hoe-lang-duurt-stellinginspectie.
+magazijn-voorbereiden-op-inspectie, informatie-in-inspectierapport, hoe-lang-duurt-stellinginspectie,
+liggerborging-ontbreekt.
 
 Bestaande pagina's buiten deze routine: `/inspecties/palletstelling`, `/inspecties/legbordstelling`,
 `/inspecties/draagarmstelling`, `/regio/[plaats]`, `/stellinginspectie`, `/prijzen`,
@@ -305,7 +306,8 @@ Toegevoegd na uitputting van de eerdere backlog. Per item staat welke bestaande 
 raakvlak heeft; houd het artikel binnen de genoemde focus. Bronnen zijn een startpunt en moeten
 tijdens de run actueel worden gecontroleerd; niets uit deze notities is al geverifieerd.
 
-- [ ] Ontbrekende of losse liggerborgingen: hoe gevaarlijk is dat?
+- [x] Ontbrekende of losse liggerborgingen: hoe gevaarlijk is dat?
+  - Gepubliceerd: 2026-11-26 -> https://www.rackcheck.nl/kennisbank/liggerborging-ontbreekt/
   - Primair zoekwoord: liggerborging ontbreekt
   - Secundaire zoekwoorden: borgpen ligger stelling, ligger springt uit staander, veiligheidspen palletstelling
   - Zoekintentie: informatief (schade/urgentie)
